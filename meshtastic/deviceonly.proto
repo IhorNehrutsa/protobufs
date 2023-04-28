@@ -159,3 +159,15 @@ message OEMStore {
    */
   LocalModuleConfig oem_local_module_config = 8;
 }
+
+/*
+* Ptd Buttons
+*/
+message PtdButtons {
+
+  uint32 up     = 1;
+  uint32 left   = 2;
+  uint32 center = 3;
+  uint32 right  = 4;
+  uint32 down   = 5;
+}
