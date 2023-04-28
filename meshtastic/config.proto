@@ -595,7 +595,7 @@ message Config {
       /*
        * United States
        */
-      US = 1;
+      // US = 1;
 
       /*
        * European Union 433mhz
@@ -605,57 +605,57 @@ message Config {
       /*
        * European Union 868mhz
        */
-      EU_868 = 3;
+      // EU_868 = 3;
 
       /*
        * China
        */
-      CN = 4;
+      // CN = 4;
 
       /*
        * Japan
        */
-      JP = 5;
+      // JP = 5;
 
       /*
        * Australia / New Zealand
        */
-      ANZ = 6;
+      // ANZ = 6;
 
       /*
        * Korea
        */
-      KR = 7;
+      // KR = 7;
 
       /*
        * Taiwan
        */
-      TW = 8;
+      // TW = 8;
 
       /*
        * Russia
        */
-      RU = 9;
+      // RU = 9;
 
       /*
        * India
        */
-      IN = 10;
+      // IN = 10;
 
       /*
        * New Zealand 865mhz
        */
-      NZ_865 = 11;
+      // NZ_865 = 11;
 
       /*
        * Thailand
        */
-      TH = 12;
+      // TH = 12;
 
       /*
        * WLAN Band
        */
-      LORA_24 = 13;
+      // LORA_24 = 13;
 
       /*
        * Ukraine 433mhz
@@ -708,6 +708,16 @@ message Config {
        * Short Range - Fast
        */
       SHORT_FAST = 6;
+      
+      AIR_RATE_300 = 7;
+      AIR_RATE_1200 = 8;
+      AIR_RATE_2400 = 9;
+      AIR_RATE_4800 = 10;
+      AIR_RATE_9600 = 11;
+      AIR_RATE_19200 = 12;
+      AIR_RATE_37500 = 13;
+      AIR_RATE_38400 = 14;
+      AIR_RATE_62500 = 15;
 
       /*
        * Long Range - Moderately Fast
