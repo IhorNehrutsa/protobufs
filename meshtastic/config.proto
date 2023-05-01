@@ -600,7 +600,7 @@ message Config {
       /*
        * European Union 433mhz
        */
-      EU_433 = 2;
+      // EU_433 = 2;
 
       /*
        * European Union 868mhz
@@ -665,7 +665,7 @@ message Config {
       /*
        * Ukraine 868mhz
        */
-      UA_868 = 15;
+      // UA_868 = 15;
     }
 
     /*
@@ -709,20 +709,20 @@ message Config {
        */
       SHORT_FAST = 6;
       
-      AIR_RATE_300 = 7;
-      AIR_RATE_1200 = 8;
-      AIR_RATE_2400 = 9;
-      AIR_RATE_4800 = 10;
-      AIR_RATE_9600 = 11;
-      AIR_RATE_19200 = 12;
-      AIR_RATE_37500 = 13;
-      AIR_RATE_38400 = 14;
-      AIR_RATE_62500 = 15;
-
       /*
        * Long Range - Moderately Fast
        */
       LONG_MODERATE = 7;
+
+      AIR_RATE_300 = 8;
+      AIR_RATE_1200 = 9;
+      AIR_RATE_2400 = 10;
+      AIR_RATE_4800 = 11;
+      AIR_RATE_9600 = 12;
+      AIR_RATE_19200 = 13;
+      AIR_RATE_37500 = 14;
+      AIR_RATE_38400 = 15;
+      AIR_RATE_62500 = 16;
     }
 
     /*
