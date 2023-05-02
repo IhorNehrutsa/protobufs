@@ -17,39 +17,39 @@ message Config {
      * Defines the device's role on the Mesh network
      */
     enum Role {
-    
+
       /*
        * Client device role
        */
       CLIENT = 0;
-    
+
       /*
        * Client Mute device role
        *   Same as a client except packets will not hop over this node, does not contribute to routing packets for mesh.
        */
       CLIENT_MUTE = 1;
-    
+
       /*
        * Router device role.
-       *   Mesh packets will prefer to be routed over this node. This node will not be used by client apps. 
+       *   Mesh packets will prefer to be routed over this node. This node will not be used by client apps.
        *   The wifi/ble radios and the oled screen will be put to sleep.
        *   This mode may still potentially have higher power usage due to it's preference in message rebroadcasting on the mesh.
        */
       ROUTER = 2;
-    
+
       /*
        * Router Client device role
        *   Mesh packets will prefer to be routed over this node. The Router Client can be used as both a Router and an app connected Client.
        */
-      ROUTER_CLIENT = 3;  
+      ROUTER_CLIENT = 3;
 
       /*
        * Repeater device role
        *   Mesh packets will simply be rebroadcasted over this node. Nodes configured with this role will not originate NodeInfo, Position, Telemetry
-       *   or any other packet type. They will simply rebroadcast any mesh packets on the same frequency, channel num, spread factor, and coding rate. 
+       *   or any other packet type. They will simply rebroadcast any mesh packets on the same frequency, channel num, spread factor, and coding rate.
        */
       REPEATER = 4;
-           
+
       /*
        * Tracker device role
        *   Position Mesh packets will be prioritized higher and sent more frequently by default.
@@ -147,54 +147,54 @@ message Config {
        * Required for compilation
        */
       UNSET = 0x0000;
-    
+
       /*
        * Include an altitude value (if available)
        */
       ALTITUDE  = 0x0001;
-    
+
       /*
        * Altitude value is MSL
        */
       ALTITUDE_MSL   = 0x0002;
-    
+
       /*
        * Include geoidal separation
        */
       GEOIDAL_SEPARATION   = 0x0004;
-    
+
       /*
        * Include the DOP value ; PDOP used by default, see below
        */
       DOP       = 0x0008;
-    
+
       /*
        * If POS_DOP set, send separate HDOP / VDOP values instead of PDOP
        */
       HVDOP     = 0x0010;
-    
+
       /*
        * Include number of "satellites in view"
        */
       SATINVIEW = 0x0020;
-    
+
       /*
        * Include a sequence number incremented per packet
        */
       SEQ_NO   = 0x0040;
-    
+
       /*
        * Include positional timestamp (from GPS solution)
        */
       TIMESTAMP = 0x0080;
-      
+
       /*
        * Include positional heading
        * Intended for use with vehicle not walking speeds
        * walking speeds are likely to be error prone like the compass
        */
       HEADING   = 0x0100;
-      
+
       /*
        * Include positional speed
        * Intended for use with vehicle not walking speeds
@@ -232,7 +232,7 @@ message Config {
      * or a very large value (maxint) to update only once at boot.
      */
     uint32 gps_update_interval = 5;
- 
+
     /*
      * How long should we try to get our position during each gps_update_interval attempt?  (in seconds)
      * Or if zero, use the default of 30 seconds.
@@ -240,7 +240,7 @@ message Config {
      * window.
      */
     uint32 gps_attempt_time = 6;
- 
+
     /*
      * Bit field of boolean configuration options for POSITION messages
      * (bitwise OR of PositionFlags)
@@ -251,12 +251,12 @@ message Config {
      * (Re)define GPS_RX_PIN for your board.
      */
     uint32 rx_gpio = 8;
- 
+
     /*
      * (Re)define GPS_TX_PIN for your board.
      */
     uint32 tx_gpio = 9;
- 
+
     /*
      * The minimum distance in meters traveled (since the last send) before we can send a position to the mesh if position_broadcast_smart_enabled
      */
@@ -304,12 +304,12 @@ message Config {
 
     /*
      * Mesh Super Deep Sleep Timeout Seconds
-     * While in Light Sleep if this value is exceeded we will lower into super deep sleep 
+     * While in Light Sleep if this value is exceeded we will lower into super deep sleep
      * for sds_secs (default 1 year) or a button press
      * 0 for default of two hours, MAXUINT for disabled
      */
     uint32 mesh_sds_timeout_secs = 5;
- 
+
     /*
      * Super Deep Sleep Seconds
      * While in Light Sleep if mesh_sds_timeout_secs is exceeded we will lower into super deep sleep
@@ -317,7 +317,7 @@ message Config {
      * 0 for default of one year
      */
     uint32 sds_secs = 6;
- 
+
     /*
      * Light Sleep Seconds
      * In light sleep the CPU is suspended, LoRa radio is on, BLE is off an GPS is on
@@ -325,7 +325,7 @@ message Config {
      * 0 for default of 300
      */
     uint32 ls_secs = 7;
- 
+
     /*
      * Minimum Wake Seconds
      * While in light sleep when we receive packets on the LoRa radio we will wake and handle them and stay awake in no BLE mode for this value
@@ -378,7 +378,7 @@ message Config {
      * Enable WiFi (disables Bluetooth)
      */
     bool wifi_enabled = 1;
-    
+
     /*
      * If set, this node will try to join the specified wifi network and
      * acquire an address via DHCP
@@ -478,22 +478,22 @@ message Config {
        */
       IMPERIAL = 1;
     }
-    
+
     /*
      * Override OLED outo detect with this if it fails.
      */
     enum OledType {
-    
+
       /*
        * Default / Auto
        */
       OLED_AUTO = 0;
-      
+
       /*
        * Default / Auto
        */
       OLED_SSD1306 = 1;
-      
+
       /*
        * Default / Auto
        */
@@ -521,9 +521,9 @@ message Config {
      * Potentially useful for devices without user buttons.
      */
     uint32 auto_screen_carousel_secs = 3;
-    
+
     /*
-     * If this is set, the displayed compass will always point north. if unset, the old behaviour 
+     * If this is set, the displayed compass will always point north. if unset, the old behaviour
      * (top of display is heading direction) is used.
      */
     bool compass_north_top = 4;
@@ -537,7 +537,7 @@ message Config {
      * Perferred display units
      */
     DisplayUnits units = 6;
-    
+
     /*
      * Override auto-detect in screen
      */
@@ -548,12 +548,12 @@ message Config {
        * Default. The old style for the 128x64 OLED screen
        */
       DEFAULT = 0;
-      
+
       /*
        * Rearrange display elements to cater for bicolor OLED displays
        */
       TWOCOLOR = 1;
-      
+
       /*
        * Same as TwoColor, but with inverted top bar. Not so good for Epaper displays
        */
@@ -595,7 +595,7 @@ message Config {
       /*
        * United States
        */
-      // US = 1;
+      US = 1;
 
       /*
        * European Union 433mhz
@@ -605,57 +605,57 @@ message Config {
       /*
        * European Union 868mhz
        */
-      // EU_868 = 3;
+      EU_868 = 3;
 
       /*
        * China
        */
-      // CN = 4;
+      CN = 4;
 
       /*
        * Japan
        */
-      // JP = 5;
+      JP = 5;
 
       /*
        * Australia / New Zealand
        */
-      // ANZ = 6;
+      ANZ = 6;
 
       /*
        * Korea
        */
-      // KR = 7;
+      KR = 7;
 
       /*
        * Taiwan
        */
-      // TW = 8;
+      TW = 8;
 
       /*
        * Russia
        */
-      // RU = 9;
+      RU = 9;
 
       /*
        * India
        */
-      // IN = 10;
+      IN = 10;
 
       /*
        * New Zealand 865mhz
        */
-      // NZ_865 = 11;
+      NZ_865 = 11;
 
       /*
        * Thailand
        */
-      // TH = 12;
+      TH = 12;
 
       /*
        * WLAN Band
        */
-      // LORA_24 = 13;
+      LORA_24 = 13;
 
       /*
        * Ukraine 433mhz
@@ -708,21 +708,24 @@ message Config {
        * Short Range - Fast
        */
       SHORT_FAST = 6;
-      
-      AIR_RATE_300 = 7;
-      AIR_RATE_1200 = 8;
-      AIR_RATE_2400 = 9;
-      AIR_RATE_4800 = 10;
-      AIR_RATE_9600 = 11;
-      AIR_RATE_19200 = 12;
-      AIR_RATE_37500 = 13;
-      AIR_RATE_38400 = 14;
-      AIR_RATE_62500 = 15;
 
       /*
        * Long Range - Moderately Fast
        */
       LONG_MODERATE = 7;
+
+      /*
+       * PTD AIR_RATE's
+       */
+      AIR_RATE_300 = 8;
+      AIR_RATE_1200 = 9;
+      AIR_RATE_2400 = 10;
+      AIR_RATE_4800 = 11;
+      AIR_RATE_9600 = 12;
+      AIR_RATE_19200 = 13;
+      AIR_RATE_37500 = 14;
+      AIR_RATE_38400 = 15;
+      AIR_RATE_62500 = 16;
     }
 
     /*
@@ -803,11 +806,11 @@ message Config {
     uint32 channel_num = 11;
 
     /*
-     * If true, duty cycle limits will be exceeded and thus you're possibly not following 
+     * If true, duty cycle limits will be exceeded and thus you're possibly not following
      * the local regulations if you're not a HAM.
-     * Has no effect if the duty cycle of the used region is 100%. 
+     * Has no effect if the duty cycle of the used region is 100%.
     */
-    bool override_duty_cycle = 12; 
+    bool override_duty_cycle = 12;
 
     /*
      * If true, sets RX boosted gain mode on SX126X based radios
@@ -865,7 +868,7 @@ message Config {
      * Specified PIN for PairingMode.FixedPin
      */
     uint32 fixed_pin = 3;
-    
+
   }
 
   /*
