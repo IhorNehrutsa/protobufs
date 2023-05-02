@@ -600,7 +600,7 @@ message Config {
       /*
        * European Union 433mhz
        */
-      EU_433 = 2;
+      // EU_433 = 2;
 
       /*
        * European Union 868mhz
@@ -665,7 +665,7 @@ message Config {
       /*
        * Ukraine 868mhz
        */
-      UA_868 = 15;
+      // UA_868 = 15;
     }
 
     /*
