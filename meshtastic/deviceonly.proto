@@ -66,6 +66,12 @@ message DeviceState {
    */
   bool did_gps_reset = 11;
 
+  /*
+   * We keep the last received waypoint stored in the device flash,
+   * so we can show it on the screen.
+   * Might be null
+   */
+  MeshPacket rx_waypoint = 12;
 }
 
 /*
@@ -152,4 +158,15 @@ message OEMStore {
    * A Preset LocalModuleConfig to apply during factory reset
    */
   LocalModuleConfig oem_local_module_config = 8;
+}
+
+/*
+* Ptd Buttons
+*/
+message PtdButtons {
+  fixed32 up     = 1;
+  fixed32 left   = 2;
+  fixed32 center = 3;
+  fixed32 right  = 4;
+  fixed32 down   = 5;
 }

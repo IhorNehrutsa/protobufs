@@ -129,10 +129,10 @@ enum PortNum {
   ZPS_APP = 68;
 
   /*
-   * Used to let multiple instances of Linux native applications communicate 
+   * Used to let multiple instances of Linux native applications communicate
    * as if they did using their LoRa chip.
-   * Maintained by GitHub user GUVWAF. 
-   * Project files at https://github.com/GUVWAF/Meshtasticator 
+   * Maintained by GitHub user GUVWAF.
+   * Project files at https://github.com/GUVWAF/Meshtasticator
    */
   SIMULATOR_APP = 69;
 
@@ -158,6 +158,11 @@ enum PortNum {
    * ATAK Forwarder Module https://github.com/paulmandal/atak-forwarder
    */
   ATAK_FORWARDER = 257;
+
+  /*
+   * PTD
+   */
+  PTD_APP = 258;
 
   /*
    * Currently we limit port nums to no higher than this value
