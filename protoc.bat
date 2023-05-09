@@ -10,3 +10,5 @@ for %%f in (%SRC_DIR%\*.proto) do protobufs\protoc.exe -I=protobufs --csharp_out
 for %%f in (%SRC_DIR%\*.proto) do protobufs\protoc.exe -I=protobufs --python_out=%DST_DIR%_python_out %%f
 
 pause
+
+REM $        ./bin/regen-protos.sh
