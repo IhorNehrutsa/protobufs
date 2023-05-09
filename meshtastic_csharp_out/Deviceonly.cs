@@ -43,7 +43,7 @@ namespace Meshtastic.Protobufs {
             "aWMuTG9jYWxDb25maWcSPgoXb2VtX2xvY2FsX21vZHVsZV9jb25maWcYCCAB",
             "KAsyHS5tZXNodGFzdGljLkxvY2FsTW9kdWxlQ29uZmlnImMKClB0ZEJ1dHRv",
             "bnMSEgoKYnV0dG9uX3BpbhgBIAEoBxIpCgVldmVudBgCIAEoDjIaLm1lc2h0",
-            "YXN0aWMuUHRkQnV0dG9uRXZlbnQSFgoOYnV0dG9uc19zdGF0ZXMYAyABKAcq",
+            "YXN0aWMuUHRkQnV0dG9uRXZlbnQSFgoOYnV0dG9uc19zdGF0ZXMYAyABKAYq",
             "PgoLU2NyZWVuRm9udHMSDgoKRk9OVF9TTUFMTBAAEg8KC0ZPTlRfTUVESVVN",
             "EAESDgoKRk9OVF9MQVJHRRACKpUBCg5QdGRCdXR0b25FdmVudBIMCghFVkVO",
             "VF9OTxAAEg8KC0VWRU5UX0NMSUNLEAESFgoSRVZFTlRfRE9VQkxFX0NMSUNL",
@@ -1457,10 +1457,10 @@ namespace Meshtastic.Protobufs {
 
     /// <summary>Field number for the "buttons_states" field.</summary>
     public const int ButtonsStatesFieldNumber = 3;
-    private uint buttonsStates_;
+    private ulong buttonsStates_;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public uint ButtonsStates {
+    public ulong ButtonsStates {
       get { return buttonsStates_; }
       set {
         buttonsStates_ = value;
@@ -1494,7 +1494,7 @@ namespace Meshtastic.Protobufs {
       int hash = 1;
       if (ButtonPin != 0) hash ^= ButtonPin.GetHashCode();
       if (Event != global::Meshtastic.Protobufs.PtdButtonEvent.EventNo) hash ^= Event.GetHashCode();
-      if (ButtonsStates != 0) hash ^= ButtonsStates.GetHashCode();
+      if (ButtonsStates != 0UL) hash ^= ButtonsStates.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -1521,9 +1521,9 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(16);
         output.WriteEnum((int) Event);
       }
-      if (ButtonsStates != 0) {
-        output.WriteRawTag(29);
-        output.WriteFixed32(ButtonsStates);
+      if (ButtonsStates != 0UL) {
+        output.WriteRawTag(25);
+        output.WriteFixed64(ButtonsStates);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
@@ -1543,9 +1543,9 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(16);
         output.WriteEnum((int) Event);
       }
-      if (ButtonsStates != 0) {
-        output.WriteRawTag(29);
-        output.WriteFixed32(ButtonsStates);
+      if (ButtonsStates != 0UL) {
+        output.WriteRawTag(25);
+        output.WriteFixed64(ButtonsStates);
       }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
@@ -1563,8 +1563,8 @@ namespace Meshtastic.Protobufs {
       if (Event != global::Meshtastic.Protobufs.PtdButtonEvent.EventNo) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Event);
       }
-      if (ButtonsStates != 0) {
-        size += 1 + 4;
+      if (ButtonsStates != 0UL) {
+        size += 1 + 8;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -1584,7 +1584,7 @@ namespace Meshtastic.Protobufs {
       if (other.Event != global::Meshtastic.Protobufs.PtdButtonEvent.EventNo) {
         Event = other.Event;
       }
-      if (other.ButtonsStates != 0) {
+      if (other.ButtonsStates != 0UL) {
         ButtonsStates = other.ButtonsStates;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
@@ -1610,8 +1610,8 @@ namespace Meshtastic.Protobufs {
             Event = (global::Meshtastic.Protobufs.PtdButtonEvent) input.ReadEnum();
             break;
           }
-          case 29: {
-            ButtonsStates = input.ReadFixed32();
+          case 25: {
+            ButtonsStates = input.ReadFixed64();
             break;
           }
         }
@@ -1637,8 +1637,8 @@ namespace Meshtastic.Protobufs {
             Event = (global::Meshtastic.Protobufs.PtdButtonEvent) input.ReadEnum();
             break;
           }
-          case 29: {
-            ButtonsStates = input.ReadFixed32();
+          case 25: {
+            ButtonsStates = input.ReadFixed64();
             break;
           }
         }
