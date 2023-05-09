@@ -164,6 +164,16 @@ enum PortNum {
    */
   PTD_APP = 258;
 
+  /* Audio Payloads.
+   * Encapsulated Speex packets.
+   */
+  AUDIO_SPEEX_APP = 259;
+
+  /* Audio Payloads.
+   * Encapsulated Opus packets.
+   */
+  AUDIO_OPUS_APP = 260;
+
   /*
    * Currently we limit port nums to no higher than this value
    */
