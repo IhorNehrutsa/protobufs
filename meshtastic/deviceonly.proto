@@ -175,5 +175,5 @@ enum PtdButtonEvent {
 message PtdButtons {
   fixed32 button_pin = 1;
   PtdButtonEvent event = 2;
-  fixed32 buttons_states = 3;
+  fixed64 buttons_states = 3;
 }
