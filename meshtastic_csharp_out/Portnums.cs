@@ -24,7 +24,7 @@ namespace Meshtastic.Protobufs {
     static PortnumsReflection() {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
-            "ChltZXNodGFzdGljL3BvcnRudW1zLnByb3RvEgptZXNodGFzdGljKsgDCgdQ",
+            "ChltZXNodGFzdGljL3BvcnRudW1zLnByb3RvEgptZXNodGFzdGljKvMDCgdQ",
             "b3J0TnVtEg8KC1VOS05PV05fQVBQEAASFAoQVEVYVF9NRVNTQUdFX0FQUBAB",
             "EhcKE1JFTU9URV9IQVJEV0FSRV9BUFAQAhIQCgxQT1NJVElPTl9BUFAQAxIQ",
             "CgxOT0RFSU5GT19BUFAQBBIPCgtST1VUSU5HX0FQUBAFEg0KCUFETUlOX0FQ",
@@ -34,10 +34,11 @@ namespace Meshtastic.Protobufs {
             "RF9BUFAQQRISCg5SQU5HRV9URVNUX0FQUBBCEhEKDVRFTEVNRVRSWV9BUFAQ",
             "QxILCgdaUFNfQVBQEEQSEQoNU0lNVUxBVE9SX0FQUBBFEhIKDlRSQUNFUk9V",
             "VEVfQVBQEEYSFAoQTkVJR0hCT1JJTkZPX0FQUBBHEhAKC1BSSVZBVEVfQVBQ",
-            "EIACEhMKDkFUQUtfRk9SV0FSREVSEIECEgwKB1BURF9BUFAQggISCAoDTUFY",
-            "EP8DQl0KE2NvbS5nZWVrc3ZpbGxlLm1lc2hCCFBvcnRudW1zWiJnaXRodWIu",
-            "Y29tL21lc2h0YXN0aWMvZ28vZ2VuZXJhdGVkqgIUTWVzaHRhc3RpYy5Qcm90",
-            "b2J1ZnO6AgBiBnByb3RvMw=="));
+            "EIACEhMKDkFUQUtfRk9SV0FSREVSEIECEgwKB1BURF9BUFAQggISFAoPQVVE",
+            "SU9fU1BFRVhfQVBQEIMCEhMKDkFVRElPX09QVVNfQVBQEIQCEggKA01BWBD/",
+            "A0JdChNjb20uZ2Vla3N2aWxsZS5tZXNoQghQb3J0bnVtc1oiZ2l0aHViLmNv",
+            "bS9tZXNodGFzdGljL2dvL2dlbmVyYXRlZKoCFE1lc2h0YXN0aWMuUHJvdG9i",
+            "dWZzugIAYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Meshtastic.Protobufs.PortNum), }, null, null));
@@ -202,6 +203,16 @@ namespace Meshtastic.Protobufs {
     /// PTD
     /// </summary>
     [pbr::OriginalName("PTD_APP")] PtdApp = 258,
+    /// <summary>
+    /// Audio Payloads.
+    /// Encapsulated Speex packets.
+    /// </summary>
+    [pbr::OriginalName("AUDIO_SPEEX_APP")] AudioSpeexApp = 259,
+    /// <summary>
+    /// Audio Payloads.
+    /// Encapsulated Opus packets.
+    /// </summary>
+    [pbr::OriginalName("AUDIO_OPUS_APP")] AudioOpusApp = 260,
     /// <summary>
     ///
     /// Currently we limit port nums to no higher than this value

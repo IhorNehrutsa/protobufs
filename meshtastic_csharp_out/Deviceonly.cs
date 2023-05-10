@@ -41,24 +41,24 @@ namespace Meshtastic.Protobufs {
             "aWMuU2NyZWVuRm9udHMSEAoIb2VtX3RleHQYBSABKAkSEwoLb2VtX2Flc19r",
             "ZXkYBiABKAwSMQoQb2VtX2xvY2FsX2NvbmZpZxgHIAEoCzIXLm1lc2h0YXN0",
             "aWMuTG9jYWxDb25maWcSPgoXb2VtX2xvY2FsX21vZHVsZV9jb25maWcYCCAB",
-            "KAsyHS5tZXNodGFzdGljLkxvY2FsTW9kdWxlQ29uZmlnImMKClB0ZEJ1dHRv",
-            "bnMSEgoKYnV0dG9uX3BpbhgBIAEoBxIpCgVldmVudBgCIAEoDjIaLm1lc2h0",
-            "YXN0aWMuUHRkQnV0dG9uRXZlbnQSFgoOYnV0dG9uc19zdGF0ZXMYAyABKAYq",
-            "PgoLU2NyZWVuRm9udHMSDgoKRk9OVF9TTUFMTBAAEg8KC0ZPTlRfTUVESVVN",
-            "EAESDgoKRk9OVF9MQVJHRRACKpUBCg5QdGRCdXR0b25FdmVudBIMCghFVkVO",
-            "VF9OTxAAEg8KC0VWRU5UX0NMSUNLEAESFgoSRVZFTlRfRE9VQkxFX0NMSUNL",
-            "EAISFQoRRVZFTlRfTVVMVElfQ0xJQ0sQAxIaChZFVkVOVF9MT05HX1BSRVNT",
-            "X1NUQVJUEAQSGQoVRVZFTlRfTE9OR19QUkVTU19TVE9QEAVCXwoTY29tLmdl",
-            "ZWtzdmlsbGUubWVzaEIKRGV2aWNlT25seVoiZ2l0aHViLmNvbS9tZXNodGFz",
-            "dGljL2dvL2dlbmVyYXRlZKoCFE1lc2h0YXN0aWMuUHJvdG9idWZzugIAYgZw",
-            "cm90bzM="));
+            "KAsyHS5tZXNodGFzdGljLkxvY2FsTW9kdWxlQ29uZmlnIoYCCgpQdGRCdXR0",
+            "b25zEhIKCmJ1dHRvbl9waW4YASABKAcSNAoFZXZlbnQYAiABKA4yJS5tZXNo",
+            "dGFzdGljLlB0ZEJ1dHRvbnMuUHRkQnV0dG9uRXZlbnQSFgoOYnV0dG9uc19z",
+            "dGF0ZXMYAyABKAYilQEKDlB0ZEJ1dHRvbkV2ZW50EgwKCEVWRU5UX05PEAAS",
+            "DwoLRVZFTlRfQ0xJQ0sQARIWChJFVkVOVF9ET1VCTEVfQ0xJQ0sQAhIVChFF",
+            "VkVOVF9NVUxUSV9DTElDSxADEhoKFkVWRU5UX0xPTkdfUFJFU1NfU1RBUlQQ",
+            "BBIZChVFVkVOVF9MT05HX1BSRVNTX1NUT1AQBSo+CgtTY3JlZW5Gb250cxIO",
+            "CgpGT05UX1NNQUxMEAASDwoLRk9OVF9NRURJVU0QARIOCgpGT05UX0xBUkdF",
+            "EAJCXwoTY29tLmdlZWtzdmlsbGUubWVzaEIKRGV2aWNlT25seVoiZ2l0aHVi",
+            "LmNvbS9tZXNodGFzdGljL2dvL2dlbmVyYXRlZKoCFE1lc2h0YXN0aWMuUHJv",
+            "dG9idWZzugIAYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Meshtastic.Protobufs.ChannelReflection.Descriptor, global::Meshtastic.Protobufs.LocalonlyReflection.Descriptor, global::Meshtastic.Protobufs.MeshReflection.Descriptor, },
-          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Meshtastic.Protobufs.ScreenFonts), typeof(global::Meshtastic.Protobufs.PtdButtonEvent), }, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Meshtastic.Protobufs.ScreenFonts), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.DeviceState), global::Meshtastic.Protobufs.DeviceState.Parser, new[]{ "MyNode", "Owner", "NodeDb", "ReceiveQueue", "Version", "RxTextMessage", "NoSave", "DidGpsReset", "RxWaypoint" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ChannelFile), global::Meshtastic.Protobufs.ChannelFile.Parser, new[]{ "Channels", "Version" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.OEMStore), global::Meshtastic.Protobufs.OEMStore.Parser, new[]{ "OemIconWidth", "OemIconHeight", "OemIconBits", "OemFont", "OemText", "OemAesKey", "OemLocalConfig", "OemLocalModuleConfig" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.PtdButtons), global::Meshtastic.Protobufs.PtdButtons.Parser, new[]{ "ButtonPin", "Event", "ButtonsStates" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.PtdButtons), global::Meshtastic.Protobufs.PtdButtons.Parser, new[]{ "ButtonPin", "Event", "ButtonsStates" }, null, new[]{ typeof(global::Meshtastic.Protobufs.PtdButtons.Types.PtdButtonEvent) }, null, null)
           }));
     }
     #endregion
@@ -85,15 +85,6 @@ namespace Meshtastic.Protobufs {
     /// TODO: REPLACE
     /// </summary>
     [pbr::OriginalName("FONT_LARGE")] FontLarge = 2,
-  }
-
-  public enum PtdButtonEvent {
-    [pbr::OriginalName("EVENT_NO")] EventNo = 0,
-    [pbr::OriginalName("EVENT_CLICK")] EventClick = 1,
-    [pbr::OriginalName("EVENT_DOUBLE_CLICK")] EventDoubleClick = 2,
-    [pbr::OriginalName("EVENT_MULTI_CLICK")] EventMultiClick = 3,
-    [pbr::OriginalName("EVENT_LONG_PRESS_START")] EventLongPressStart = 4,
-    [pbr::OriginalName("EVENT_LONG_PRESS_STOP")] EventLongPressStop = 5,
   }
 
   #endregion
@@ -1445,10 +1436,10 @@ namespace Meshtastic.Protobufs {
 
     /// <summary>Field number for the "event" field.</summary>
     public const int EventFieldNumber = 2;
-    private global::Meshtastic.Protobufs.PtdButtonEvent event_ = global::Meshtastic.Protobufs.PtdButtonEvent.EventNo;
+    private global::Meshtastic.Protobufs.PtdButtons.Types.PtdButtonEvent event_ = global::Meshtastic.Protobufs.PtdButtons.Types.PtdButtonEvent.EventNo;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Meshtastic.Protobufs.PtdButtonEvent Event {
+    public global::Meshtastic.Protobufs.PtdButtons.Types.PtdButtonEvent Event {
       get { return event_; }
       set {
         event_ = value;
@@ -1493,7 +1484,7 @@ namespace Meshtastic.Protobufs {
     public override int GetHashCode() {
       int hash = 1;
       if (ButtonPin != 0) hash ^= ButtonPin.GetHashCode();
-      if (Event != global::Meshtastic.Protobufs.PtdButtonEvent.EventNo) hash ^= Event.GetHashCode();
+      if (Event != global::Meshtastic.Protobufs.PtdButtons.Types.PtdButtonEvent.EventNo) hash ^= Event.GetHashCode();
       if (ButtonsStates != 0UL) hash ^= ButtonsStates.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -1517,7 +1508,7 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(13);
         output.WriteFixed32(ButtonPin);
       }
-      if (Event != global::Meshtastic.Protobufs.PtdButtonEvent.EventNo) {
+      if (Event != global::Meshtastic.Protobufs.PtdButtons.Types.PtdButtonEvent.EventNo) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Event);
       }
@@ -1539,7 +1530,7 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(13);
         output.WriteFixed32(ButtonPin);
       }
-      if (Event != global::Meshtastic.Protobufs.PtdButtonEvent.EventNo) {
+      if (Event != global::Meshtastic.Protobufs.PtdButtons.Types.PtdButtonEvent.EventNo) {
         output.WriteRawTag(16);
         output.WriteEnum((int) Event);
       }
@@ -1560,7 +1551,7 @@ namespace Meshtastic.Protobufs {
       if (ButtonPin != 0) {
         size += 1 + 4;
       }
-      if (Event != global::Meshtastic.Protobufs.PtdButtonEvent.EventNo) {
+      if (Event != global::Meshtastic.Protobufs.PtdButtons.Types.PtdButtonEvent.EventNo) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Event);
       }
       if (ButtonsStates != 0UL) {
@@ -1581,7 +1572,7 @@ namespace Meshtastic.Protobufs {
       if (other.ButtonPin != 0) {
         ButtonPin = other.ButtonPin;
       }
-      if (other.Event != global::Meshtastic.Protobufs.PtdButtonEvent.EventNo) {
+      if (other.Event != global::Meshtastic.Protobufs.PtdButtons.Types.PtdButtonEvent.EventNo) {
         Event = other.Event;
       }
       if (other.ButtonsStates != 0UL) {
@@ -1607,7 +1598,7 @@ namespace Meshtastic.Protobufs {
             break;
           }
           case 16: {
-            Event = (global::Meshtastic.Protobufs.PtdButtonEvent) input.ReadEnum();
+            Event = (global::Meshtastic.Protobufs.PtdButtons.Types.PtdButtonEvent) input.ReadEnum();
             break;
           }
           case 25: {
@@ -1634,7 +1625,7 @@ namespace Meshtastic.Protobufs {
             break;
           }
           case 16: {
-            Event = (global::Meshtastic.Protobufs.PtdButtonEvent) input.ReadEnum();
+            Event = (global::Meshtastic.Protobufs.PtdButtons.Types.PtdButtonEvent) input.ReadEnum();
             break;
           }
           case 25: {
@@ -1645,6 +1636,23 @@ namespace Meshtastic.Protobufs {
       }
     }
     #endif
+
+    #region Nested types
+    /// <summary>Container for nested types declared in the PtdButtons message type.</summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static partial class Types {
+      public enum PtdButtonEvent {
+        [pbr::OriginalName("EVENT_NO")] EventNo = 0,
+        [pbr::OriginalName("EVENT_CLICK")] EventClick = 1,
+        [pbr::OriginalName("EVENT_DOUBLE_CLICK")] EventDoubleClick = 2,
+        [pbr::OriginalName("EVENT_MULTI_CLICK")] EventMultiClick = 3,
+        [pbr::OriginalName("EVENT_LONG_PRESS_START")] EventLongPressStart = 4,
+        [pbr::OriginalName("EVENT_LONG_PRESS_STOP")] EventLongPressStop = 5,
+      }
+
+    }
+    #endregion
 
   }
 
