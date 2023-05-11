@@ -137,6 +137,64 @@ message ModuleConfig {
   }
 
   /*
+   * Audio Config for Speex, Opus voice
+   */
+  message SpeexOpusConfig {
+
+    /*
+     * Baudrate for Speex voice
+     */
+    enum Audio_Baud {
+      SPEEX_DEFAULT = 0;
+      /*
+      SPEEX_3200 = 1;
+      SPEEX_2400 = 2;
+      CODEC2_1600 = 3;
+      CODEC2_1400 = 4;
+      CODEC2_1300 = 5;
+      CODEC2_1200 = 6;
+      CODEC2_700 = 7;
+      CODEC2_700B = 8;
+      */
+    };
+
+    /*
+     * Whether Audio is enabled
+     */
+    uint32 codec_enabled = 1;
+
+    /*
+     * PTT Pin
+     */
+    uint32 ptt_pin = 2;
+
+    /*
+     * The audio sample rate to use for Speex, Opus
+     */
+    Audio_Baud bitrate = 3;
+
+    /*
+     * I2S Word Select
+     */
+    uint32 i2s_ws = 4;
+
+    /*
+     * I2S Data IN
+     */
+    uint32 i2s_sd = 5;
+
+    /*
+     * I2S Data OUT
+     */
+    uint32 i2s_din = 6;
+
+    /*
+     * I2S Clock
+     */
+    uint32 i2s_sck = 7;
+  }
+
+  /*
    * Serial Config
    */
   message SerialConfig {
