@@ -112,4 +112,10 @@ message LocalModuleConfig {
    * NodeDB.cpp in the device code.
    */
   uint32 version = 8;
+
+  // This will replace "ModuleConfig.AudioConfig audio = 9;"
+  /*
+   * The part of the config that is specific to the Audio module
+   */
+  ModuleConfig.Audio_Config audio_config = 11;
 }

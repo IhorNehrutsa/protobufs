@@ -137,6 +137,107 @@ message ModuleConfig {
   }
 
   /*
+   * Audio Config for Codec2, Speex, Opus voice
+   */
+  message Audio_Config {
+
+    enum Audio_Codec {
+      CODEC_NO = 0;
+      CODEC_CODEC2 = 1;
+      CODEC_SPEEX = 2;
+      CODEC_OPUS = 3;
+    }
+
+    /*
+     * Whether Audio is enabled
+     */
+    Audio_Codec codec = 11;
+
+    /*
+     * PTT Pin
+     */
+    uint32 ptt_pin = 2;
+
+    /*
+     * Baudrate for codec2 voice
+     */
+    enum Codec2_Baud {
+      CODEC2_DEFAULT = 0;
+      CODEC2_3200 = 1;
+      CODEC2_2400 = 2;
+      CODEC2_1600 = 3;
+      CODEC2_1400 = 4;
+      CODEC2_1300 = 5;
+      CODEC2_1200 = 6;
+      CODEC2_700 = 7;
+      CODEC2_700B = 8;
+    };
+
+    /*
+     * Baudrate for Speex voice
+     */
+    enum Speex_Baud {
+      SPEEX_DEFAULT = 0;
+      /*
+      SPEEX_3200 = 1;
+      SPEEX_2400 = 2;
+      CODEC2_1600 = 3;
+      CODEC2_1400 = 4;
+      CODEC2_1300 = 5;
+      CODEC2_1200 = 6;
+      CODEC2_700 = 7;
+      CODEC2_700B = 8;
+      */
+    };
+
+    /*
+     * Baudrate for Opus voice
+     */
+    enum Opus_Baud {
+      OPUS_DEFAULT = 0;
+      /*
+      OPUS_3200 = 1;
+      OPUS_2400 = 2;
+      CODEC2_1600 = 3;
+      CODEC2_1400 = 4;
+      CODEC2_1300 = 5;
+      CODEC2_1200 = 6;
+      CODEC2_700 = 7;
+      CODEC2_700B = 8;
+      */
+    };
+
+    /*
+     * The audio sample rate to use for Codec2, Speex, Opus
+     */
+    oneof bitrate {
+        Codec2_Baud codec2_bitrate = 21;
+        Speex_Baud speex_bitrate = 22;
+        Opus_Baud opus_bitrate = 23;
+    }
+
+    /*
+     * I2S Word Select
+     */
+    uint32 i2s_ws = 4;
+
+    /*
+     * I2S Data IN
+     */
+    uint32 i2s_sd = 5;
+
+    /*
+     * I2S Data OUT
+     */
+    uint32 i2s_din = 6;
+
+    /*
+     * I2S Clock
+     */
+    uint32 i2s_sck = 7;
+  }
+
+  /*
    * Serial Config
    */
   message SerialConfig {
@@ -555,6 +656,11 @@ message ModuleConfig {
      * TODO: REPLACE
      */
     RemoteHardwareConfig remote_hardware = 9;
+
+    /*
+     * TODO: REPLACE
+     */
+    Audio_Config audio_config = 10;
 
   }
 }
