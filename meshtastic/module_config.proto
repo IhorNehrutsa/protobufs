@@ -108,7 +108,7 @@ message ModuleConfig {
     /*
      * PTT Pin
      */
-    uint32 ptt_pin = 2;
+    int32 ptt_pin = 2;
 
     /*
      * The audio sample rate to use for codec2
@@ -118,22 +118,22 @@ message ModuleConfig {
     /*
      * I2S Word Select
      */
-    uint32 i2s_ws = 4;
+    int32 i2s_ws = 4;
 
     /*
      * I2S Data IN
      */
-    uint32 i2s_sd = 5;
+    int32 i2s_sd = 5;
 
     /*
      * I2S Data OUT
      */
-    uint32 i2s_din = 6;
+    int32 i2s_din = 6;
 
     /*
      * I2S Clock
      */
-    uint32 i2s_sck = 7;
+    int32 i2s_sck = 7;
   }
 
   /*
@@ -156,7 +156,7 @@ message ModuleConfig {
     /*
      * PTT Pin
      */
-    uint32 ptt_pin = 2;
+    int32 ptt_pin = 2;
 
     /*
      * Baudrate for codec2 voice
@@ -174,20 +174,28 @@ message ModuleConfig {
     };
 
     /*
-     * Baudrate for Speex voice
+     * Speex narrowband mode (Table 9.2)
+     * Bit-rate for Speex voice
+     * Use enum from 1 to 8 in user interface
      */
-    enum Speex_Baud {
-      SPEEX_DEFAULT = 0;
-      /*
-      SPEEX_3200 = 1;
-      SPEEX_2400 = 2;
-      CODEC2_1600 = 3;
-      CODEC2_1400 = 4;
-      CODEC2_1300 = 5;
-      CODEC2_1200 = 6;
-      CODEC2_700 = 7;
-      CODEC2_700B = 8;
-      */
+    enum Speex_Bit_Rate {
+      //    bps                       // Quality | Description
+      SPEEX_DEFAULT_250 = 0;          //         | No transmission (DTX)
+      SPEEX_2150 = 1;                 //      0  | Vocoder (mostly for comfort noise)
+      SPEEX_5950 = 2;                 //      2  | Very noticeable artifacts/noise, good intelligibility
+      SPEEX_8000 = 3;                 //    3-4  | Artifacts/noise sometimes noticeable
+      SPEEX_11000 = 4;                //    5-6  | Artifacts usually noticeable only with headphones
+      SPEEX_15000 = 5;                //    7-8  | Need good headphones to tell the difference
+      SPEEX_18200 = 6;                //      9  | Hard to tell the difference even with good headphones
+      SPEEX_24600 = 7;                //     10  | Completely transparent for voice, good quality music
+      SPEEX_3950 = 8;                 //      1  | Very noticeable artifacts/noise, good intelligibility
+      SPEEX_RESERVED9 = 9;            //         | reserved
+      SPEEX_RESERVED10 = 10;          //         | reserved
+      SPEEX_RESERVED11 = 11;          //         | reserved
+      SPEEX_RESERVED12 = 12;          //         | reserved
+      SPEEX_APPLICATION_DEFINED = 13; //         | Application-defined, interpreted by callback or skipped
+      SPEEX_IN_BAND_SIGNALING = 14;   //         | Speex in-band signaling
+      SPEEX_TERMINATOR_CODE = 15;     //         | Terminator code
     };
 
     /*
@@ -212,29 +220,29 @@ message ModuleConfig {
      */
     oneof bitrate {
         Codec2_Baud codec2_bitrate = 21;
-        Speex_Baud speex_bitrate = 22;
+        Speex_Bit_Rate speex_bitrate = 22;
         Opus_Baud opus_bitrate = 23;
     }
 
     /*
      * I2S Word Select
      */
-    uint32 i2s_ws = 4;
+    int32 i2s_ws = 4;
 
     /*
      * I2S Data IN
      */
-    uint32 i2s_sd = 5;
+    int32 i2s_sd = 5;
 
     /*
      * I2S Data OUT
      */
-    uint32 i2s_din = 6;
+    int32 i2s_din = 6;
 
     /*
      * I2S Clock
      */
-    uint32 i2s_sck = 7;
+    int32 i2s_sck = 7;
   }
 
   /*
@@ -650,7 +658,7 @@ message ModuleConfig {
     /*
      * TODO: REPLACE
      */
-    AudioConfig audio = 8;
+    AudioConfig audio = 8 [deprecated = true];
 
     /*
      * TODO: REPLACE
