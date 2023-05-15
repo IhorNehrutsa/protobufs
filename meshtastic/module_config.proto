@@ -108,7 +108,7 @@ message ModuleConfig {
     /*
      * PTT Pin
      */
-    uint32 ptt_pin = 2;
+    int32 ptt_pin = 2;
 
     /*
      * The audio sample rate to use for codec2
@@ -118,22 +118,22 @@ message ModuleConfig {
     /*
      * I2S Word Select
      */
-    uint32 i2s_ws = 4;
+    int32 i2s_ws = 4;
 
     /*
      * I2S Data IN
      */
-    uint32 i2s_sd = 5;
+    int32 i2s_sd = 5;
 
     /*
      * I2S Data OUT
      */
-    uint32 i2s_din = 6;
+    int32 i2s_din = 6;
 
     /*
      * I2S Clock
      */
-    uint32 i2s_sck = 7;
+    int32 i2s_sck = 7;
   }
 
   /*
@@ -156,7 +156,7 @@ message ModuleConfig {
     /*
      * PTT Pin
      */
-    uint32 ptt_pin = 2;
+    int32 ptt_pin = 2;
 
     /*
      * Baudrate for codec2 voice
@@ -219,22 +219,22 @@ message ModuleConfig {
     /*
      * I2S Word Select
      */
-    uint32 i2s_ws = 4;
+    int32 i2s_ws = 4;
 
     /*
      * I2S Data IN
      */
-    uint32 i2s_sd = 5;
+    int32 i2s_sd = 5;
 
     /*
      * I2S Data OUT
      */
-    uint32 i2s_din = 6;
+    int32 i2s_din = 6;
 
     /*
      * I2S Clock
      */
-    uint32 i2s_sck = 7;
+    int32 i2s_sck = 7;
   }
 
   /*
