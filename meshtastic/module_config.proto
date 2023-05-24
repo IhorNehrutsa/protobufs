@@ -176,7 +176,7 @@ message ModuleConfig {
     /*
      * Speex narrowband mode (Table 9.2)
      * Bit-rate for Speex voice
-     * Use enum from 1 to 8 in user interface
+     * Use enum from 1 to 8 in user interface (8, 2, 3 for PTD)
      */
     enum Speex_Bit_Rate {
       //    bps                       // Quality | Description
