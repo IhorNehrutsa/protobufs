@@ -2,18 +2,18 @@ syntax = "proto3";
 
 package meshtastic;
 
-option java_package = "com.geeksville.mesh";
-option java_outer_classname = "MeshProtos";
-option go_package = "github.com/meshtastic/go/generated";
-option csharp_namespace = "Meshtastic.Protobufs";
-option swift_prefix = "";
-
 import "meshtastic/channel.proto";
 import "meshtastic/config.proto";
 import "meshtastic/module_config.proto";
 import "meshtastic/portnums.proto";
 import "meshtastic/telemetry.proto";
 import "meshtastic/xmodem.proto";
+
+option csharp_namespace = "Meshtastic.Protobufs";
+option go_package = "github.com/meshtastic/go/generated";
+option java_outer_classname = "MeshProtos";
+option java_package = "com.geeksville.mesh";
+option swift_prefix = "";
 
 /*
 * Ptd Buttons
@@ -76,7 +76,6 @@ message Position {
    * How the location was acquired: manual, onboard GPS, external (EUD) GPS
    */
   enum LocSource {
-
     /*
      * TODO: REPLACE
      */
@@ -108,7 +107,6 @@ message Position {
    * Default: same as location_source if present
    */
   enum AltSource {
-
     /*
      * TODO: REPLACE
      */
@@ -237,13 +235,12 @@ message Position {
 }
 
 /*
-  * Note: these enum names must EXACTLY match the string used in the device
-  * bin/build-all.sh script.
-  * Because they will be used to find firmware filenames in the android app for OTA updates.
-  * To match the old style filenames, _ is converted to -, p is converted to .
-  */
+ * Note: these enum names must EXACTLY match the string used in the device
+ * bin/build-all.sh script.
+ * Because they will be used to find firmware filenames in the android app for OTA updates.
+ * To match the old style filenames, _ is converted to -, p is converted to .
+ */
 enum HardwareModel {
-
   /*
    * TODO: REPLACE
    */
@@ -451,7 +448,6 @@ enum HardwareModel {
  * 0 through 3 - for future use
  */
 message User {
-
   /*
    * A globally unique ID string for this user.
    * In the case of Signal that would mean +16504442323, for the default macaddr derived id it would be !<8 hexidecimal bytes>.
@@ -497,7 +493,6 @@ message User {
  * A message used in our Dynamic Source Routing protocol (RFC 4728 based)
  */
 message RouteDiscovery {
-
   /*
    * The list of nodenums this packet has visited so far
    */
@@ -508,13 +503,11 @@ message RouteDiscovery {
  * A Routing control Data packet handled by the routing module
  */
 message Routing {
-
   /*
    * A failure in delivering a message (usually used for routing control messages, but might be provided in addition to ack.fail_id to provide
    * details on the type of failure).
    */
   enum Error {
-
     /*
      * This message is not a failure
      */
@@ -579,7 +572,6 @@ message Routing {
   }
 
   oneof variant {
-
     /*
      * A route request going from the requester
      */
@@ -595,7 +587,6 @@ message Routing {
      * in addition to ack.fail_id to provide details on the type of failure).
      */
     Error error_reason = 3;
-
   }
 }
 
@@ -605,15 +596,14 @@ message Routing {
  * inside a radio packet (because from/to are broken out by the comms library)
  */
 message Data {
-
   /*
    * Formerly named typ and of type Type
    */
   PortNum portnum = 1;
 
   /*
-  * TODO: REPLACE
-  */
+   * TODO: REPLACE
+   */
   bytes payload = 2;
 
   /*
@@ -655,14 +645,12 @@ message Data {
    * a message a heart or poop emoji.
    */
   fixed32 emoji = 8;
-
 }
 
 /*
  * Waypoint message, used to share arbitrary locations across the mesh
  */
 message Waypoint {
-
   /*
    * Id of the waypoint
    */
@@ -711,7 +699,6 @@ message Waypoint {
  * The other fields are either not sent at all, or sent in the special 16 byte LORA header.
  */
 message MeshPacket {
-
   /*
    * The priority of this message for sending.
    * Higher priorities are sent first (when managing the transmit queue).
@@ -733,7 +720,6 @@ message MeshPacket {
    * And the transmission queue in the router object is now a priority queue.
    */
   enum Priority {
-
     /*
      * Treated as Priority.DEFAULT
      */
@@ -777,7 +763,6 @@ message MeshPacket {
    * Identify if this is a delayed packet
    */
   enum Delayed {
-
     /*
      * If unset, the message is being sent in real time.
      */
@@ -829,7 +814,6 @@ message MeshPacket {
    */
 
   oneof payload_variant {
-
     /*
      * TODO: REPLACE
      */
@@ -906,14 +890,12 @@ message MeshPacket {
    * Describe if this message is delayed
    */
   Delayed delayed = 13;
-
 }
 
 /*
  * Shared constants between device and phone
  */
 enum Constants {
-
   /*
    * First enum must be zero, and we are just using this enum to
    * pass int constants between two very different environments
@@ -947,7 +929,6 @@ enum Constants {
  * Full information about a node on the mesh
  */
 message NodeInfo {
-
   /*
    * The node number
    */
@@ -1010,7 +991,6 @@ message NodeInfo {
    * local channel index we heard that node on. Only populated if its not the default channel.
    */
   uint32 channel = 7;
-
 }
 
 /*
@@ -1020,7 +1000,6 @@ message NodeInfo {
  * and we'll try to help.
  */
 enum CriticalErrorCode {
-
   /*
    * TODO: REPLACE
    */
@@ -1089,7 +1068,6 @@ enum CriticalErrorCode {
  * Sent to the phone in response to WantNodes.
  */
 message MyNodeInfo {
-
   /*
    * Tells the phone what our node number is, default starting value is
    * lowbyte of macaddr, but it will be fixed if that is already in use
@@ -1192,7 +1170,6 @@ message MyNodeInfo {
  * and then extend as needed by emitting multiple records.
  */
 message LogRecord {
-
   /*
    * Log levels, chosen to match python logging conventions.
    */
@@ -1275,7 +1252,6 @@ message QueueStatus {
  * at which point the next item in the FIFO will be populated.
  */
 message FromRadio {
-
   /*
    * The packet id, used to allow the phone to request missing read packets from the FIFO,
    * see our bluetooth docs
@@ -1286,7 +1262,6 @@ message FromRadio {
    * Log levels, chosen to match python logging conventions.
    */
   oneof payload_variant {
-
     /*
      * Log levels, chosen to match python logging conventions.
      */
@@ -1362,18 +1337,15 @@ message FromRadio {
   }
 }
 
-
 /*
  * Packets/commands to the radio will be written (reliably) to the toRadio characteristic.
  * Once the write completes the phone can assume it is handled.
  */
 message ToRadio {
-
   /*
    * Log levels, chosen to match python logging conventions.
    */
   oneof payload_variant {
-
     /*
      * Send this packet on the mesh
      */
@@ -1410,7 +1382,6 @@ message ToRadio {
  * Compressed message payload
  */
 message Compressed {
-
   /*
    * PortNum to determine the how to handle the compressed payload.
    */
@@ -1423,42 +1394,42 @@ message Compressed {
 }
 
 /*
-* Full info on edges for a single node
-*/
+ * Full info on edges for a single node
+ */
 message NeighborInfo {
   /*
-  * The node ID of the node sending info on its neighbors
-  */
+   * The node ID of the node sending info on its neighbors
+   */
   uint32 node_id = 1;
   /*
-  * Field to pass neighbor info for the next sending cycle
-  */
+   * Field to pass neighbor info for the next sending cycle
+   */
   uint32 last_sent_by_id = 2;
   /*
-  * The list of out edges from this node
-  */
+   * The list of out edges from this node
+   */
   repeated Neighbor neighbors = 3;
 }
 
 /*
-* A single edge in the mesh
-*/
+ * A single edge in the mesh
+ */
 message Neighbor {
   /*
-  * Node ID of neighbor
-  */
+   * Node ID of neighbor
+   */
   uint32 node_id = 1;
 
   /*
-  * SNR of last heard message
-  */
+   * SNR of last heard message
+   */
   float snr = 2;
 }
 
 /*
  * Device metadata response
  */
- message DeviceMetadata {
+message DeviceMetadata {
   /*
    * Device firmware version string
    */
@@ -1503,4 +1474,9 @@ message Neighbor {
    * Device hardware model
    */
   HardwareModel hw_model = 9;
+
+  /*
+   * Has Remote Hardware enabled
+   */
+  bool hasRemoteHardware = 10;
 }

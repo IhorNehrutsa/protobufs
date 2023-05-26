@@ -2,26 +2,24 @@ syntax = "proto3";
 
 package meshtastic;
 
-option java_package = "com.geeksville.mesh";
-option java_outer_classname = "ModuleConfigProtos";
-option go_package = "github.com/meshtastic/go/generated";
 option csharp_namespace = "Meshtastic.Protobufs";
+option go_package = "github.com/meshtastic/go/generated";
+option java_outer_classname = "ModuleConfigProtos";
+option java_package = "com.geeksville.mesh";
 option swift_prefix = "";
 
 /*
  * Module Config
  */
 message ModuleConfig {
-
   /*
    * MQTT Client Config
    */
   message MQTTConfig {
-
     /*
      * If a meshtastic node is able to reach the internet it will normally attempt to gateway any channels that are marked as
      * is_uplink_enabled or is_downlink_enabled.
-    */
+     */
     bool enabled = 1;
 
     /*
@@ -73,18 +71,26 @@ message ModuleConfig {
    * RemoteHardwareModule Config
    */
   message RemoteHardwareConfig {
-
     /*
      * Whether the Module is enabled
      */
     bool enabled = 1;
+
+    /*
+     * Whether the Module allows consumers to read / write to pins not defined in available_pins
+     */
+    bool allow_undefined_pin_access = 2;
+
+    /*
+     * Exposes the available pins to the mesh for reading and writing
+     */
+    repeated RemoteHardwarePin available_pins = 3;
   }
 
   /*
    * Audio Config for codec2 voice
    */
   message AudioConfig {
-
     /*
      * Baudrate for codec2 voice
      */
@@ -98,7 +104,7 @@ message ModuleConfig {
       CODEC2_1200 = 6;
       CODEC2_700 = 7;
       CODEC2_700B = 8;
-    };
+    }
 
     /*
      * Whether Audio is enabled
@@ -249,7 +255,6 @@ message ModuleConfig {
    * Serial Config
    */
   message SerialConfig {
-
     /*
      * TODO: REPLACE
      */
@@ -270,7 +275,7 @@ message ModuleConfig {
       BAUD_460800 = 13;
       BAUD_576000 = 14;
       BAUD_921600 = 15;
-    };
+    }
 
     /*
      * TODO: REPLACE
@@ -281,7 +286,7 @@ message ModuleConfig {
       PROTO = 2;
       TEXTMSG = 3;
       NMEA = 4;
-    };
+    }
 
     /*
      * Preferences for the SerialModule
@@ -318,14 +323,12 @@ message ModuleConfig {
      * TODO: REPLACE
      */
     Serial_Mode mode = 7;
-
   }
 
   /*
    * External Notifications Config
    */
   message ExternalNotificationConfig {
-
     /*
      * Enable the ExternalNotificationModule
      */
@@ -435,7 +438,6 @@ message ModuleConfig {
      * TODO: REPLACE
      */
     uint32 history_return_window = 5;
-
   }
 
   /*
@@ -463,7 +465,6 @@ message ModuleConfig {
    * Configuration for both device and environment metrics
    */
   message TelemetryConfig {
-
     /*
      * Interval in seconds of how often we should try to send our
      * device metrics to the mesh
@@ -510,36 +511,34 @@ message ModuleConfig {
    * TODO: REPLACE
    */
   message CannedMessageConfig {
-
     /*
      * TODO: REPLACE
      */
     enum InputEventChar {
+      /*
+       * TODO: REPLACE
+       */
+      NONE = 0;
 
       /*
        * TODO: REPLACE
        */
-      NONE  = 0;
+      UP = 17;
 
       /*
        * TODO: REPLACE
        */
-      UP    = 17;
+      DOWN = 18;
 
       /*
        * TODO: REPLACE
        */
-      DOWN  = 18;
+      LEFT = 19;
 
       /*
        * TODO: REPLACE
        */
-      LEFT  = 19;
-
-      /*
-       * TODO: REPLACE
-       */
-      RIGHT =  20;
+      RIGHT = 20;
 
       /*
        * '\n'
@@ -549,7 +548,7 @@ message ModuleConfig {
       /*
        * TODO: REPLACE
        */
-      BACK  = 27;
+      BACK = 27;
 
       /*
        * TODO: REPLACE
@@ -619,7 +618,6 @@ message ModuleConfig {
    * TODO: REPLACE
    */
   oneof payload_variant {
-
     /*
      * TODO: REPLACE
      */
@@ -671,4 +669,41 @@ message ModuleConfig {
     Audio_Config audio_config = 10;
 
   }
+}
+
+/*
+ * A GPIO pin definition for remote hardware module
+ */
+message RemoteHardwarePin {
+  /*
+   * GPIO Pin number (must match Arduino)
+   */
+  uint32 gpio_pin = 1;
+
+  /*
+   * Name for the GPIO pin (i.e. Front gate, mailbox, etc)
+   */
+  string name = 2;
+
+  /*
+   * Type of GPIO access available to consumers on the mesh
+   */
+  RemoteHardwarePinType type = 3;
+}
+
+enum RemoteHardwarePinType {
+  /*
+   * Unset/unused
+   */
+  UNKNOWN = 0;
+
+  /*
+   * GPIO pin can be read (if it is high / low)
+   */
+  DIGITAL_READ = 1;
+
+  /*
+   * GPIO pin can be written to (high / low)
+   */
+  DIGITAL_WRITE = 2;
 }

@@ -2,10 +2,10 @@ syntax = "proto3";
 
 package meshtastic;
 
-option java_package = "com.geeksville.mesh";
-option java_outer_classname = "ConfigProtos";
-option go_package = "github.com/meshtastic/go/generated";
 option csharp_namespace = "Meshtastic.Protobufs";
+option go_package = "github.com/meshtastic/go/generated";
+option java_outer_classname = "ConfigProtos";
+option java_package = "com.geeksville.mesh";
 option swift_prefix = "";
 
 message Config {
@@ -17,7 +17,6 @@ message Config {
      * Defines the device's role on the Mesh network
      */
     enum Role {
-
       /*
        * Client device role
        */
@@ -129,6 +128,12 @@ message Config {
      * Treat double tap interrupt on supported accelerometers as a button press if set to true
      */
     bool double_tap_as_button_press = 8;
+
+    /*
+     * If true, device is considered to be "managed" by a mesh administrator
+     * Clients should then limit available configuration and administrative options inside the user interface
+     */
+    bool is_managed = 9;
   }
 
   /*
@@ -151,27 +156,27 @@ message Config {
       /*
        * Include an altitude value (if available)
        */
-      ALTITUDE  = 0x0001;
+      ALTITUDE = 0x0001;
 
       /*
        * Altitude value is MSL
        */
-      ALTITUDE_MSL   = 0x0002;
+      ALTITUDE_MSL = 0x0002;
 
       /*
        * Include geoidal separation
        */
-      GEOIDAL_SEPARATION   = 0x0004;
+      GEOIDAL_SEPARATION = 0x0004;
 
       /*
        * Include the DOP value ; PDOP used by default, see below
        */
-      DOP       = 0x0008;
+      DOP = 0x0008;
 
       /*
        * If POS_DOP set, send separate HDOP / VDOP values instead of PDOP
        */
-      HVDOP     = 0x0010;
+      HVDOP = 0x0010;
 
       /*
        * Include number of "satellites in view"
@@ -181,7 +186,7 @@ message Config {
       /*
        * Include a sequence number incremented per packet
        */
-      SEQ_NO   = 0x0040;
+      SEQ_NO = 0x0040;
 
       /*
        * Include positional timestamp (from GPS solution)
@@ -193,14 +198,14 @@ message Config {
        * Intended for use with vehicle not walking speeds
        * walking speeds are likely to be error prone like the compass
        */
-      HEADING   = 0x0100;
+      HEADING = 0x0100;
 
       /*
        * Include positional speed
        * Intended for use with vehicle not walking speeds
        * walking speeds are likely to be error prone like the compass
        */
-      SPEED     = 0x0200;
+      SPEED = 0x0200;
     }
 
     /*
@@ -273,7 +278,6 @@ message Config {
    * See [Power Config](/docs/settings/config/power) for additional power config details.
    */
   message PowerConfig {
-
     /*
      * If set, we are powered from a low-current source (i.e. solar), so even if it looks like we have power flowing in
      * we should try to minimize power consumption as much as possible.
@@ -332,14 +336,12 @@ message Config {
      * 0 for default of 10 seconds
      */
     uint32 min_wake_secs = 8;
-
   }
 
   /*
    * Network Config
    */
   message NetworkConfig {
-
     enum AddressMode {
       /*
        * obtain ip address via DHCP
@@ -424,7 +426,6 @@ message Config {
      * How the GPS coordinates are displayed on the OLED screen.
      */
     enum GpsCoordinateFormat {
-
       /*
        * GPS coordinates are displayed in the normal decimal degrees format:
        * DD.DDDDDD DDD.DDDDDD
@@ -467,7 +468,6 @@ message Config {
      * Unit display preference
      */
     enum DisplayUnits {
-
       /*
        * Metric (Default)
        */
@@ -483,7 +483,6 @@ message Config {
      * Override OLED outo detect with this if it fails.
      */
     enum OledType {
-
       /*
        * Default / Auto
        */
@@ -584,9 +583,7 @@ message Config {
    * Lora Config
    */
   message LoRaConfig {
-
     enum RegionCode {
-
       /*
        * Region is not set
        */
@@ -673,7 +670,6 @@ message Config {
      * Note: these mappings must match ModemPreset Choice in the device code.
      */
     enum ModemPreset {
-
       /*
        * Long Range - Fast
        */
@@ -791,7 +787,7 @@ message Config {
      * burn out the radio hardware)
      * In most cases you should use zero here.
      * Units are in dBm.
-    */
+     */
     int32 tx_power = 10;
 
     /*
@@ -809,12 +805,12 @@ message Config {
      * If true, duty cycle limits will be exceeded and thus you're possibly not following
      * the local regulations if you're not a HAM.
      * Has no effect if the duty cycle of the used region is 100%.
-    */
+     */
     bool override_duty_cycle = 12;
 
     /*
      * If true, sets RX boosted gain mode on SX126X based radios
-    */
+     */
     bool sx126x_rx_boosted_gain = 13;
 
     /*
@@ -832,11 +828,9 @@ message Config {
      * in ignore_incoming will have packets they send dropped on receive (by router.cpp)
      */
     repeated uint32 ignore_incoming = 103;
-
   }
 
   message BluetoothConfig {
-
     enum PairingMode {
       /*
        * Device generates a random PIN that will be shown on the screen of the device for pairing
@@ -868,14 +862,12 @@ message Config {
      * Specified PIN for PairingMode.FixedPin
      */
     uint32 fixed_pin = 3;
-
   }
 
   /*
    * Payload Variant
    */
   oneof payload_variant {
-
     DeviceConfig device = 1;
     PositionConfig position = 2;
     PowerConfig power = 3;
@@ -883,6 +875,5 @@ message Config {
     DisplayConfig display = 5;
     LoRaConfig lora = 6;
     BluetoothConfig bluetooth = 7;
-
   }
 }
