@@ -25,7 +25,7 @@ namespace Meshtastic.Protobufs {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5tZXNodGFzdGljL21vZHVsZV9jb25maWcucHJvdG8SCm1lc2h0YXN0aWMi",
-            "3RgKDE1vZHVsZUNvbmZpZxIzCgRtcXR0GAEgASgLMiMubWVzaHRhc3RpYy5N",
+            "rCEKDE1vZHVsZUNvbmZpZxIzCgRtcXR0GAEgASgLMiMubWVzaHRhc3RpYy5N",
             "b2R1bGVDb25maWcuTVFUVENvbmZpZ0gAEjcKBnNlcmlhbBgCIAEoCzIlLm1l",
             "c2h0YXN0aWMuTW9kdWxlQ29uZmlnLlNlcmlhbENvbmZpZ0gAElQKFWV4dGVy",
             "bmFsX25vdGlmaWNhdGlvbhgDIAEoCzIzLm1lc2h0YXN0aWMuTW9kdWxlQ29u",
@@ -35,75 +35,101 @@ namespace Meshtastic.Protobufs {
             "Lk1vZHVsZUNvbmZpZy5SYW5nZVRlc3RDb25maWdIABI9Cgl0ZWxlbWV0cnkY",
             "BiABKAsyKC5tZXNodGFzdGljLk1vZHVsZUNvbmZpZy5UZWxlbWV0cnlDb25m",
             "aWdIABJGCg5jYW5uZWRfbWVzc2FnZRgHIAEoCzIsLm1lc2h0YXN0aWMuTW9k",
-            "dWxlQ29uZmlnLkNhbm5lZE1lc3NhZ2VDb25maWdIABI1CgVhdWRpbxgIIAEo",
-            "CzIkLm1lc2h0YXN0aWMuTW9kdWxlQ29uZmlnLkF1ZGlvQ29uZmlnSAASSAoP",
-            "cmVtb3RlX2hhcmR3YXJlGAkgASgLMi0ubWVzaHRhc3RpYy5Nb2R1bGVDb25m",
-            "aWcuUmVtb3RlSGFyZHdhcmVDb25maWdIABqnAQoKTVFUVENvbmZpZxIPCgdl",
-            "bmFibGVkGAEgASgIEg8KB2FkZHJlc3MYAiABKAkSEAoIdXNlcm5hbWUYAyAB",
-            "KAkSEAoIcGFzc3dvcmQYBCABKAkSGgoSZW5jcnlwdGlvbl9lbmFibGVkGAUg",
-            "ASgIEhQKDGpzb25fZW5hYmxlZBgGIAEoCBITCgt0bHNfZW5hYmxlZBgHIAEo",
-            "CBIMCgRyb290GAggASgJGicKFFJlbW90ZUhhcmR3YXJlQ29uZmlnEg8KB2Vu",
-            "YWJsZWQYASABKAga5AIKC0F1ZGlvQ29uZmlnEhYKDmNvZGVjMl9lbmFibGVk",
-            "GAEgASgIEg8KB3B0dF9waW4YAiABKA0SQAoHYml0cmF0ZRgDIAEoDjIvLm1l",
-            "c2h0YXN0aWMuTW9kdWxlQ29uZmlnLkF1ZGlvQ29uZmlnLkF1ZGlvX0JhdWQS",
-            "DgoGaTJzX3dzGAQgASgNEg4KBmkyc19zZBgFIAEoDRIPCgdpMnNfZGluGAYg",
-            "ASgNEg8KB2kyc19zY2sYByABKA0ipwEKCkF1ZGlvX0JhdWQSEgoOQ09ERUMy",
-            "X0RFRkFVTFQQABIPCgtDT0RFQzJfMzIwMBABEg8KC0NPREVDMl8yNDAwEAIS",
-            "DwoLQ09ERUMyXzE2MDAQAxIPCgtDT0RFQzJfMTQwMBAEEg8KC0NPREVDMl8x",
-            "MzAwEAUSDwoLQ09ERUMyXzEyMDAQBhIOCgpDT0RFQzJfNzAwEAcSDwoLQ09E",
-            "RUMyXzcwMEIQCBqxBAoMU2VyaWFsQ29uZmlnEg8KB2VuYWJsZWQYASABKAgS",
-            "DAoEZWNobxgCIAEoCBILCgNyeGQYAyABKA0SCwoDdHhkGAQgASgNEj8KBGJh",
-            "dWQYBSABKA4yMS5tZXNodGFzdGljLk1vZHVsZUNvbmZpZy5TZXJpYWxDb25m",
-            "aWcuU2VyaWFsX0JhdWQSDwoHdGltZW91dBgGIAEoDRI/CgRtb2RlGAcgASgO",
-            "MjEubWVzaHRhc3RpYy5Nb2R1bGVDb25maWcuU2VyaWFsQ29uZmlnLlNlcmlh",
-            "bF9Nb2RlIooCCgtTZXJpYWxfQmF1ZBIQCgxCQVVEX0RFRkFVTFQQABIMCghC",
-            "QVVEXzExMBABEgwKCEJBVURfMzAwEAISDAoIQkFVRF82MDAQAxINCglCQVVE",
-            "XzEyMDAQBBINCglCQVVEXzI0MDAQBRINCglCQVVEXzQ4MDAQBhINCglCQVVE",
-            "Xzk2MDAQBxIOCgpCQVVEXzE5MjAwEAgSDgoKQkFVRF8zODQwMBAJEg4KCkJB",
-            "VURfNTc2MDAQChIPCgtCQVVEXzExNTIwMBALEg8KC0JBVURfMjMwNDAwEAwS",
-            "DwoLQkFVRF80NjA4MDAQDRIPCgtCQVVEXzU3NjAwMBAOEg8KC0JBVURfOTIx",
-            "NjAwEA8iSAoLU2VyaWFsX01vZGUSCwoHREVGQVVMVBAAEgoKBlNJTVBMRRAB",
-            "EgkKBVBST1RPEAISCwoHVEVYVE1TRxADEggKBE5NRUEQBBrOAgoaRXh0ZXJu",
-            "YWxOb3RpZmljYXRpb25Db25maWcSDwoHZW5hYmxlZBgBIAEoCBIRCglvdXRw",
-            "dXRfbXMYAiABKA0SDgoGb3V0cHV0GAMgASgNEhQKDG91dHB1dF92aWJyYRgI",
-            "IAEoDRIVCg1vdXRwdXRfYnV6emVyGAkgASgNEg4KBmFjdGl2ZRgEIAEoCBIV",
-            "Cg1hbGVydF9tZXNzYWdlGAUgASgIEhsKE2FsZXJ0X21lc3NhZ2VfdmlicmEY",
-            "CiABKAgSHAoUYWxlcnRfbWVzc2FnZV9idXp6ZXIYCyABKAgSEgoKYWxlcnRf",
-            "YmVsbBgGIAEoCBIYChBhbGVydF9iZWxsX3ZpYnJhGAwgASgIEhkKEWFsZXJ0",
-            "X2JlbGxfYnV6emVyGA0gASgIEg8KB3VzZV9wd20YByABKAgSEwoLbmFnX3Rp",
-            "bWVvdXQYDiABKA0ahAEKElN0b3JlRm9yd2FyZENvbmZpZxIPCgdlbmFibGVk",
-            "GAEgASgIEhEKCWhlYXJ0YmVhdBgCIAEoCBIPCgdyZWNvcmRzGAMgASgNEhoK",
-            "Emhpc3RvcnlfcmV0dXJuX21heBgEIAEoDRIdChVoaXN0b3J5X3JldHVybl93",
-            "aW5kb3cYBSABKA0aQAoPUmFuZ2VUZXN0Q29uZmlnEg8KB2VuYWJsZWQYASAB",
-            "KAgSDgoGc2VuZGVyGAIgASgNEgwKBHNhdmUYAyABKAgahgIKD1RlbGVtZXRy",
-            "eUNvbmZpZxIeChZkZXZpY2VfdXBkYXRlX2ludGVydmFsGAEgASgNEiMKG2Vu",
-            "dmlyb25tZW50X3VwZGF0ZV9pbnRlcnZhbBgCIAEoDRInCh9lbnZpcm9ubWVu",
-            "dF9tZWFzdXJlbWVudF9lbmFibGVkGAMgASgIEiIKGmVudmlyb25tZW50X3Nj",
-            "cmVlbl9lbmFibGVkGAQgASgIEiYKHmVudmlyb25tZW50X2Rpc3BsYXlfZmFo",
-            "cmVuaGVpdBgFIAEoCBIbChNhaXJfcXVhbGl0eV9lbmFibGVkGAYgASgIEhwK",
-            "FGFpcl9xdWFsaXR5X2ludGVydmFsGAcgASgNGtYEChNDYW5uZWRNZXNzYWdl",
-            "Q29uZmlnEhcKD3JvdGFyeTFfZW5hYmxlZBgBIAEoCBIZChFpbnB1dGJyb2tl",
-            "cl9waW5fYRgCIAEoDRIZChFpbnB1dGJyb2tlcl9waW5fYhgDIAEoDRIdChVp",
-            "bnB1dGJyb2tlcl9waW5fcHJlc3MYBCABKA0SWQoUaW5wdXRicm9rZXJfZXZl",
-            "bnRfY3cYBSABKA4yOy5tZXNodGFzdGljLk1vZHVsZUNvbmZpZy5DYW5uZWRN",
-            "ZXNzYWdlQ29uZmlnLklucHV0RXZlbnRDaGFyEloKFWlucHV0YnJva2VyX2V2",
-            "ZW50X2NjdxgGIAEoDjI7Lm1lc2h0YXN0aWMuTW9kdWxlQ29uZmlnLkNhbm5l",
-            "ZE1lc3NhZ2VDb25maWcuSW5wdXRFdmVudENoYXISXAoXaW5wdXRicm9rZXJf",
-            "ZXZlbnRfcHJlc3MYByABKA4yOy5tZXNodGFzdGljLk1vZHVsZUNvbmZpZy5D",
-            "YW5uZWRNZXNzYWdlQ29uZmlnLklucHV0RXZlbnRDaGFyEhcKD3VwZG93bjFf",
-            "ZW5hYmxlZBgIIAEoCBIPCgdlbmFibGVkGAkgASgIEhoKEmFsbG93X2lucHV0",
-            "X3NvdXJjZRgKIAEoCRIRCglzZW5kX2JlbGwYCyABKAgiYwoOSW5wdXRFdmVu",
-            "dENoYXISCAoETk9ORRAAEgYKAlVQEBESCAoERE9XThASEggKBExFRlQQExIJ",
-            "CgVSSUdIVBAUEgoKBlNFTEVDVBAKEggKBEJBQ0sQGxIKCgZDQU5DRUwQGEIR",
-            "Cg9wYXlsb2FkX3ZhcmlhbnRCZwoTY29tLmdlZWtzdmlsbGUubWVzaEISTW9k",
-            "dWxlQ29uZmlnUHJvdG9zWiJnaXRodWIuY29tL21lc2h0YXN0aWMvZ28vZ2Vu",
-            "ZXJhdGVkqgIUTWVzaHRhc3RpYy5Qcm90b2J1ZnO6AgBiBnByb3RvMw=="));
+            "dWxlQ29uZmlnLkNhbm5lZE1lc3NhZ2VDb25maWdIABI5CgVhdWRpbxgIIAEo",
+            "CzIkLm1lc2h0YXN0aWMuTW9kdWxlQ29uZmlnLkF1ZGlvQ29uZmlnQgIYAUgA",
+            "EkgKD3JlbW90ZV9oYXJkd2FyZRgJIAEoCzItLm1lc2h0YXN0aWMuTW9kdWxl",
+            "Q29uZmlnLlJlbW90ZUhhcmR3YXJlQ29uZmlnSAASPQoMYXVkaW9fY29uZmln",
+            "GAogASgLMiUubWVzaHRhc3RpYy5Nb2R1bGVDb25maWcuQXVkaW9fQ29uZmln",
+            "SAAapwEKCk1RVFRDb25maWcSDwoHZW5hYmxlZBgBIAEoCBIPCgdhZGRyZXNz",
+            "GAIgASgJEhAKCHVzZXJuYW1lGAMgASgJEhAKCHBhc3N3b3JkGAQgASgJEhoK",
+            "EmVuY3J5cHRpb25fZW5hYmxlZBgFIAEoCBIUCgxqc29uX2VuYWJsZWQYBiAB",
+            "KAgSEwoLdGxzX2VuYWJsZWQYByABKAgSDAoEcm9vdBgIIAEoCRonChRSZW1v",
+            "dGVIYXJkd2FyZUNvbmZpZxIPCgdlbmFibGVkGAEgASgIGuQCCgtBdWRpb0Nv",
+            "bmZpZxIWCg5jb2RlYzJfZW5hYmxlZBgBIAEoCBIPCgdwdHRfcGluGAIgASgF",
+            "EkAKB2JpdHJhdGUYAyABKA4yLy5tZXNodGFzdGljLk1vZHVsZUNvbmZpZy5B",
+            "dWRpb0NvbmZpZy5BdWRpb19CYXVkEg4KBmkyc193cxgEIAEoBRIOCgZpMnNf",
+            "c2QYBSABKAUSDwoHaTJzX2RpbhgGIAEoBRIPCgdpMnNfc2NrGAcgASgFIqcB",
+            "CgpBdWRpb19CYXVkEhIKDkNPREVDMl9ERUZBVUxUEAASDwoLQ09ERUMyXzMy",
+            "MDAQARIPCgtDT0RFQzJfMjQwMBACEg8KC0NPREVDMl8xNjAwEAMSDwoLQ09E",
+            "RUMyXzE0MDAQBBIPCgtDT0RFQzJfMTMwMBAFEg8KC0NPREVDMl8xMjAwEAYS",
+            "DgoKQ09ERUMyXzcwMBAHEg8KC0NPREVDMl83MDBCEAgaiQgKDEF1ZGlvX0Nv",
+            "bmZpZxJACgVjb2RlYxgLIAEoDjIxLm1lc2h0YXN0aWMuTW9kdWxlQ29uZmln",
+            "LkF1ZGlvX0NvbmZpZy5BdWRpb19Db2RlYxIPCgdwdHRfcGluGAIgASgFEksK",
+            "DmNvZGVjMl9iaXRyYXRlGBUgASgOMjEubWVzaHRhc3RpYy5Nb2R1bGVDb25m",
+            "aWcuQXVkaW9fQ29uZmlnLkNvZGVjMl9CYXVkSAASTQoNc3BlZXhfYml0cmF0",
+            "ZRgWIAEoDjI0Lm1lc2h0YXN0aWMuTW9kdWxlQ29uZmlnLkF1ZGlvX0NvbmZp",
+            "Zy5TcGVleF9CaXRfUmF0ZUgAEkcKDG9wdXNfYml0cmF0ZRgXIAEoDjIvLm1l",
+            "c2h0YXN0aWMuTW9kdWxlQ29uZmlnLkF1ZGlvX0NvbmZpZy5PcHVzX0JhdWRI",
+            "ABIOCgZpMnNfd3MYBCABKAUSDgoGaTJzX3NkGAUgASgFEg8KB2kyc19kaW4Y",
+            "BiABKAUSDwoHaTJzX3NjaxgHIAEoBSJOCgtBdWRpb19Db2RlYxIMCghDT0RF",
+            "Q19OTxAAEhAKDENPREVDX0NPREVDMhABEg8KC0NPREVDX1NQRUVYEAISDgoK",
+            "Q09ERUNfT1BVUxADIqgBCgtDb2RlYzJfQmF1ZBISCg5DT0RFQzJfREVGQVVM",
+            "VBAAEg8KC0NPREVDMl8zMjAwEAESDwoLQ09ERUMyXzI0MDAQAhIPCgtDT0RF",
+            "QzJfMTYwMBADEg8KC0NPREVDMl8xNDAwEAQSDwoLQ09ERUMyXzEzMDAQBRIP",
+            "CgtDT0RFQzJfMTIwMBAGEg4KCkNPREVDMl83MDAQBxIPCgtDT0RFQzJfNzAw",
+            "QhAIItkCCg5TcGVleF9CaXRfUmF0ZRIVChFTUEVFWF9ERUZBVUxUXzI1MBAA",
+            "Eg4KClNQRUVYXzIxNTAQARIOCgpTUEVFWF81OTUwEAISDgoKU1BFRVhfODAw",
+            "MBADEg8KC1NQRUVYXzExMDAwEAQSDwoLU1BFRVhfMTUwMDAQBRIPCgtTUEVF",
+            "WF8xODIwMBAGEg8KC1NQRUVYXzI0NjAwEAcSDgoKU1BFRVhfMzk1MBAIEhMK",
+            "D1NQRUVYX1JFU0VSVkVEORAJEhQKEFNQRUVYX1JFU0VSVkVEMTAQChIUChBT",
+            "UEVFWF9SRVNFUlZFRDExEAsSFAoQU1BFRVhfUkVTRVJWRUQxMhAMEh0KGVNQ",
+            "RUVYX0FQUExJQ0FUSU9OX0RFRklORUQQDRIbChdTUEVFWF9JTl9CQU5EX1NJ",
+            "R05BTElORxAOEhkKFVNQRUVYX1RFUk1JTkFUT1JfQ09ERRAPIh0KCU9wdXNf",
+            "QmF1ZBIQCgxPUFVTX0RFRkFVTFQQAEIJCgdiaXRyYXRlGrEECgxTZXJpYWxD",
+            "b25maWcSDwoHZW5hYmxlZBgBIAEoCBIMCgRlY2hvGAIgASgIEgsKA3J4ZBgD",
+            "IAEoDRILCgN0eGQYBCABKA0SPwoEYmF1ZBgFIAEoDjIxLm1lc2h0YXN0aWMu",
+            "TW9kdWxlQ29uZmlnLlNlcmlhbENvbmZpZy5TZXJpYWxfQmF1ZBIPCgd0aW1l",
+            "b3V0GAYgASgNEj8KBG1vZGUYByABKA4yMS5tZXNodGFzdGljLk1vZHVsZUNv",
+            "bmZpZy5TZXJpYWxDb25maWcuU2VyaWFsX01vZGUiigIKC1NlcmlhbF9CYXVk",
+            "EhAKDEJBVURfREVGQVVMVBAAEgwKCEJBVURfMTEwEAESDAoIQkFVRF8zMDAQ",
+            "AhIMCghCQVVEXzYwMBADEg0KCUJBVURfMTIwMBAEEg0KCUJBVURfMjQwMBAF",
+            "Eg0KCUJBVURfNDgwMBAGEg0KCUJBVURfOTYwMBAHEg4KCkJBVURfMTkyMDAQ",
+            "CBIOCgpCQVVEXzM4NDAwEAkSDgoKQkFVRF81NzYwMBAKEg8KC0JBVURfMTE1",
+            "MjAwEAsSDwoLQkFVRF8yMzA0MDAQDBIPCgtCQVVEXzQ2MDgwMBANEg8KC0JB",
+            "VURfNTc2MDAwEA4SDwoLQkFVRF85MjE2MDAQDyJICgtTZXJpYWxfTW9kZRIL",
+            "CgdERUZBVUxUEAASCgoGU0lNUExFEAESCQoFUFJPVE8QAhILCgdURVhUTVNH",
+            "EAMSCAoETk1FQRAEGs4CChpFeHRlcm5hbE5vdGlmaWNhdGlvbkNvbmZpZxIP",
+            "CgdlbmFibGVkGAEgASgIEhEKCW91dHB1dF9tcxgCIAEoDRIOCgZvdXRwdXQY",
+            "AyABKA0SFAoMb3V0cHV0X3ZpYnJhGAggASgNEhUKDW91dHB1dF9idXp6ZXIY",
+            "CSABKA0SDgoGYWN0aXZlGAQgASgIEhUKDWFsZXJ0X21lc3NhZ2UYBSABKAgS",
+            "GwoTYWxlcnRfbWVzc2FnZV92aWJyYRgKIAEoCBIcChRhbGVydF9tZXNzYWdl",
+            "X2J1enplchgLIAEoCBISCgphbGVydF9iZWxsGAYgASgIEhgKEGFsZXJ0X2Jl",
+            "bGxfdmlicmEYDCABKAgSGQoRYWxlcnRfYmVsbF9idXp6ZXIYDSABKAgSDwoH",
+            "dXNlX3B3bRgHIAEoCBITCgtuYWdfdGltZW91dBgOIAEoDRqEAQoSU3RvcmVG",
+            "b3J3YXJkQ29uZmlnEg8KB2VuYWJsZWQYASABKAgSEQoJaGVhcnRiZWF0GAIg",
+            "ASgIEg8KB3JlY29yZHMYAyABKA0SGgoSaGlzdG9yeV9yZXR1cm5fbWF4GAQg",
+            "ASgNEh0KFWhpc3RvcnlfcmV0dXJuX3dpbmRvdxgFIAEoDRpACg9SYW5nZVRl",
+            "c3RDb25maWcSDwoHZW5hYmxlZBgBIAEoCBIOCgZzZW5kZXIYAiABKA0SDAoE",
+            "c2F2ZRgDIAEoCBqGAgoPVGVsZW1ldHJ5Q29uZmlnEh4KFmRldmljZV91cGRh",
+            "dGVfaW50ZXJ2YWwYASABKA0SIwobZW52aXJvbm1lbnRfdXBkYXRlX2ludGVy",
+            "dmFsGAIgASgNEicKH2Vudmlyb25tZW50X21lYXN1cmVtZW50X2VuYWJsZWQY",
+            "AyABKAgSIgoaZW52aXJvbm1lbnRfc2NyZWVuX2VuYWJsZWQYBCABKAgSJgoe",
+            "ZW52aXJvbm1lbnRfZGlzcGxheV9mYWhyZW5oZWl0GAUgASgIEhsKE2Fpcl9x",
+            "dWFsaXR5X2VuYWJsZWQYBiABKAgSHAoUYWlyX3F1YWxpdHlfaW50ZXJ2YWwY",
+            "ByABKA0a1gQKE0Nhbm5lZE1lc3NhZ2VDb25maWcSFwoPcm90YXJ5MV9lbmFi",
+            "bGVkGAEgASgIEhkKEWlucHV0YnJva2VyX3Bpbl9hGAIgASgNEhkKEWlucHV0",
+            "YnJva2VyX3Bpbl9iGAMgASgNEh0KFWlucHV0YnJva2VyX3Bpbl9wcmVzcxgE",
+            "IAEoDRJZChRpbnB1dGJyb2tlcl9ldmVudF9jdxgFIAEoDjI7Lm1lc2h0YXN0",
+            "aWMuTW9kdWxlQ29uZmlnLkNhbm5lZE1lc3NhZ2VDb25maWcuSW5wdXRFdmVu",
+            "dENoYXISWgoVaW5wdXRicm9rZXJfZXZlbnRfY2N3GAYgASgOMjsubWVzaHRh",
+            "c3RpYy5Nb2R1bGVDb25maWcuQ2FubmVkTWVzc2FnZUNvbmZpZy5JbnB1dEV2",
+            "ZW50Q2hhchJcChdpbnB1dGJyb2tlcl9ldmVudF9wcmVzcxgHIAEoDjI7Lm1l",
+            "c2h0YXN0aWMuTW9kdWxlQ29uZmlnLkNhbm5lZE1lc3NhZ2VDb25maWcuSW5w",
+            "dXRFdmVudENoYXISFwoPdXBkb3duMV9lbmFibGVkGAggASgIEg8KB2VuYWJs",
+            "ZWQYCSABKAgSGgoSYWxsb3dfaW5wdXRfc291cmNlGAogASgJEhEKCXNlbmRf",
+            "YmVsbBgLIAEoCCJjCg5JbnB1dEV2ZW50Q2hhchIICgROT05FEAASBgoCVVAQ",
+            "ERIICgRET1dOEBISCAoETEVGVBATEgkKBVJJR0hUEBQSCgoGU0VMRUNUEAoS",
+            "CAoEQkFDSxAbEgoKBkNBTkNFTBAYQhEKD3BheWxvYWRfdmFyaWFudEJnChNj",
+            "b20uZ2Vla3N2aWxsZS5tZXNoQhJNb2R1bGVDb25maWdQcm90b3NaImdpdGh1",
+            "Yi5jb20vbWVzaHRhc3RpYy9nby9nZW5lcmF0ZWSqAhRNZXNodGFzdGljLlBy",
+            "b3RvYnVmc7oCAGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
-            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig), global::Meshtastic.Protobufs.ModuleConfig.Parser, new[]{ "Mqtt", "Serial", "ExternalNotification", "StoreForward", "RangeTest", "Telemetry", "CannedMessage", "Audio", "RemoteHardware" }, new[]{ "PayloadVariant" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.MQTTConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.MQTTConfig.Parser, new[]{ "Enabled", "Address", "Username", "Password", "EncryptionEnabled", "JsonEnabled", "TlsEnabled", "Root" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig), global::Meshtastic.Protobufs.ModuleConfig.Parser, new[]{ "Mqtt", "Serial", "ExternalNotification", "StoreForward", "RangeTest", "Telemetry", "CannedMessage", "Audio", "RemoteHardware", "AudioConfig" }, new[]{ "PayloadVariant" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.MQTTConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.MQTTConfig.Parser, new[]{ "Enabled", "Address", "Username", "Password", "EncryptionEnabled", "JsonEnabled", "TlsEnabled", "Root" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.RemoteHardwareConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.RemoteHardwareConfig.Parser, new[]{ "Enabled" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig.Parser, new[]{ "Codec2Enabled", "PttPin", "Bitrate", "I2SWs", "I2SSd", "I2SDin", "I2SSck" }, null, new[]{ typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig.Types.Audio_Baud) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config), global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Parser, new[]{ "Codec", "PttPin", "Codec2Bitrate", "SpeexBitrate", "OpusBitrate", "I2SWs", "I2SSd", "I2SDin", "I2SSck" }, new[]{ "Bitrate" }, new[]{ typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Codec2_Baud), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Speex_Bit_Rate), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Opus_Baud) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Parser, new[]{ "Enabled", "Echo", "Rxd", "Txd", "Baud", "Timeout", "Mode" }, null, new[]{ typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Baud), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Mode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.ExternalNotificationConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.ExternalNotificationConfig.Parser, new[]{ "Enabled", "OutputMs", "Output", "OutputVibra", "OutputBuzzer", "Active", "AlertMessage", "AlertMessageVibra", "AlertMessageBuzzer", "AlertBell", "AlertBellVibra", "AlertBellBuzzer", "UsePwm", "NagTimeout" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.StoreForwardConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.StoreForwardConfig.Parser, new[]{ "Enabled", "Heartbeat", "Records", "HistoryReturnMax", "HistoryReturnWindow" }, null, null, null, null),
@@ -181,6 +207,9 @@ namespace Meshtastic.Protobufs {
           break;
         case PayloadVariantOneofCase.RemoteHardware:
           RemoteHardware = other.RemoteHardware.Clone();
+          break;
+        case PayloadVariantOneofCase.AudioConfig:
+          AudioConfig = other.AudioConfig.Clone();
           break;
       }
 
@@ -311,6 +340,7 @@ namespace Meshtastic.Protobufs {
     ///
     /// TODO: REPLACE
     /// </summary>
+    [global::System.ObsoleteAttribute]
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig Audio {
@@ -337,6 +367,22 @@ namespace Meshtastic.Protobufs {
       }
     }
 
+    /// <summary>Field number for the "audio_config" field.</summary>
+    public const int AudioConfigFieldNumber = 10;
+    /// <summary>
+    ///
+    /// TODO: REPLACE
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config AudioConfig {
+      get { return payloadVariantCase_ == PayloadVariantOneofCase.AudioConfig ? (global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config) payloadVariant_ : null; }
+      set {
+        payloadVariant_ = value;
+        payloadVariantCase_ = value == null ? PayloadVariantOneofCase.None : PayloadVariantOneofCase.AudioConfig;
+      }
+    }
+
     private object payloadVariant_;
     /// <summary>Enum of possible cases for the "payload_variant" oneof.</summary>
     public enum PayloadVariantOneofCase {
@@ -350,6 +396,7 @@ namespace Meshtastic.Protobufs {
       CannedMessage = 7,
       Audio = 8,
       RemoteHardware = 9,
+      AudioConfig = 10,
     }
     private PayloadVariantOneofCase payloadVariantCase_ = PayloadVariantOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -389,6 +436,7 @@ namespace Meshtastic.Protobufs {
       if (!object.Equals(CannedMessage, other.CannedMessage)) return false;
       if (!object.Equals(Audio, other.Audio)) return false;
       if (!object.Equals(RemoteHardware, other.RemoteHardware)) return false;
+      if (!object.Equals(AudioConfig, other.AudioConfig)) return false;
       if (PayloadVariantCase != other.PayloadVariantCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -406,6 +454,7 @@ namespace Meshtastic.Protobufs {
       if (payloadVariantCase_ == PayloadVariantOneofCase.CannedMessage) hash ^= CannedMessage.GetHashCode();
       if (payloadVariantCase_ == PayloadVariantOneofCase.Audio) hash ^= Audio.GetHashCode();
       if (payloadVariantCase_ == PayloadVariantOneofCase.RemoteHardware) hash ^= RemoteHardware.GetHashCode();
+      if (payloadVariantCase_ == PayloadVariantOneofCase.AudioConfig) hash ^= AudioConfig.GetHashCode();
       hash ^= (int) payloadVariantCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -461,6 +510,10 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(74);
         output.WriteMessage(RemoteHardware);
       }
+      if (payloadVariantCase_ == PayloadVariantOneofCase.AudioConfig) {
+        output.WriteRawTag(82);
+        output.WriteMessage(AudioConfig);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -507,6 +560,10 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(74);
         output.WriteMessage(RemoteHardware);
       }
+      if (payloadVariantCase_ == PayloadVariantOneofCase.AudioConfig) {
+        output.WriteRawTag(82);
+        output.WriteMessage(AudioConfig);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -543,6 +600,9 @@ namespace Meshtastic.Protobufs {
       }
       if (payloadVariantCase_ == PayloadVariantOneofCase.RemoteHardware) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(RemoteHardware);
+      }
+      if (payloadVariantCase_ == PayloadVariantOneofCase.AudioConfig) {
+        size += 1 + pb::CodedOutputStream.ComputeMessageSize(AudioConfig);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -610,6 +670,12 @@ namespace Meshtastic.Protobufs {
             RemoteHardware = new global::Meshtastic.Protobufs.ModuleConfig.Types.RemoteHardwareConfig();
           }
           RemoteHardware.MergeFrom(other.RemoteHardware);
+          break;
+        case PayloadVariantOneofCase.AudioConfig:
+          if (AudioConfig == null) {
+            AudioConfig = new global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config();
+          }
+          AudioConfig.MergeFrom(other.AudioConfig);
           break;
       }
 
@@ -709,6 +775,15 @@ namespace Meshtastic.Protobufs {
             RemoteHardware = subBuilder;
             break;
           }
+          case 82: {
+            global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config subBuilder = new global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config();
+            if (payloadVariantCase_ == PayloadVariantOneofCase.AudioConfig) {
+              subBuilder.MergeFrom(AudioConfig);
+            }
+            input.ReadMessage(subBuilder);
+            AudioConfig = subBuilder;
+            break;
+          }
         }
       }
     #endif
@@ -803,6 +878,15 @@ namespace Meshtastic.Protobufs {
             }
             input.ReadMessage(subBuilder);
             RemoteHardware = subBuilder;
+            break;
+          }
+          case 82: {
+            global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config subBuilder = new global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config();
+            if (payloadVariantCase_ == PayloadVariantOneofCase.AudioConfig) {
+              subBuilder.MergeFrom(AudioConfig);
+            }
+            input.ReadMessage(subBuilder);
+            AudioConfig = subBuilder;
             break;
           }
         }
@@ -1578,14 +1662,14 @@ namespace Meshtastic.Protobufs {
 
         /// <summary>Field number for the "ptt_pin" field.</summary>
         public const int PttPinFieldNumber = 2;
-        private uint pttPin_;
+        private int pttPin_;
         /// <summary>
         ///
         /// PTT Pin
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public uint PttPin {
+        public int PttPin {
           get { return pttPin_; }
           set {
             pttPin_ = value;
@@ -1610,14 +1694,14 @@ namespace Meshtastic.Protobufs {
 
         /// <summary>Field number for the "i2s_ws" field.</summary>
         public const int I2SWsFieldNumber = 4;
-        private uint i2SWs_;
+        private int i2SWs_;
         /// <summary>
         ///
         /// I2S Word Select
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public uint I2SWs {
+        public int I2SWs {
           get { return i2SWs_; }
           set {
             i2SWs_ = value;
@@ -1626,14 +1710,14 @@ namespace Meshtastic.Protobufs {
 
         /// <summary>Field number for the "i2s_sd" field.</summary>
         public const int I2SSdFieldNumber = 5;
-        private uint i2SSd_;
+        private int i2SSd_;
         /// <summary>
         ///
         /// I2S Data IN
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public uint I2SSd {
+        public int I2SSd {
           get { return i2SSd_; }
           set {
             i2SSd_ = value;
@@ -1642,14 +1726,14 @@ namespace Meshtastic.Protobufs {
 
         /// <summary>Field number for the "i2s_din" field.</summary>
         public const int I2SDinFieldNumber = 6;
-        private uint i2SDin_;
+        private int i2SDin_;
         /// <summary>
         ///
         /// I2S Data OUT
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public uint I2SDin {
+        public int I2SDin {
           get { return i2SDin_; }
           set {
             i2SDin_ = value;
@@ -1658,14 +1742,14 @@ namespace Meshtastic.Protobufs {
 
         /// <summary>Field number for the "i2s_sck" field.</summary>
         public const int I2SSckFieldNumber = 7;
-        private uint i2SSck_;
+        private int i2SSck_;
         /// <summary>
         ///
         /// I2S Clock
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-        public uint I2SSck {
+        public int I2SSck {
           get { return i2SSck_; }
           set {
             i2SSck_ = value;
@@ -1732,7 +1816,7 @@ namespace Meshtastic.Protobufs {
           }
           if (PttPin != 0) {
             output.WriteRawTag(16);
-            output.WriteUInt32(PttPin);
+            output.WriteInt32(PttPin);
           }
           if (Bitrate != global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig.Types.Audio_Baud.Codec2Default) {
             output.WriteRawTag(24);
@@ -1740,19 +1824,19 @@ namespace Meshtastic.Protobufs {
           }
           if (I2SWs != 0) {
             output.WriteRawTag(32);
-            output.WriteUInt32(I2SWs);
+            output.WriteInt32(I2SWs);
           }
           if (I2SSd != 0) {
             output.WriteRawTag(40);
-            output.WriteUInt32(I2SSd);
+            output.WriteInt32(I2SSd);
           }
           if (I2SDin != 0) {
             output.WriteRawTag(48);
-            output.WriteUInt32(I2SDin);
+            output.WriteInt32(I2SDin);
           }
           if (I2SSck != 0) {
             output.WriteRawTag(56);
-            output.WriteUInt32(I2SSck);
+            output.WriteInt32(I2SSck);
           }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
@@ -1770,7 +1854,7 @@ namespace Meshtastic.Protobufs {
           }
           if (PttPin != 0) {
             output.WriteRawTag(16);
-            output.WriteUInt32(PttPin);
+            output.WriteInt32(PttPin);
           }
           if (Bitrate != global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig.Types.Audio_Baud.Codec2Default) {
             output.WriteRawTag(24);
@@ -1778,19 +1862,19 @@ namespace Meshtastic.Protobufs {
           }
           if (I2SWs != 0) {
             output.WriteRawTag(32);
-            output.WriteUInt32(I2SWs);
+            output.WriteInt32(I2SWs);
           }
           if (I2SSd != 0) {
             output.WriteRawTag(40);
-            output.WriteUInt32(I2SSd);
+            output.WriteInt32(I2SSd);
           }
           if (I2SDin != 0) {
             output.WriteRawTag(48);
-            output.WriteUInt32(I2SDin);
+            output.WriteInt32(I2SDin);
           }
           if (I2SSck != 0) {
             output.WriteRawTag(56);
-            output.WriteUInt32(I2SSck);
+            output.WriteInt32(I2SSck);
           }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
@@ -1806,22 +1890,22 @@ namespace Meshtastic.Protobufs {
             size += 1 + 1;
           }
           if (PttPin != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(PttPin);
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(PttPin);
           }
           if (Bitrate != global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig.Types.Audio_Baud.Codec2Default) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Bitrate);
           }
           if (I2SWs != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(I2SWs);
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(I2SWs);
           }
           if (I2SSd != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(I2SSd);
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(I2SSd);
           }
           if (I2SDin != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(I2SDin);
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(I2SDin);
           }
           if (I2SSck != 0) {
-            size += 1 + pb::CodedOutputStream.ComputeUInt32Size(I2SSck);
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(I2SSck);
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -1876,7 +1960,7 @@ namespace Meshtastic.Protobufs {
                 break;
               }
               case 16: {
-                PttPin = input.ReadUInt32();
+                PttPin = input.ReadInt32();
                 break;
               }
               case 24: {
@@ -1884,19 +1968,19 @@ namespace Meshtastic.Protobufs {
                 break;
               }
               case 32: {
-                I2SWs = input.ReadUInt32();
+                I2SWs = input.ReadInt32();
                 break;
               }
               case 40: {
-                I2SSd = input.ReadUInt32();
+                I2SSd = input.ReadInt32();
                 break;
               }
               case 48: {
-                I2SDin = input.ReadUInt32();
+                I2SDin = input.ReadInt32();
                 break;
               }
               case 56: {
-                I2SSck = input.ReadUInt32();
+                I2SSck = input.ReadInt32();
                 break;
               }
             }
@@ -1919,7 +2003,7 @@ namespace Meshtastic.Protobufs {
                 break;
               }
               case 16: {
-                PttPin = input.ReadUInt32();
+                PttPin = input.ReadInt32();
                 break;
               }
               case 24: {
@@ -1927,19 +2011,19 @@ namespace Meshtastic.Protobufs {
                 break;
               }
               case 32: {
-                I2SWs = input.ReadUInt32();
+                I2SWs = input.ReadInt32();
                 break;
               }
               case 40: {
-                I2SSd = input.ReadUInt32();
+                I2SSd = input.ReadInt32();
                 break;
               }
               case 48: {
-                I2SDin = input.ReadUInt32();
+                I2SDin = input.ReadInt32();
                 break;
               }
               case 56: {
-                I2SSck = input.ReadUInt32();
+                I2SSck = input.ReadInt32();
                 break;
               }
             }
@@ -1975,6 +2059,684 @@ namespace Meshtastic.Protobufs {
 
       /// <summary>
       ///
+      /// Audio Config for Codec2, Speex, Opus voice
+      /// </summary>
+      public sealed partial class Audio_Config : pb::IMessage<Audio_Config>
+      #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          , pb::IBufferMessage
+      #endif
+      {
+        private static readonly pb::MessageParser<Audio_Config> _parser = new pb::MessageParser<Audio_Config>(() => new Audio_Config());
+        private pb::UnknownFieldSet _unknownFields;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pb::MessageParser<Audio_Config> Parser { get { return _parser; } }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static pbr::MessageDescriptor Descriptor {
+          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[3]; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        pbr::MessageDescriptor pb::IMessage.Descriptor {
+          get { return Descriptor; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public Audio_Config() {
+          OnConstruction();
+        }
+
+        partial void OnConstruction();
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public Audio_Config(Audio_Config other) : this() {
+          codec_ = other.codec_;
+          pttPin_ = other.pttPin_;
+          i2SWs_ = other.i2SWs_;
+          i2SSd_ = other.i2SSd_;
+          i2SDin_ = other.i2SDin_;
+          i2SSck_ = other.i2SSck_;
+          switch (other.BitrateCase) {
+            case BitrateOneofCase.Codec2Bitrate:
+              Codec2Bitrate = other.Codec2Bitrate;
+              break;
+            case BitrateOneofCase.SpeexBitrate:
+              SpeexBitrate = other.SpeexBitrate;
+              break;
+            case BitrateOneofCase.OpusBitrate:
+              OpusBitrate = other.OpusBitrate;
+              break;
+          }
+
+          _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public Audio_Config Clone() {
+          return new Audio_Config(this);
+        }
+
+        /// <summary>Field number for the "codec" field.</summary>
+        public const int CodecFieldNumber = 11;
+        private global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec codec_ = global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec.CodecNo;
+        /// <summary>
+        ///
+        /// Whether Audio is enabled
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec Codec {
+          get { return codec_; }
+          set {
+            codec_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "ptt_pin" field.</summary>
+        public const int PttPinFieldNumber = 2;
+        private int pttPin_;
+        /// <summary>
+        ///
+        /// PTT Pin
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int PttPin {
+          get { return pttPin_; }
+          set {
+            pttPin_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "codec2_bitrate" field.</summary>
+        public const int Codec2BitrateFieldNumber = 21;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Codec2_Baud Codec2Bitrate {
+          get { return bitrateCase_ == BitrateOneofCase.Codec2Bitrate ? (global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Codec2_Baud) bitrate_ : global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Codec2_Baud.Codec2Default; }
+          set {
+            bitrate_ = value;
+            bitrateCase_ = BitrateOneofCase.Codec2Bitrate;
+          }
+        }
+
+        /// <summary>Field number for the "speex_bitrate" field.</summary>
+        public const int SpeexBitrateFieldNumber = 22;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Speex_Bit_Rate SpeexBitrate {
+          get { return bitrateCase_ == BitrateOneofCase.SpeexBitrate ? (global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Speex_Bit_Rate) bitrate_ : global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Speex_Bit_Rate.SpeexDefault250; }
+          set {
+            bitrate_ = value;
+            bitrateCase_ = BitrateOneofCase.SpeexBitrate;
+          }
+        }
+
+        /// <summary>Field number for the "opus_bitrate" field.</summary>
+        public const int OpusBitrateFieldNumber = 23;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Opus_Baud OpusBitrate {
+          get { return bitrateCase_ == BitrateOneofCase.OpusBitrate ? (global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Opus_Baud) bitrate_ : global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Opus_Baud.OpusDefault; }
+          set {
+            bitrate_ = value;
+            bitrateCase_ = BitrateOneofCase.OpusBitrate;
+          }
+        }
+
+        /// <summary>Field number for the "i2s_ws" field.</summary>
+        public const int I2SWsFieldNumber = 4;
+        private int i2SWs_;
+        /// <summary>
+        ///
+        /// I2S Word Select
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int I2SWs {
+          get { return i2SWs_; }
+          set {
+            i2SWs_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "i2s_sd" field.</summary>
+        public const int I2SSdFieldNumber = 5;
+        private int i2SSd_;
+        /// <summary>
+        ///
+        /// I2S Data IN
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int I2SSd {
+          get { return i2SSd_; }
+          set {
+            i2SSd_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "i2s_din" field.</summary>
+        public const int I2SDinFieldNumber = 6;
+        private int i2SDin_;
+        /// <summary>
+        ///
+        /// I2S Data OUT
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int I2SDin {
+          get { return i2SDin_; }
+          set {
+            i2SDin_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "i2s_sck" field.</summary>
+        public const int I2SSckFieldNumber = 7;
+        private int i2SSck_;
+        /// <summary>
+        ///
+        /// I2S Clock
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int I2SSck {
+          get { return i2SSck_; }
+          set {
+            i2SSck_ = value;
+          }
+        }
+
+        private object bitrate_;
+        /// <summary>Enum of possible cases for the "bitrate" oneof.</summary>
+        public enum BitrateOneofCase {
+          None = 0,
+          Codec2Bitrate = 21,
+          SpeexBitrate = 22,
+          OpusBitrate = 23,
+        }
+        private BitrateOneofCase bitrateCase_ = BitrateOneofCase.None;
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public BitrateOneofCase BitrateCase {
+          get { return bitrateCase_; }
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void ClearBitrate() {
+          bitrateCase_ = BitrateOneofCase.None;
+          bitrate_ = null;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override bool Equals(object other) {
+          return Equals(other as Audio_Config);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool Equals(Audio_Config other) {
+          if (ReferenceEquals(other, null)) {
+            return false;
+          }
+          if (ReferenceEquals(other, this)) {
+            return true;
+          }
+          if (Codec != other.Codec) return false;
+          if (PttPin != other.PttPin) return false;
+          if (Codec2Bitrate != other.Codec2Bitrate) return false;
+          if (SpeexBitrate != other.SpeexBitrate) return false;
+          if (OpusBitrate != other.OpusBitrate) return false;
+          if (I2SWs != other.I2SWs) return false;
+          if (I2SSd != other.I2SSd) return false;
+          if (I2SDin != other.I2SDin) return false;
+          if (I2SSck != other.I2SSck) return false;
+          if (BitrateCase != other.BitrateCase) return false;
+          return Equals(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override int GetHashCode() {
+          int hash = 1;
+          if (Codec != global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec.CodecNo) hash ^= Codec.GetHashCode();
+          if (PttPin != 0) hash ^= PttPin.GetHashCode();
+          if (bitrateCase_ == BitrateOneofCase.Codec2Bitrate) hash ^= Codec2Bitrate.GetHashCode();
+          if (bitrateCase_ == BitrateOneofCase.SpeexBitrate) hash ^= SpeexBitrate.GetHashCode();
+          if (bitrateCase_ == BitrateOneofCase.OpusBitrate) hash ^= OpusBitrate.GetHashCode();
+          if (I2SWs != 0) hash ^= I2SWs.GetHashCode();
+          if (I2SSd != 0) hash ^= I2SSd.GetHashCode();
+          if (I2SDin != 0) hash ^= I2SDin.GetHashCode();
+          if (I2SSck != 0) hash ^= I2SSck.GetHashCode();
+          hash ^= (int) bitrateCase_;
+          if (_unknownFields != null) {
+            hash ^= _unknownFields.GetHashCode();
+          }
+          return hash;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public override string ToString() {
+          return pb::JsonFormatter.ToDiagnosticString(this);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void WriteTo(pb::CodedOutputStream output) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          output.WriteRawMessage(this);
+        #else
+          if (PttPin != 0) {
+            output.WriteRawTag(16);
+            output.WriteInt32(PttPin);
+          }
+          if (I2SWs != 0) {
+            output.WriteRawTag(32);
+            output.WriteInt32(I2SWs);
+          }
+          if (I2SSd != 0) {
+            output.WriteRawTag(40);
+            output.WriteInt32(I2SSd);
+          }
+          if (I2SDin != 0) {
+            output.WriteRawTag(48);
+            output.WriteInt32(I2SDin);
+          }
+          if (I2SSck != 0) {
+            output.WriteRawTag(56);
+            output.WriteInt32(I2SSck);
+          }
+          if (Codec != global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec.CodecNo) {
+            output.WriteRawTag(88);
+            output.WriteEnum((int) Codec);
+          }
+          if (bitrateCase_ == BitrateOneofCase.Codec2Bitrate) {
+            output.WriteRawTag(168, 1);
+            output.WriteEnum((int) Codec2Bitrate);
+          }
+          if (bitrateCase_ == BitrateOneofCase.SpeexBitrate) {
+            output.WriteRawTag(176, 1);
+            output.WriteEnum((int) SpeexBitrate);
+          }
+          if (bitrateCase_ == BitrateOneofCase.OpusBitrate) {
+            output.WriteRawTag(184, 1);
+            output.WriteEnum((int) OpusBitrate);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(output);
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+          if (PttPin != 0) {
+            output.WriteRawTag(16);
+            output.WriteInt32(PttPin);
+          }
+          if (I2SWs != 0) {
+            output.WriteRawTag(32);
+            output.WriteInt32(I2SWs);
+          }
+          if (I2SSd != 0) {
+            output.WriteRawTag(40);
+            output.WriteInt32(I2SSd);
+          }
+          if (I2SDin != 0) {
+            output.WriteRawTag(48);
+            output.WriteInt32(I2SDin);
+          }
+          if (I2SSck != 0) {
+            output.WriteRawTag(56);
+            output.WriteInt32(I2SSck);
+          }
+          if (Codec != global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec.CodecNo) {
+            output.WriteRawTag(88);
+            output.WriteEnum((int) Codec);
+          }
+          if (bitrateCase_ == BitrateOneofCase.Codec2Bitrate) {
+            output.WriteRawTag(168, 1);
+            output.WriteEnum((int) Codec2Bitrate);
+          }
+          if (bitrateCase_ == BitrateOneofCase.SpeexBitrate) {
+            output.WriteRawTag(176, 1);
+            output.WriteEnum((int) SpeexBitrate);
+          }
+          if (bitrateCase_ == BitrateOneofCase.OpusBitrate) {
+            output.WriteRawTag(184, 1);
+            output.WriteEnum((int) OpusBitrate);
+          }
+          if (_unknownFields != null) {
+            _unknownFields.WriteTo(ref output);
+          }
+        }
+        #endif
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public int CalculateSize() {
+          int size = 0;
+          if (Codec != global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec.CodecNo) {
+            size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Codec);
+          }
+          if (PttPin != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(PttPin);
+          }
+          if (bitrateCase_ == BitrateOneofCase.Codec2Bitrate) {
+            size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) Codec2Bitrate);
+          }
+          if (bitrateCase_ == BitrateOneofCase.SpeexBitrate) {
+            size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) SpeexBitrate);
+          }
+          if (bitrateCase_ == BitrateOneofCase.OpusBitrate) {
+            size += 2 + pb::CodedOutputStream.ComputeEnumSize((int) OpusBitrate);
+          }
+          if (I2SWs != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(I2SWs);
+          }
+          if (I2SSd != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(I2SSd);
+          }
+          if (I2SDin != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(I2SDin);
+          }
+          if (I2SSck != 0) {
+            size += 1 + pb::CodedOutputStream.ComputeInt32Size(I2SSck);
+          }
+          if (_unknownFields != null) {
+            size += _unknownFields.CalculateSize();
+          }
+          return size;
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(Audio_Config other) {
+          if (other == null) {
+            return;
+          }
+          if (other.Codec != global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec.CodecNo) {
+            Codec = other.Codec;
+          }
+          if (other.PttPin != 0) {
+            PttPin = other.PttPin;
+          }
+          if (other.I2SWs != 0) {
+            I2SWs = other.I2SWs;
+          }
+          if (other.I2SSd != 0) {
+            I2SSd = other.I2SSd;
+          }
+          if (other.I2SDin != 0) {
+            I2SDin = other.I2SDin;
+          }
+          if (other.I2SSck != 0) {
+            I2SSck = other.I2SSck;
+          }
+          switch (other.BitrateCase) {
+            case BitrateOneofCase.Codec2Bitrate:
+              Codec2Bitrate = other.Codec2Bitrate;
+              break;
+            case BitrateOneofCase.SpeexBitrate:
+              SpeexBitrate = other.SpeexBitrate;
+              break;
+            case BitrateOneofCase.OpusBitrate:
+              OpusBitrate = other.OpusBitrate;
+              break;
+          }
+
+          _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+        }
+
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public void MergeFrom(pb::CodedInputStream input) {
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+          input.ReadRawMessage(this);
+        #else
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+                break;
+              case 16: {
+                PttPin = input.ReadInt32();
+                break;
+              }
+              case 32: {
+                I2SWs = input.ReadInt32();
+                break;
+              }
+              case 40: {
+                I2SSd = input.ReadInt32();
+                break;
+              }
+              case 48: {
+                I2SDin = input.ReadInt32();
+                break;
+              }
+              case 56: {
+                I2SSck = input.ReadInt32();
+                break;
+              }
+              case 88: {
+                Codec = (global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec) input.ReadEnum();
+                break;
+              }
+              case 168: {
+                bitrate_ = input.ReadEnum();
+                bitrateCase_ = BitrateOneofCase.Codec2Bitrate;
+                break;
+              }
+              case 176: {
+                bitrate_ = input.ReadEnum();
+                bitrateCase_ = BitrateOneofCase.SpeexBitrate;
+                break;
+              }
+              case 184: {
+                bitrate_ = input.ReadEnum();
+                bitrateCase_ = BitrateOneofCase.OpusBitrate;
+                break;
+              }
+            }
+          }
+        #endif
+        }
+
+        #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+          uint tag;
+          while ((tag = input.ReadTag()) != 0) {
+            switch(tag) {
+              default:
+                _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+                break;
+              case 16: {
+                PttPin = input.ReadInt32();
+                break;
+              }
+              case 32: {
+                I2SWs = input.ReadInt32();
+                break;
+              }
+              case 40: {
+                I2SSd = input.ReadInt32();
+                break;
+              }
+              case 48: {
+                I2SDin = input.ReadInt32();
+                break;
+              }
+              case 56: {
+                I2SSck = input.ReadInt32();
+                break;
+              }
+              case 88: {
+                Codec = (global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec) input.ReadEnum();
+                break;
+              }
+              case 168: {
+                bitrate_ = input.ReadEnum();
+                bitrateCase_ = BitrateOneofCase.Codec2Bitrate;
+                break;
+              }
+              case 176: {
+                bitrate_ = input.ReadEnum();
+                bitrateCase_ = BitrateOneofCase.SpeexBitrate;
+                break;
+              }
+              case 184: {
+                bitrate_ = input.ReadEnum();
+                bitrateCase_ = BitrateOneofCase.OpusBitrate;
+                break;
+              }
+            }
+          }
+        }
+        #endif
+
+        #region Nested types
+        /// <summary>Container for nested types declared in the Audio_Config message type.</summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public static partial class Types {
+          public enum Audio_Codec {
+            [pbr::OriginalName("CODEC_NO")] CodecNo = 0,
+            [pbr::OriginalName("CODEC_CODEC2")] CodecCodec2 = 1,
+            [pbr::OriginalName("CODEC_SPEEX")] CodecSpeex = 2,
+            [pbr::OriginalName("CODEC_OPUS")] CodecOpus = 3,
+          }
+
+          /// <summary>
+          ///
+          /// Baudrate for codec2 voice
+          /// </summary>
+          public enum Codec2_Baud {
+            [pbr::OriginalName("CODEC2_DEFAULT")] Codec2Default = 0,
+            [pbr::OriginalName("CODEC2_3200")] Codec23200 = 1,
+            [pbr::OriginalName("CODEC2_2400")] Codec22400 = 2,
+            [pbr::OriginalName("CODEC2_1600")] Codec21600 = 3,
+            [pbr::OriginalName("CODEC2_1400")] Codec21400 = 4,
+            [pbr::OriginalName("CODEC2_1300")] Codec21300 = 5,
+            [pbr::OriginalName("CODEC2_1200")] Codec21200 = 6,
+            [pbr::OriginalName("CODEC2_700")] Codec2700 = 7,
+            [pbr::OriginalName("CODEC2_700B")] Codec2700B = 8,
+          }
+
+          /// <summary>
+          ///
+          /// Speex narrowband mode (Table 9.2)
+          /// Bit-rate for Speex voice
+          /// Use enum from 1 to 8 in user interface (8, 2, 3 for PTD)
+          /// </summary>
+          public enum Speex_Bit_Rate {
+            /// <summary>
+            ///    bps                       // Quality | Description
+            /// </summary>
+            [pbr::OriginalName("SPEEX_DEFAULT_250")] SpeexDefault250 = 0,
+            /// <summary>
+            ///      0  | Vocoder (mostly for comfort noise)
+            /// </summary>
+            [pbr::OriginalName("SPEEX_2150")] Speex2150 = 1,
+            /// <summary>
+            ///      2  | Very noticeable artifacts/noise, good intelligibility
+            /// </summary>
+            [pbr::OriginalName("SPEEX_5950")] Speex5950 = 2,
+            /// <summary>
+            ///    3-4  | Artifacts/noise sometimes noticeable
+            /// </summary>
+            [pbr::OriginalName("SPEEX_8000")] Speex8000 = 3,
+            /// <summary>
+            ///    5-6  | Artifacts usually noticeable only with headphones
+            /// </summary>
+            [pbr::OriginalName("SPEEX_11000")] Speex11000 = 4,
+            /// <summary>
+            ///    7-8  | Need good headphones to tell the difference
+            /// </summary>
+            [pbr::OriginalName("SPEEX_15000")] Speex15000 = 5,
+            /// <summary>
+            ///      9  | Hard to tell the difference even with good headphones
+            /// </summary>
+            [pbr::OriginalName("SPEEX_18200")] Speex18200 = 6,
+            /// <summary>
+            ///     10  | Completely transparent for voice, good quality music
+            /// </summary>
+            [pbr::OriginalName("SPEEX_24600")] Speex24600 = 7,
+            /// <summary>
+            ///      1  | Very noticeable artifacts/noise, good intelligibility
+            /// </summary>
+            [pbr::OriginalName("SPEEX_3950")] Speex3950 = 8,
+            /// <summary>
+            ///         | reserved
+            /// </summary>
+            [pbr::OriginalName("SPEEX_RESERVED9")] SpeexReserved9 = 9,
+            /// <summary>
+            ///         | reserved
+            /// </summary>
+            [pbr::OriginalName("SPEEX_RESERVED10")] SpeexReserved10 = 10,
+            /// <summary>
+            ///         | reserved
+            /// </summary>
+            [pbr::OriginalName("SPEEX_RESERVED11")] SpeexReserved11 = 11,
+            /// <summary>
+            ///         | reserved
+            /// </summary>
+            [pbr::OriginalName("SPEEX_RESERVED12")] SpeexReserved12 = 12,
+            /// <summary>
+            ///         | Application-defined, interpreted by callback or skipped
+            /// </summary>
+            [pbr::OriginalName("SPEEX_APPLICATION_DEFINED")] SpeexApplicationDefined = 13,
+            /// <summary>
+            ///         | Speex in-band signaling
+            /// </summary>
+            [pbr::OriginalName("SPEEX_IN_BAND_SIGNALING")] SpeexInBandSignaling = 14,
+            /// <summary>
+            ///         | Terminator code
+            /// </summary>
+            [pbr::OriginalName("SPEEX_TERMINATOR_CODE")] SpeexTerminatorCode = 15,
+          }
+
+          /// <summary>
+          ///
+          /// Baudrate for Opus voice
+          /// </summary>
+          public enum Opus_Baud {
+            /// <summary>
+            ///
+            ///OPUS_3200 = 1;
+            ///OPUS_2400 = 2;
+            ///CODEC2_1600 = 3;
+            ///CODEC2_1400 = 4;
+            ///CODEC2_1300 = 5;
+            ///CODEC2_1200 = 6;
+            ///CODEC2_700 = 7;
+            ///CODEC2_700B = 8;
+            /// </summary>
+            [pbr::OriginalName("OPUS_DEFAULT")] OpusDefault = 0,
+          }
+
+        }
+        #endregion
+
+      }
+
+      /// <summary>
+      ///
       /// Serial Config
       /// </summary>
       public sealed partial class SerialConfig : pb::IMessage<SerialConfig>
@@ -1991,7 +2753,7 @@ namespace Meshtastic.Protobufs {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[3]; }
+          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[4]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -2478,7 +3240,7 @@ namespace Meshtastic.Protobufs {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[4]; }
+          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[5]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3218,7 +3980,7 @@ namespace Meshtastic.Protobufs {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[5]; }
+          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[6]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3579,7 +4341,7 @@ namespace Meshtastic.Protobufs {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[6]; }
+          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[7]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -3859,7 +4621,7 @@ namespace Meshtastic.Protobufs {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[7]; }
+          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[8]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -4302,7 +5064,7 @@ namespace Meshtastic.Protobufs {
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public static pbr::MessageDescriptor Descriptor {
-          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[8]; }
+          get { return global::Meshtastic.Protobufs.ModuleConfig.Descriptor.NestedTypes[9]; }
         }
 
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
