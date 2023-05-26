@@ -159,22 +159,3 @@ message OEMStore {
    */
   LocalModuleConfig oem_local_module_config = 8;
 }
-
-/*
-* Ptd Buttons
-*/
-message PtdButtons {
-
-  enum PtdButtonEvent {
-    EVENT_NO = 0;
-    EVENT_CLICK = 1;
-    EVENT_DOUBLE_CLICK = 2;
-    EVENT_MULTI_CLICK = 3;
-    EVENT_LONG_PRESS_START = 4;
-    EVENT_LONG_PRESS_STOP = 5;
-  }
-
-  fixed32 button_pin = 1;
-  PtdButtonEvent event = 2;
-  fixed64 buttons_states = 3;
-}
