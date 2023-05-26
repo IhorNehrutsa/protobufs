@@ -20,6 +20,15 @@ import "meshtastic/xmodem.proto";
 */
 message PtdButtons {
 
+  enum PtdButtonId {
+    BUTTON_NO = 0;
+    BUTTON_UP = 1;
+    BUTTON_LEFT = 2;
+    BUTTON_CENTER = 4;
+    BUTTON_RIGHT = 8;
+    BUTTON_DOWN = 16;
+  }
+
   enum PtdButtonEvent {
     EVENT_NO = 0;
     EVENT_CLICK = 1;
@@ -29,9 +38,9 @@ message PtdButtons {
     EVENT_LONG_PRESS_STOP = 5;
   }
 
-  fixed32 button_pin = 1;
+  PtdButtonId button = 1;
   PtdButtonEvent event = 2;
-  fixed64 buttons_states = 3;
+  fixed32 buttons_states = 3;
 }
 
 /*
