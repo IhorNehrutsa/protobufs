@@ -124,36 +124,36 @@ namespace Meshtastic.Protobufs {
             "Lm1lc2h0YXN0aWMuUG9ydE51bRIMCgRkYXRhGAIgASgMImEKDE5laWdoYm9y",
             "SW5mbxIPCgdub2RlX2lkGAEgASgNEhcKD2xhc3Rfc2VudF9ieV9pZBgCIAEo",
             "DRInCgluZWlnaGJvcnMYAyADKAsyFC5tZXNodGFzdGljLk5laWdoYm9yIigK",
-            "CE5laWdoYm9yEg8KB25vZGVfaWQYASABKA0SCwoDc25yGAIgASgCIpICCg5E",
+            "CE5laWdoYm9yEg8KB25vZGVfaWQYASABKA0SCwoDc25yGAIgASgCIq0CCg5E",
             "ZXZpY2VNZXRhZGF0YRIYChBmaXJtd2FyZV92ZXJzaW9uGAEgASgJEhwKFGRl",
             "dmljZV9zdGF0ZV92ZXJzaW9uGAIgASgNEhMKC2NhblNodXRkb3duGAMgASgI",
             "Eg8KB2hhc1dpZmkYBCABKAgSFAoMaGFzQmx1ZXRvb3RoGAUgASgIEhMKC2hh",
             "c0V0aGVybmV0GAYgASgIEjIKBHJvbGUYByABKA4yJC5tZXNodGFzdGljLkNv",
             "bmZpZy5EZXZpY2VDb25maWcuUm9sZRIWCg5wb3NpdGlvbl9mbGFncxgIIAEo",
             "DRIrCghod19tb2RlbBgJIAEoDjIZLm1lc2h0YXN0aWMuSGFyZHdhcmVNb2Rl",
-            "bCrXBAoNSGFyZHdhcmVNb2RlbBIJCgVVTlNFVBAAEgwKCFRMT1JBX1YyEAES",
-            "DAoIVExPUkFfVjEQAhISCg5UTE9SQV9WMl8xXzFQNhADEgkKBVRCRUFNEAQS",
-            "DwoLSEVMVEVDX1YyXzAQBRIOCgpUQkVBTV9WMFA3EAYSCgoGVF9FQ0hPEAcS",
-            "EAoMVExPUkFfVjFfMVAzEAgSCwoHUkFLNDYzMRAJEg8KC0hFTFRFQ19WMl8x",
-            "EAoSDQoJSEVMVEVDX1YxEAsSGAoUTElMWUdPX1RCRUFNX1MzX0NPUkUQDBIM",
-            "CghSQUsxMTIwMBANEgsKB05BTk9fRzEQDhISCg5UTE9SQV9WMl8xXzFQOBAP",
-            "Eg8KC1RMT1JBX1QzX1MzEBASFAoQTkFOT19HMV9FWFBMT1JFUhAREg4KClNU",
-            "QVRJT05fRzEQGRIRCg1MT1JBX1JFTEFZX1YxECASDgoKTlJGNTI4NDBESxAh",
-            "EgcKA1BQUhAiEg8KC0dFTklFQkxPQ0tTECMSEQoNTlJGNTJfVU5LTk9XThAk",
-            "Eg0KCVBPUlREVUlOTxAlEg8KC0FORFJPSURfU0lNECYSCgoGRElZX1YxECcS",
-            "FQoRTlJGNTI4NDBfUENBMTAwNTkQKBIKCgZEUl9ERVYQKRILCgdNNVNUQUNL",
-            "ECoSDQoJSEVMVEVDX1YzECsSEQoNSEVMVEVDX1dTTF9WMxAsEhMKD0JFVEFG",
-            "UFZfMjQwMF9UWBAtEhcKE0JFVEFGUFZfOTAwX05BTk9fVFgQLhIHCgNQVEQQ",
-            "ZBIPCgpQUklWQVRFX0hXEP8BKiwKCUNvbnN0YW50cxIICgRaRVJPEAASFQoQ",
-            "REFUQV9QQVlMT0FEX0xFThDtASruAQoRQ3JpdGljYWxFcnJvckNvZGUSCAoE",
-            "Tk9ORRAAEg8KC1RYX1dBVENIRE9HEAESFAoQU0xFRVBfRU5URVJfV0FJVBAC",
-            "EgwKCE5PX1JBRElPEAMSDwoLVU5TUEVDSUZJRUQQBBIVChFVQkxPWF9VTklU",
-            "X0ZBSUxFRBAFEg0KCU5PX0FYUDE5MhAGEhkKFUlOVkFMSURfUkFESU9fU0VU",
-            "VElORxAHEhMKD1RSQU5TTUlUX0ZBSUxFRBAIEgwKCEJST1dOT1VUEAkSEgoO",
-            "U1gxMjYyX0ZBSUxVUkUQChIRCg1SQURJT19TUElfQlVHEAtCXwoTY29tLmdl",
-            "ZWtzdmlsbGUubWVzaEIKTWVzaFByb3Rvc1oiZ2l0aHViLmNvbS9tZXNodGFz",
-            "dGljL2dvL2dlbmVyYXRlZKoCFE1lc2h0YXN0aWMuUHJvdG9idWZzugIAYgZw",
-            "cm90bzM="));
+            "bBIZChFoYXNSZW1vdGVIYXJkd2FyZRgKIAEoCCrXBAoNSGFyZHdhcmVNb2Rl",
+            "bBIJCgVVTlNFVBAAEgwKCFRMT1JBX1YyEAESDAoIVExPUkFfVjEQAhISCg5U",
+            "TE9SQV9WMl8xXzFQNhADEgkKBVRCRUFNEAQSDwoLSEVMVEVDX1YyXzAQBRIO",
+            "CgpUQkVBTV9WMFA3EAYSCgoGVF9FQ0hPEAcSEAoMVExPUkFfVjFfMVAzEAgS",
+            "CwoHUkFLNDYzMRAJEg8KC0hFTFRFQ19WMl8xEAoSDQoJSEVMVEVDX1YxEAsS",
+            "GAoUTElMWUdPX1RCRUFNX1MzX0NPUkUQDBIMCghSQUsxMTIwMBANEgsKB05B",
+            "Tk9fRzEQDhISCg5UTE9SQV9WMl8xXzFQOBAPEg8KC1RMT1JBX1QzX1MzEBAS",
+            "FAoQTkFOT19HMV9FWFBMT1JFUhAREg4KClNUQVRJT05fRzEQGRIRCg1MT1JB",
+            "X1JFTEFZX1YxECASDgoKTlJGNTI4NDBESxAhEgcKA1BQUhAiEg8KC0dFTklF",
+            "QkxPQ0tTECMSEQoNTlJGNTJfVU5LTk9XThAkEg0KCVBPUlREVUlOTxAlEg8K",
+            "C0FORFJPSURfU0lNECYSCgoGRElZX1YxECcSFQoRTlJGNTI4NDBfUENBMTAw",
+            "NTkQKBIKCgZEUl9ERVYQKRILCgdNNVNUQUNLECoSDQoJSEVMVEVDX1YzECsS",
+            "EQoNSEVMVEVDX1dTTF9WMxAsEhMKD0JFVEFGUFZfMjQwMF9UWBAtEhcKE0JF",
+            "VEFGUFZfOTAwX05BTk9fVFgQLhIHCgNQVEQQZBIPCgpQUklWQVRFX0hXEP8B",
+            "KiwKCUNvbnN0YW50cxIICgRaRVJPEAASFQoQREFUQV9QQVlMT0FEX0xFThDt",
+            "ASruAQoRQ3JpdGljYWxFcnJvckNvZGUSCAoETk9ORRAAEg8KC1RYX1dBVENI",
+            "RE9HEAESFAoQU0xFRVBfRU5URVJfV0FJVBACEgwKCE5PX1JBRElPEAMSDwoL",
+            "VU5TUEVDSUZJRUQQBBIVChFVQkxPWF9VTklUX0ZBSUxFRBAFEg0KCU5PX0FY",
+            "UDE5MhAGEhkKFUlOVkFMSURfUkFESU9fU0VUVElORxAHEhMKD1RSQU5TTUlU",
+            "X0ZBSUxFRBAIEgwKCEJST1dOT1VUEAkSEgoOU1gxMjYyX0ZBSUxVUkUQChIR",
+            "Cg1SQURJT19TUElfQlVHEAtCXwoTY29tLmdlZWtzdmlsbGUubWVzaEIKTWVz",
+            "aFByb3Rvc1oiZ2l0aHViLmNvbS9tZXNodGFzdGljL2dvL2dlbmVyYXRlZKoC",
+            "FE1lc2h0YXN0aWMuUHJvdG9idWZzugIAYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Meshtastic.Protobufs.ChannelReflection.Descriptor, global::Meshtastic.Protobufs.ConfigReflection.Descriptor, global::Meshtastic.Protobufs.ModuleConfigReflection.Descriptor, global::Meshtastic.Protobufs.PortnumsReflection.Descriptor, global::Meshtastic.Protobufs.TelemetryReflection.Descriptor, global::Meshtastic.Protobufs.XmodemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Meshtastic.Protobufs.HardwareModel), typeof(global::Meshtastic.Protobufs.Constants), typeof(global::Meshtastic.Protobufs.CriticalErrorCode), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -174,7 +174,7 @@ namespace Meshtastic.Protobufs {
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.Compressed), global::Meshtastic.Protobufs.Compressed.Parser, new[]{ "Portnum", "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.NeighborInfo), global::Meshtastic.Protobufs.NeighborInfo.Parser, new[]{ "NodeId", "LastSentById", "Neighbors" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.Neighbor), global::Meshtastic.Protobufs.Neighbor.Parser, new[]{ "NodeId", "Snr" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.DeviceMetadata), global::Meshtastic.Protobufs.DeviceMetadata.Parser, new[]{ "FirmwareVersion", "DeviceStateVersion", "CanShutdown", "HasWifi", "HasBluetooth", "HasEthernet", "Role", "PositionFlags", "HwModel" }, null, null, null, null)
+            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.DeviceMetadata), global::Meshtastic.Protobufs.DeviceMetadata.Parser, new[]{ "FirmwareVersion", "DeviceStateVersion", "CanShutdown", "HasWifi", "HasBluetooth", "HasEthernet", "Role", "PositionFlags", "HwModel", "HasRemoteHardware" }, null, null, null, null)
           }));
     }
     #endregion
@@ -8909,6 +8909,7 @@ namespace Meshtastic.Protobufs {
       role_ = other.role_;
       positionFlags_ = other.positionFlags_;
       hwModel_ = other.hwModel_;
+      hasRemoteHardware_ = other.hasRemoteHardware_;
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
     }
 
@@ -9062,6 +9063,22 @@ namespace Meshtastic.Protobufs {
       }
     }
 
+    /// <summary>Field number for the "hasRemoteHardware" field.</summary>
+    public const int HasRemoteHardwareFieldNumber = 10;
+    private bool hasRemoteHardware_;
+    /// <summary>
+    ///
+    /// Has Remote Hardware enabled
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool HasRemoteHardware {
+      get { return hasRemoteHardware_; }
+      set {
+        hasRemoteHardware_ = value;
+      }
+    }
+
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
     [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
     public override bool Equals(object other) {
@@ -9086,6 +9103,7 @@ namespace Meshtastic.Protobufs {
       if (Role != other.Role) return false;
       if (PositionFlags != other.PositionFlags) return false;
       if (HwModel != other.HwModel) return false;
+      if (HasRemoteHardware != other.HasRemoteHardware) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
 
@@ -9102,6 +9120,7 @@ namespace Meshtastic.Protobufs {
       if (Role != global::Meshtastic.Protobufs.Config.Types.DeviceConfig.Types.Role.Client) hash ^= Role.GetHashCode();
       if (PositionFlags != 0) hash ^= PositionFlags.GetHashCode();
       if (HwModel != global::Meshtastic.Protobufs.HardwareModel.Unset) hash ^= HwModel.GetHashCode();
+      if (HasRemoteHardware != false) hash ^= HasRemoteHardware.GetHashCode();
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
       }
@@ -9156,6 +9175,10 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(72);
         output.WriteEnum((int) HwModel);
       }
+      if (HasRemoteHardware != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(HasRemoteHardware);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -9202,6 +9225,10 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(72);
         output.WriteEnum((int) HwModel);
       }
+      if (HasRemoteHardware != false) {
+        output.WriteRawTag(80);
+        output.WriteBool(HasRemoteHardware);
+      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -9238,6 +9265,9 @@ namespace Meshtastic.Protobufs {
       }
       if (HwModel != global::Meshtastic.Protobufs.HardwareModel.Unset) {
         size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) HwModel);
+      }
+      if (HasRemoteHardware != false) {
+        size += 1 + 1;
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -9277,6 +9307,9 @@ namespace Meshtastic.Protobufs {
       }
       if (other.HwModel != global::Meshtastic.Protobufs.HardwareModel.Unset) {
         HwModel = other.HwModel;
+      }
+      if (other.HasRemoteHardware != false) {
+        HasRemoteHardware = other.HasRemoteHardware;
       }
       _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
     }
@@ -9329,6 +9362,10 @@ namespace Meshtastic.Protobufs {
             HwModel = (global::Meshtastic.Protobufs.HardwareModel) input.ReadEnum();
             break;
           }
+          case 80: {
+            HasRemoteHardware = input.ReadBool();
+            break;
+          }
         }
       }
     #endif
@@ -9378,6 +9415,10 @@ namespace Meshtastic.Protobufs {
           }
           case 72: {
             HwModel = (global::Meshtastic.Protobufs.HardwareModel) input.ReadEnum();
+            break;
+          }
+          case 80: {
+            HasRemoteHardware = input.ReadBool();
             break;
           }
         }

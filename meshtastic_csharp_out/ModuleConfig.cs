@@ -25,7 +25,7 @@ namespace Meshtastic.Protobufs {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5tZXNodGFzdGljL21vZHVsZV9jb25maWcucHJvdG8SCm1lc2h0YXN0aWMi",
-            "rCEKDE1vZHVsZUNvbmZpZxIzCgRtcXR0GAEgASgLMiMubWVzaHRhc3RpYy5N",
+            "iCIKDE1vZHVsZUNvbmZpZxIzCgRtcXR0GAEgASgLMiMubWVzaHRhc3RpYy5N",
             "b2R1bGVDb25maWcuTVFUVENvbmZpZ0gAEjcKBnNlcmlhbBgCIAEoCzIlLm1l",
             "c2h0YXN0aWMuTW9kdWxlQ29uZmlnLlNlcmlhbENvbmZpZ0gAElQKFWV4dGVy",
             "bmFsX25vdGlmaWNhdGlvbhgDIAEoCzIzLm1lc2h0YXN0aWMuTW9kdWxlQ29u",
@@ -43,91 +43,97 @@ namespace Meshtastic.Protobufs {
             "SAAapwEKCk1RVFRDb25maWcSDwoHZW5hYmxlZBgBIAEoCBIPCgdhZGRyZXNz",
             "GAIgASgJEhAKCHVzZXJuYW1lGAMgASgJEhAKCHBhc3N3b3JkGAQgASgJEhoK",
             "EmVuY3J5cHRpb25fZW5hYmxlZBgFIAEoCBIUCgxqc29uX2VuYWJsZWQYBiAB",
-            "KAgSEwoLdGxzX2VuYWJsZWQYByABKAgSDAoEcm9vdBgIIAEoCRonChRSZW1v",
-            "dGVIYXJkd2FyZUNvbmZpZxIPCgdlbmFibGVkGAEgASgIGuQCCgtBdWRpb0Nv",
-            "bmZpZxIWCg5jb2RlYzJfZW5hYmxlZBgBIAEoCBIPCgdwdHRfcGluGAIgASgF",
-            "EkAKB2JpdHJhdGUYAyABKA4yLy5tZXNodGFzdGljLk1vZHVsZUNvbmZpZy5B",
-            "dWRpb0NvbmZpZy5BdWRpb19CYXVkEg4KBmkyc193cxgEIAEoBRIOCgZpMnNf",
-            "c2QYBSABKAUSDwoHaTJzX2RpbhgGIAEoBRIPCgdpMnNfc2NrGAcgASgFIqcB",
-            "CgpBdWRpb19CYXVkEhIKDkNPREVDMl9ERUZBVUxUEAASDwoLQ09ERUMyXzMy",
-            "MDAQARIPCgtDT0RFQzJfMjQwMBACEg8KC0NPREVDMl8xNjAwEAMSDwoLQ09E",
-            "RUMyXzE0MDAQBBIPCgtDT0RFQzJfMTMwMBAFEg8KC0NPREVDMl8xMjAwEAYS",
-            "DgoKQ09ERUMyXzcwMBAHEg8KC0NPREVDMl83MDBCEAgaiQgKDEF1ZGlvX0Nv",
-            "bmZpZxJACgVjb2RlYxgLIAEoDjIxLm1lc2h0YXN0aWMuTW9kdWxlQ29uZmln",
-            "LkF1ZGlvX0NvbmZpZy5BdWRpb19Db2RlYxIPCgdwdHRfcGluGAIgASgFEksK",
-            "DmNvZGVjMl9iaXRyYXRlGBUgASgOMjEubWVzaHRhc3RpYy5Nb2R1bGVDb25m",
-            "aWcuQXVkaW9fQ29uZmlnLkNvZGVjMl9CYXVkSAASTQoNc3BlZXhfYml0cmF0",
-            "ZRgWIAEoDjI0Lm1lc2h0YXN0aWMuTW9kdWxlQ29uZmlnLkF1ZGlvX0NvbmZp",
-            "Zy5TcGVleF9CaXRfUmF0ZUgAEkcKDG9wdXNfYml0cmF0ZRgXIAEoDjIvLm1l",
-            "c2h0YXN0aWMuTW9kdWxlQ29uZmlnLkF1ZGlvX0NvbmZpZy5PcHVzX0JhdWRI",
-            "ABIOCgZpMnNfd3MYBCABKAUSDgoGaTJzX3NkGAUgASgFEg8KB2kyc19kaW4Y",
-            "BiABKAUSDwoHaTJzX3NjaxgHIAEoBSJOCgtBdWRpb19Db2RlYxIMCghDT0RF",
-            "Q19OTxAAEhAKDENPREVDX0NPREVDMhABEg8KC0NPREVDX1NQRUVYEAISDgoK",
-            "Q09ERUNfT1BVUxADIqgBCgtDb2RlYzJfQmF1ZBISCg5DT0RFQzJfREVGQVVM",
-            "VBAAEg8KC0NPREVDMl8zMjAwEAESDwoLQ09ERUMyXzI0MDAQAhIPCgtDT0RF",
-            "QzJfMTYwMBADEg8KC0NPREVDMl8xNDAwEAQSDwoLQ09ERUMyXzEzMDAQBRIP",
-            "CgtDT0RFQzJfMTIwMBAGEg4KCkNPREVDMl83MDAQBxIPCgtDT0RFQzJfNzAw",
-            "QhAIItkCCg5TcGVleF9CaXRfUmF0ZRIVChFTUEVFWF9ERUZBVUxUXzI1MBAA",
-            "Eg4KClNQRUVYXzIxNTAQARIOCgpTUEVFWF81OTUwEAISDgoKU1BFRVhfODAw",
-            "MBADEg8KC1NQRUVYXzExMDAwEAQSDwoLU1BFRVhfMTUwMDAQBRIPCgtTUEVF",
-            "WF8xODIwMBAGEg8KC1NQRUVYXzI0NjAwEAcSDgoKU1BFRVhfMzk1MBAIEhMK",
-            "D1NQRUVYX1JFU0VSVkVEORAJEhQKEFNQRUVYX1JFU0VSVkVEMTAQChIUChBT",
-            "UEVFWF9SRVNFUlZFRDExEAsSFAoQU1BFRVhfUkVTRVJWRUQxMhAMEh0KGVNQ",
-            "RUVYX0FQUExJQ0FUSU9OX0RFRklORUQQDRIbChdTUEVFWF9JTl9CQU5EX1NJ",
-            "R05BTElORxAOEhkKFVNQRUVYX1RFUk1JTkFUT1JfQ09ERRAPIh0KCU9wdXNf",
-            "QmF1ZBIQCgxPUFVTX0RFRkFVTFQQAEIJCgdiaXRyYXRlGrEECgxTZXJpYWxD",
-            "b25maWcSDwoHZW5hYmxlZBgBIAEoCBIMCgRlY2hvGAIgASgIEgsKA3J4ZBgD",
-            "IAEoDRILCgN0eGQYBCABKA0SPwoEYmF1ZBgFIAEoDjIxLm1lc2h0YXN0aWMu",
-            "TW9kdWxlQ29uZmlnLlNlcmlhbENvbmZpZy5TZXJpYWxfQmF1ZBIPCgd0aW1l",
-            "b3V0GAYgASgNEj8KBG1vZGUYByABKA4yMS5tZXNodGFzdGljLk1vZHVsZUNv",
-            "bmZpZy5TZXJpYWxDb25maWcuU2VyaWFsX01vZGUiigIKC1NlcmlhbF9CYXVk",
-            "EhAKDEJBVURfREVGQVVMVBAAEgwKCEJBVURfMTEwEAESDAoIQkFVRF8zMDAQ",
-            "AhIMCghCQVVEXzYwMBADEg0KCUJBVURfMTIwMBAEEg0KCUJBVURfMjQwMBAF",
-            "Eg0KCUJBVURfNDgwMBAGEg0KCUJBVURfOTYwMBAHEg4KCkJBVURfMTkyMDAQ",
-            "CBIOCgpCQVVEXzM4NDAwEAkSDgoKQkFVRF81NzYwMBAKEg8KC0JBVURfMTE1",
-            "MjAwEAsSDwoLQkFVRF8yMzA0MDAQDBIPCgtCQVVEXzQ2MDgwMBANEg8KC0JB",
-            "VURfNTc2MDAwEA4SDwoLQkFVRF85MjE2MDAQDyJICgtTZXJpYWxfTW9kZRIL",
-            "CgdERUZBVUxUEAASCgoGU0lNUExFEAESCQoFUFJPVE8QAhILCgdURVhUTVNH",
-            "EAMSCAoETk1FQRAEGs4CChpFeHRlcm5hbE5vdGlmaWNhdGlvbkNvbmZpZxIP",
-            "CgdlbmFibGVkGAEgASgIEhEKCW91dHB1dF9tcxgCIAEoDRIOCgZvdXRwdXQY",
-            "AyABKA0SFAoMb3V0cHV0X3ZpYnJhGAggASgNEhUKDW91dHB1dF9idXp6ZXIY",
-            "CSABKA0SDgoGYWN0aXZlGAQgASgIEhUKDWFsZXJ0X21lc3NhZ2UYBSABKAgS",
-            "GwoTYWxlcnRfbWVzc2FnZV92aWJyYRgKIAEoCBIcChRhbGVydF9tZXNzYWdl",
-            "X2J1enplchgLIAEoCBISCgphbGVydF9iZWxsGAYgASgIEhgKEGFsZXJ0X2Jl",
-            "bGxfdmlicmEYDCABKAgSGQoRYWxlcnRfYmVsbF9idXp6ZXIYDSABKAgSDwoH",
-            "dXNlX3B3bRgHIAEoCBITCgtuYWdfdGltZW91dBgOIAEoDRqEAQoSU3RvcmVG",
-            "b3J3YXJkQ29uZmlnEg8KB2VuYWJsZWQYASABKAgSEQoJaGVhcnRiZWF0GAIg",
-            "ASgIEg8KB3JlY29yZHMYAyABKA0SGgoSaGlzdG9yeV9yZXR1cm5fbWF4GAQg",
-            "ASgNEh0KFWhpc3RvcnlfcmV0dXJuX3dpbmRvdxgFIAEoDRpACg9SYW5nZVRl",
-            "c3RDb25maWcSDwoHZW5hYmxlZBgBIAEoCBIOCgZzZW5kZXIYAiABKA0SDAoE",
-            "c2F2ZRgDIAEoCBqGAgoPVGVsZW1ldHJ5Q29uZmlnEh4KFmRldmljZV91cGRh",
-            "dGVfaW50ZXJ2YWwYASABKA0SIwobZW52aXJvbm1lbnRfdXBkYXRlX2ludGVy",
-            "dmFsGAIgASgNEicKH2Vudmlyb25tZW50X21lYXN1cmVtZW50X2VuYWJsZWQY",
-            "AyABKAgSIgoaZW52aXJvbm1lbnRfc2NyZWVuX2VuYWJsZWQYBCABKAgSJgoe",
-            "ZW52aXJvbm1lbnRfZGlzcGxheV9mYWhyZW5oZWl0GAUgASgIEhsKE2Fpcl9x",
-            "dWFsaXR5X2VuYWJsZWQYBiABKAgSHAoUYWlyX3F1YWxpdHlfaW50ZXJ2YWwY",
-            "ByABKA0a1gQKE0Nhbm5lZE1lc3NhZ2VDb25maWcSFwoPcm90YXJ5MV9lbmFi",
-            "bGVkGAEgASgIEhkKEWlucHV0YnJva2VyX3Bpbl9hGAIgASgNEhkKEWlucHV0",
-            "YnJva2VyX3Bpbl9iGAMgASgNEh0KFWlucHV0YnJva2VyX3Bpbl9wcmVzcxgE",
-            "IAEoDRJZChRpbnB1dGJyb2tlcl9ldmVudF9jdxgFIAEoDjI7Lm1lc2h0YXN0",
-            "aWMuTW9kdWxlQ29uZmlnLkNhbm5lZE1lc3NhZ2VDb25maWcuSW5wdXRFdmVu",
-            "dENoYXISWgoVaW5wdXRicm9rZXJfZXZlbnRfY2N3GAYgASgOMjsubWVzaHRh",
+            "KAgSEwoLdGxzX2VuYWJsZWQYByABKAgSDAoEcm9vdBgIIAEoCRqCAQoUUmVt",
+            "b3RlSGFyZHdhcmVDb25maWcSDwoHZW5hYmxlZBgBIAEoCBIiChphbGxvd191",
+            "bmRlZmluZWRfcGluX2FjY2VzcxgCIAEoCBI1Cg5hdmFpbGFibGVfcGlucxgD",
+            "IAMoCzIdLm1lc2h0YXN0aWMuUmVtb3RlSGFyZHdhcmVQaW4a5AIKC0F1ZGlv",
+            "Q29uZmlnEhYKDmNvZGVjMl9lbmFibGVkGAEgASgIEg8KB3B0dF9waW4YAiAB",
+            "KAUSQAoHYml0cmF0ZRgDIAEoDjIvLm1lc2h0YXN0aWMuTW9kdWxlQ29uZmln",
+            "LkF1ZGlvQ29uZmlnLkF1ZGlvX0JhdWQSDgoGaTJzX3dzGAQgASgFEg4KBmky",
+            "c19zZBgFIAEoBRIPCgdpMnNfZGluGAYgASgFEg8KB2kyc19zY2sYByABKAUi",
+            "pwEKCkF1ZGlvX0JhdWQSEgoOQ09ERUMyX0RFRkFVTFQQABIPCgtDT0RFQzJf",
+            "MzIwMBABEg8KC0NPREVDMl8yNDAwEAISDwoLQ09ERUMyXzE2MDAQAxIPCgtD",
+            "T0RFQzJfMTQwMBAEEg8KC0NPREVDMl8xMzAwEAUSDwoLQ09ERUMyXzEyMDAQ",
+            "BhIOCgpDT0RFQzJfNzAwEAcSDwoLQ09ERUMyXzcwMEIQCBqJCAoMQXVkaW9f",
+            "Q29uZmlnEkAKBWNvZGVjGAsgASgOMjEubWVzaHRhc3RpYy5Nb2R1bGVDb25m",
+            "aWcuQXVkaW9fQ29uZmlnLkF1ZGlvX0NvZGVjEg8KB3B0dF9waW4YAiABKAUS",
+            "SwoOY29kZWMyX2JpdHJhdGUYFSABKA4yMS5tZXNodGFzdGljLk1vZHVsZUNv",
+            "bmZpZy5BdWRpb19Db25maWcuQ29kZWMyX0JhdWRIABJNCg1zcGVleF9iaXRy",
+            "YXRlGBYgASgOMjQubWVzaHRhc3RpYy5Nb2R1bGVDb25maWcuQXVkaW9fQ29u",
+            "ZmlnLlNwZWV4X0JpdF9SYXRlSAASRwoMb3B1c19iaXRyYXRlGBcgASgOMi8u",
+            "bWVzaHRhc3RpYy5Nb2R1bGVDb25maWcuQXVkaW9fQ29uZmlnLk9wdXNfQmF1",
+            "ZEgAEg4KBmkyc193cxgEIAEoBRIOCgZpMnNfc2QYBSABKAUSDwoHaTJzX2Rp",
+            "bhgGIAEoBRIPCgdpMnNfc2NrGAcgASgFIk4KC0F1ZGlvX0NvZGVjEgwKCENP",
+            "REVDX05PEAASEAoMQ09ERUNfQ09ERUMyEAESDwoLQ09ERUNfU1BFRVgQAhIO",
+            "CgpDT0RFQ19PUFVTEAMiqAEKC0NvZGVjMl9CYXVkEhIKDkNPREVDMl9ERUZB",
+            "VUxUEAASDwoLQ09ERUMyXzMyMDAQARIPCgtDT0RFQzJfMjQwMBACEg8KC0NP",
+            "REVDMl8xNjAwEAMSDwoLQ09ERUMyXzE0MDAQBBIPCgtDT0RFQzJfMTMwMBAF",
+            "Eg8KC0NPREVDMl8xMjAwEAYSDgoKQ09ERUMyXzcwMBAHEg8KC0NPREVDMl83",
+            "MDBCEAgi2QIKDlNwZWV4X0JpdF9SYXRlEhUKEVNQRUVYX0RFRkFVTFRfMjUw",
+            "EAASDgoKU1BFRVhfMjE1MBABEg4KClNQRUVYXzU5NTAQAhIOCgpTUEVFWF84",
+            "MDAwEAMSDwoLU1BFRVhfMTEwMDAQBBIPCgtTUEVFWF8xNTAwMBAFEg8KC1NQ",
+            "RUVYXzE4MjAwEAYSDwoLU1BFRVhfMjQ2MDAQBxIOCgpTUEVFWF8zOTUwEAgS",
+            "EwoPU1BFRVhfUkVTRVJWRUQ5EAkSFAoQU1BFRVhfUkVTRVJWRUQxMBAKEhQK",
+            "EFNQRUVYX1JFU0VSVkVEMTEQCxIUChBTUEVFWF9SRVNFUlZFRDEyEAwSHQoZ",
+            "U1BFRVhfQVBQTElDQVRJT05fREVGSU5FRBANEhsKF1NQRUVYX0lOX0JBTkRf",
+            "U0lHTkFMSU5HEA4SGQoVU1BFRVhfVEVSTUlOQVRPUl9DT0RFEA8iHQoJT3B1",
+            "c19CYXVkEhAKDE9QVVNfREVGQVVMVBAAQgkKB2JpdHJhdGUasQQKDFNlcmlh",
+            "bENvbmZpZxIPCgdlbmFibGVkGAEgASgIEgwKBGVjaG8YAiABKAgSCwoDcnhk",
+            "GAMgASgNEgsKA3R4ZBgEIAEoDRI/CgRiYXVkGAUgASgOMjEubWVzaHRhc3Rp",
+            "Yy5Nb2R1bGVDb25maWcuU2VyaWFsQ29uZmlnLlNlcmlhbF9CYXVkEg8KB3Rp",
+            "bWVvdXQYBiABKA0SPwoEbW9kZRgHIAEoDjIxLm1lc2h0YXN0aWMuTW9kdWxl",
+            "Q29uZmlnLlNlcmlhbENvbmZpZy5TZXJpYWxfTW9kZSKKAgoLU2VyaWFsX0Jh",
+            "dWQSEAoMQkFVRF9ERUZBVUxUEAASDAoIQkFVRF8xMTAQARIMCghCQVVEXzMw",
+            "MBACEgwKCEJBVURfNjAwEAMSDQoJQkFVRF8xMjAwEAQSDQoJQkFVRF8yNDAw",
+            "EAUSDQoJQkFVRF80ODAwEAYSDQoJQkFVRF85NjAwEAcSDgoKQkFVRF8xOTIw",
+            "MBAIEg4KCkJBVURfMzg0MDAQCRIOCgpCQVVEXzU3NjAwEAoSDwoLQkFVRF8x",
+            "MTUyMDAQCxIPCgtCQVVEXzIzMDQwMBAMEg8KC0JBVURfNDYwODAwEA0SDwoL",
+            "QkFVRF81NzYwMDAQDhIPCgtCQVVEXzkyMTYwMBAPIkgKC1NlcmlhbF9Nb2Rl",
+            "EgsKB0RFRkFVTFQQABIKCgZTSU1QTEUQARIJCgVQUk9UTxACEgsKB1RFWFRN",
+            "U0cQAxIICgROTUVBEAQazgIKGkV4dGVybmFsTm90aWZpY2F0aW9uQ29uZmln",
+            "Eg8KB2VuYWJsZWQYASABKAgSEQoJb3V0cHV0X21zGAIgASgNEg4KBm91dHB1",
+            "dBgDIAEoDRIUCgxvdXRwdXRfdmlicmEYCCABKA0SFQoNb3V0cHV0X2J1enpl",
+            "chgJIAEoDRIOCgZhY3RpdmUYBCABKAgSFQoNYWxlcnRfbWVzc2FnZRgFIAEo",
+            "CBIbChNhbGVydF9tZXNzYWdlX3ZpYnJhGAogASgIEhwKFGFsZXJ0X21lc3Nh",
+            "Z2VfYnV6emVyGAsgASgIEhIKCmFsZXJ0X2JlbGwYBiABKAgSGAoQYWxlcnRf",
+            "YmVsbF92aWJyYRgMIAEoCBIZChFhbGVydF9iZWxsX2J1enplchgNIAEoCBIP",
+            "Cgd1c2VfcHdtGAcgASgIEhMKC25hZ190aW1lb3V0GA4gASgNGoQBChJTdG9y",
+            "ZUZvcndhcmRDb25maWcSDwoHZW5hYmxlZBgBIAEoCBIRCgloZWFydGJlYXQY",
+            "AiABKAgSDwoHcmVjb3JkcxgDIAEoDRIaChJoaXN0b3J5X3JldHVybl9tYXgY",
+            "BCABKA0SHQoVaGlzdG9yeV9yZXR1cm5fd2luZG93GAUgASgNGkAKD1Jhbmdl",
+            "VGVzdENvbmZpZxIPCgdlbmFibGVkGAEgASgIEg4KBnNlbmRlchgCIAEoDRIM",
+            "CgRzYXZlGAMgASgIGoYCCg9UZWxlbWV0cnlDb25maWcSHgoWZGV2aWNlX3Vw",
+            "ZGF0ZV9pbnRlcnZhbBgBIAEoDRIjChtlbnZpcm9ubWVudF91cGRhdGVfaW50",
+            "ZXJ2YWwYAiABKA0SJwofZW52aXJvbm1lbnRfbWVhc3VyZW1lbnRfZW5hYmxl",
+            "ZBgDIAEoCBIiChplbnZpcm9ubWVudF9zY3JlZW5fZW5hYmxlZBgEIAEoCBIm",
+            "Ch5lbnZpcm9ubWVudF9kaXNwbGF5X2ZhaHJlbmhlaXQYBSABKAgSGwoTYWly",
+            "X3F1YWxpdHlfZW5hYmxlZBgGIAEoCBIcChRhaXJfcXVhbGl0eV9pbnRlcnZh",
+            "bBgHIAEoDRrWBAoTQ2FubmVkTWVzc2FnZUNvbmZpZxIXCg9yb3RhcnkxX2Vu",
+            "YWJsZWQYASABKAgSGQoRaW5wdXRicm9rZXJfcGluX2EYAiABKA0SGQoRaW5w",
+            "dXRicm9rZXJfcGluX2IYAyABKA0SHQoVaW5wdXRicm9rZXJfcGluX3ByZXNz",
+            "GAQgASgNElkKFGlucHV0YnJva2VyX2V2ZW50X2N3GAUgASgOMjsubWVzaHRh",
             "c3RpYy5Nb2R1bGVDb25maWcuQ2FubmVkTWVzc2FnZUNvbmZpZy5JbnB1dEV2",
-            "ZW50Q2hhchJcChdpbnB1dGJyb2tlcl9ldmVudF9wcmVzcxgHIAEoDjI7Lm1l",
-            "c2h0YXN0aWMuTW9kdWxlQ29uZmlnLkNhbm5lZE1lc3NhZ2VDb25maWcuSW5w",
-            "dXRFdmVudENoYXISFwoPdXBkb3duMV9lbmFibGVkGAggASgIEg8KB2VuYWJs",
-            "ZWQYCSABKAgSGgoSYWxsb3dfaW5wdXRfc291cmNlGAogASgJEhEKCXNlbmRf",
-            "YmVsbBgLIAEoCCJjCg5JbnB1dEV2ZW50Q2hhchIICgROT05FEAASBgoCVVAQ",
-            "ERIICgRET1dOEBISCAoETEVGVBATEgkKBVJJR0hUEBQSCgoGU0VMRUNUEAoS",
-            "CAoEQkFDSxAbEgoKBkNBTkNFTBAYQhEKD3BheWxvYWRfdmFyaWFudEJnChNj",
-            "b20uZ2Vla3N2aWxsZS5tZXNoQhJNb2R1bGVDb25maWdQcm90b3NaImdpdGh1",
-            "Yi5jb20vbWVzaHRhc3RpYy9nby9nZW5lcmF0ZWSqAhRNZXNodGFzdGljLlBy",
-            "b3RvYnVmc7oCAGIGcHJvdG8z"));
+            "ZW50Q2hhchJaChVpbnB1dGJyb2tlcl9ldmVudF9jY3cYBiABKA4yOy5tZXNo",
+            "dGFzdGljLk1vZHVsZUNvbmZpZy5DYW5uZWRNZXNzYWdlQ29uZmlnLklucHV0",
+            "RXZlbnRDaGFyElwKF2lucHV0YnJva2VyX2V2ZW50X3ByZXNzGAcgASgOMjsu",
+            "bWVzaHRhc3RpYy5Nb2R1bGVDb25maWcuQ2FubmVkTWVzc2FnZUNvbmZpZy5J",
+            "bnB1dEV2ZW50Q2hhchIXCg91cGRvd24xX2VuYWJsZWQYCCABKAgSDwoHZW5h",
+            "YmxlZBgJIAEoCBIaChJhbGxvd19pbnB1dF9zb3VyY2UYCiABKAkSEQoJc2Vu",
+            "ZF9iZWxsGAsgASgIImMKDklucHV0RXZlbnRDaGFyEggKBE5PTkUQABIGCgJV",
+            "UBAREggKBERPV04QEhIICgRMRUZUEBMSCQoFUklHSFQQFBIKCgZTRUxFQ1QQ",
+            "ChIICgRCQUNLEBsSCgoGQ0FOQ0VMEBhCEQoPcGF5bG9hZF92YXJpYW50ImQK",
+            "EVJlbW90ZUhhcmR3YXJlUGluEhAKCGdwaW9fcGluGAEgASgNEgwKBG5hbWUY",
+            "AiABKAkSLwoEdHlwZRgDIAEoDjIhLm1lc2h0YXN0aWMuUmVtb3RlSGFyZHdh",
+            "cmVQaW5UeXBlKkkKFVJlbW90ZUhhcmR3YXJlUGluVHlwZRILCgdVTktOT1dO",
+            "EAASEAoMRElHSVRBTF9SRUFEEAESEQoNRElHSVRBTF9XUklURRACQmcKE2Nv",
+            "bS5nZWVrc3ZpbGxlLm1lc2hCEk1vZHVsZUNvbmZpZ1Byb3Rvc1oiZ2l0aHVi",
+            "LmNvbS9tZXNodGFzdGljL2dvL2dlbmVyYXRlZKoCFE1lc2h0YXN0aWMuUHJv",
+            "dG9idWZzugIAYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
-          new pbr::GeneratedClrTypeInfo(null, null, new pbr::GeneratedClrTypeInfo[] {
+          new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Meshtastic.Protobufs.RemoteHardwarePinType), }, null, new pbr::GeneratedClrTypeInfo[] {
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig), global::Meshtastic.Protobufs.ModuleConfig.Parser, new[]{ "Mqtt", "Serial", "ExternalNotification", "StoreForward", "RangeTest", "Telemetry", "CannedMessage", "Audio", "RemoteHardware", "AudioConfig" }, new[]{ "PayloadVariant" }, null, null, new pbr::GeneratedClrTypeInfo[] { new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.MQTTConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.MQTTConfig.Parser, new[]{ "Enabled", "Address", "Username", "Password", "EncryptionEnabled", "JsonEnabled", "TlsEnabled", "Root" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.RemoteHardwareConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.RemoteHardwareConfig.Parser, new[]{ "Enabled" }, null, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.RemoteHardwareConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.RemoteHardwareConfig.Parser, new[]{ "Enabled", "AllowUndefinedPinAccess", "AvailablePins" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig.Parser, new[]{ "Codec2Enabled", "PttPin", "Bitrate", "I2SWs", "I2SSd", "I2SDin", "I2SSck" }, null, new[]{ typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig.Types.Audio_Baud) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config), global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Parser, new[]{ "Codec", "PttPin", "Codec2Bitrate", "SpeexBitrate", "OpusBitrate", "I2SWs", "I2SSd", "I2SDin", "I2SSck" }, new[]{ "Bitrate" }, new[]{ typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Codec2_Baud), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Speex_Bit_Rate), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Opus_Baud) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Parser, new[]{ "Enabled", "Echo", "Rxd", "Txd", "Baud", "Timeout", "Mode" }, null, new[]{ typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Baud), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Mode) }, null, null),
@@ -135,12 +141,34 @@ namespace Meshtastic.Protobufs {
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.StoreForwardConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.StoreForwardConfig.Parser, new[]{ "Enabled", "Heartbeat", "Records", "HistoryReturnMax", "HistoryReturnWindow" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.RangeTestConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.RangeTestConfig.Parser, new[]{ "Enabled", "Sender", "Save" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.TelemetryConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.TelemetryConfig.Parser, new[]{ "DeviceUpdateInterval", "EnvironmentUpdateInterval", "EnvironmentMeasurementEnabled", "EnvironmentScreenEnabled", "EnvironmentDisplayFahrenheit", "AirQualityEnabled", "AirQualityInterval" }, null, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.CannedMessageConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.CannedMessageConfig.Parser, new[]{ "Rotary1Enabled", "InputbrokerPinA", "InputbrokerPinB", "InputbrokerPinPress", "InputbrokerEventCw", "InputbrokerEventCcw", "InputbrokerEventPress", "Updown1Enabled", "Enabled", "AllowInputSource", "SendBell" }, null, new[]{ typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.CannedMessageConfig.Types.InputEventChar) }, null, null)})
+            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.CannedMessageConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.CannedMessageConfig.Parser, new[]{ "Rotary1Enabled", "InputbrokerPinA", "InputbrokerPinB", "InputbrokerPinPress", "InputbrokerEventCw", "InputbrokerEventCcw", "InputbrokerEventPress", "Updown1Enabled", "Enabled", "AllowInputSource", "SendBell" }, null, new[]{ typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.CannedMessageConfig.Types.InputEventChar) }, null, null)}),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.RemoteHardwarePin), global::Meshtastic.Protobufs.RemoteHardwarePin.Parser, new[]{ "GpioPin", "Name", "Type" }, null, null, null, null)
           }));
     }
     #endregion
 
   }
+  #region Enums
+  public enum RemoteHardwarePinType {
+    /// <summary>
+    ///
+    /// Unset/unused
+    /// </summary>
+    [pbr::OriginalName("UNKNOWN")] Unknown = 0,
+    /// <summary>
+    ///
+    /// GPIO pin can be read (if it is high / low)
+    /// </summary>
+    [pbr::OriginalName("DIGITAL_READ")] DigitalRead = 1,
+    /// <summary>
+    ///
+    /// GPIO pin can be written to (high / low)
+    /// </summary>
+    [pbr::OriginalName("DIGITAL_WRITE")] DigitalWrite = 2,
+  }
+
+  #endregion
+
   #region Messages
   /// <summary>
   ///
@@ -1432,6 +1460,8 @@ namespace Meshtastic.Protobufs {
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public RemoteHardwareConfig(RemoteHardwareConfig other) : this() {
           enabled_ = other.enabled_;
+          allowUndefinedPinAccess_ = other.allowUndefinedPinAccess_;
+          availablePins_ = other.availablePins_.Clone();
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -1457,6 +1487,37 @@ namespace Meshtastic.Protobufs {
           }
         }
 
+        /// <summary>Field number for the "allow_undefined_pin_access" field.</summary>
+        public const int AllowUndefinedPinAccessFieldNumber = 2;
+        private bool allowUndefinedPinAccess_;
+        /// <summary>
+        ///
+        /// Whether the Module allows consumers to read / write to pins not defined in available_pins
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool AllowUndefinedPinAccess {
+          get { return allowUndefinedPinAccess_; }
+          set {
+            allowUndefinedPinAccess_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "available_pins" field.</summary>
+        public const int AvailablePinsFieldNumber = 3;
+        private static readonly pb::FieldCodec<global::Meshtastic.Protobufs.RemoteHardwarePin> _repeated_availablePins_codec
+            = pb::FieldCodec.ForMessage(26, global::Meshtastic.Protobufs.RemoteHardwarePin.Parser);
+        private readonly pbc::RepeatedField<global::Meshtastic.Protobufs.RemoteHardwarePin> availablePins_ = new pbc::RepeatedField<global::Meshtastic.Protobufs.RemoteHardwarePin>();
+        /// <summary>
+        ///
+        /// Exposes the available pins to the mesh for reading and writing
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public pbc::RepeatedField<global::Meshtastic.Protobufs.RemoteHardwarePin> AvailablePins {
+          get { return availablePins_; }
+        }
+
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
         public override bool Equals(object other) {
@@ -1473,6 +1534,8 @@ namespace Meshtastic.Protobufs {
             return true;
           }
           if (Enabled != other.Enabled) return false;
+          if (AllowUndefinedPinAccess != other.AllowUndefinedPinAccess) return false;
+          if(!availablePins_.Equals(other.availablePins_)) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -1481,6 +1544,8 @@ namespace Meshtastic.Protobufs {
         public override int GetHashCode() {
           int hash = 1;
           if (Enabled != false) hash ^= Enabled.GetHashCode();
+          if (AllowUndefinedPinAccess != false) hash ^= AllowUndefinedPinAccess.GetHashCode();
+          hash ^= availablePins_.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -1503,6 +1568,11 @@ namespace Meshtastic.Protobufs {
             output.WriteRawTag(8);
             output.WriteBool(Enabled);
           }
+          if (AllowUndefinedPinAccess != false) {
+            output.WriteRawTag(16);
+            output.WriteBool(AllowUndefinedPinAccess);
+          }
+          availablePins_.WriteTo(output, _repeated_availablePins_codec);
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -1517,6 +1587,11 @@ namespace Meshtastic.Protobufs {
             output.WriteRawTag(8);
             output.WriteBool(Enabled);
           }
+          if (AllowUndefinedPinAccess != false) {
+            output.WriteRawTag(16);
+            output.WriteBool(AllowUndefinedPinAccess);
+          }
+          availablePins_.WriteTo(ref output, _repeated_availablePins_codec);
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
           }
@@ -1530,6 +1605,10 @@ namespace Meshtastic.Protobufs {
           if (Enabled != false) {
             size += 1 + 1;
           }
+          if (AllowUndefinedPinAccess != false) {
+            size += 1 + 1;
+          }
+          size += availablePins_.CalculateSize(_repeated_availablePins_codec);
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
           }
@@ -1545,6 +1624,10 @@ namespace Meshtastic.Protobufs {
           if (other.Enabled != false) {
             Enabled = other.Enabled;
           }
+          if (other.AllowUndefinedPinAccess != false) {
+            AllowUndefinedPinAccess = other.AllowUndefinedPinAccess;
+          }
+          availablePins_.Add(other.availablePins_);
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
 
@@ -1564,6 +1647,14 @@ namespace Meshtastic.Protobufs {
                 Enabled = input.ReadBool();
                 break;
               }
+              case 16: {
+                AllowUndefinedPinAccess = input.ReadBool();
+                break;
+              }
+              case 26: {
+                availablePins_.AddEntriesFrom(input, _repeated_availablePins_codec);
+                break;
+              }
             }
           }
         #endif
@@ -1581,6 +1672,14 @@ namespace Meshtastic.Protobufs {
                 break;
               case 8: {
                 Enabled = input.ReadBool();
+                break;
+              }
+              case 16: {
+                AllowUndefinedPinAccess = input.ReadBool();
+                break;
+              }
+              case 26: {
+                availablePins_.AddEntriesFrom(ref input, _repeated_availablePins_codec);
                 break;
               }
             }
@@ -5712,6 +5811,285 @@ namespace Meshtastic.Protobufs {
 
     }
     #endregion
+
+  }
+
+  /// <summary>
+  ///
+  /// A GPIO pin definition for remote hardware module
+  /// </summary>
+  public sealed partial class RemoteHardwarePin : pb::IMessage<RemoteHardwarePin>
+  #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      , pb::IBufferMessage
+  #endif
+  {
+    private static readonly pb::MessageParser<RemoteHardwarePin> _parser = new pb::MessageParser<RemoteHardwarePin>(() => new RemoteHardwarePin());
+    private pb::UnknownFieldSet _unknownFields;
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pb::MessageParser<RemoteHardwarePin> Parser { get { return _parser; } }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public static pbr::MessageDescriptor Descriptor {
+      get { return global::Meshtastic.Protobufs.ModuleConfigReflection.Descriptor.MessageTypes[1]; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    pbr::MessageDescriptor pb::IMessage.Descriptor {
+      get { return Descriptor; }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RemoteHardwarePin() {
+      OnConstruction();
+    }
+
+    partial void OnConstruction();
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RemoteHardwarePin(RemoteHardwarePin other) : this() {
+      gpioPin_ = other.gpioPin_;
+      name_ = other.name_;
+      type_ = other.type_;
+      _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public RemoteHardwarePin Clone() {
+      return new RemoteHardwarePin(this);
+    }
+
+    /// <summary>Field number for the "gpio_pin" field.</summary>
+    public const int GpioPinFieldNumber = 1;
+    private uint gpioPin_;
+    /// <summary>
+    ///
+    /// GPIO Pin number (must match Arduino)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public uint GpioPin {
+      get { return gpioPin_; }
+      set {
+        gpioPin_ = value;
+      }
+    }
+
+    /// <summary>Field number for the "name" field.</summary>
+    public const int NameFieldNumber = 2;
+    private string name_ = "";
+    /// <summary>
+    ///
+    /// Name for the GPIO pin (i.e. Front gate, mailbox, etc)
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public string Name {
+      get { return name_; }
+      set {
+        name_ = pb::ProtoPreconditions.CheckNotNull(value, "value");
+      }
+    }
+
+    /// <summary>Field number for the "type" field.</summary>
+    public const int TypeFieldNumber = 3;
+    private global::Meshtastic.Protobufs.RemoteHardwarePinType type_ = global::Meshtastic.Protobufs.RemoteHardwarePinType.Unknown;
+    /// <summary>
+    ///
+    /// Type of GPIO access available to consumers on the mesh
+    /// </summary>
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public global::Meshtastic.Protobufs.RemoteHardwarePinType Type {
+      get { return type_; }
+      set {
+        type_ = value;
+      }
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override bool Equals(object other) {
+      return Equals(other as RemoteHardwarePin);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public bool Equals(RemoteHardwarePin other) {
+      if (ReferenceEquals(other, null)) {
+        return false;
+      }
+      if (ReferenceEquals(other, this)) {
+        return true;
+      }
+      if (GpioPin != other.GpioPin) return false;
+      if (Name != other.Name) return false;
+      if (Type != other.Type) return false;
+      return Equals(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override int GetHashCode() {
+      int hash = 1;
+      if (GpioPin != 0) hash ^= GpioPin.GetHashCode();
+      if (Name.Length != 0) hash ^= Name.GetHashCode();
+      if (Type != global::Meshtastic.Protobufs.RemoteHardwarePinType.Unknown) hash ^= Type.GetHashCode();
+      if (_unknownFields != null) {
+        hash ^= _unknownFields.GetHashCode();
+      }
+      return hash;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public override string ToString() {
+      return pb::JsonFormatter.ToDiagnosticString(this);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void WriteTo(pb::CodedOutputStream output) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      output.WriteRawMessage(this);
+    #else
+      if (GpioPin != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GpioPin);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+      if (Type != global::Meshtastic.Protobufs.RemoteHardwarePinType.Unknown) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Type);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(output);
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalWriteTo(ref pb::WriteContext output) {
+      if (GpioPin != 0) {
+        output.WriteRawTag(8);
+        output.WriteUInt32(GpioPin);
+      }
+      if (Name.Length != 0) {
+        output.WriteRawTag(18);
+        output.WriteString(Name);
+      }
+      if (Type != global::Meshtastic.Protobufs.RemoteHardwarePinType.Unknown) {
+        output.WriteRawTag(24);
+        output.WriteEnum((int) Type);
+      }
+      if (_unknownFields != null) {
+        _unknownFields.WriteTo(ref output);
+      }
+    }
+    #endif
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public int CalculateSize() {
+      int size = 0;
+      if (GpioPin != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeUInt32Size(GpioPin);
+      }
+      if (Name.Length != 0) {
+        size += 1 + pb::CodedOutputStream.ComputeStringSize(Name);
+      }
+      if (Type != global::Meshtastic.Protobufs.RemoteHardwarePinType.Unknown) {
+        size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Type);
+      }
+      if (_unknownFields != null) {
+        size += _unknownFields.CalculateSize();
+      }
+      return size;
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(RemoteHardwarePin other) {
+      if (other == null) {
+        return;
+      }
+      if (other.GpioPin != 0) {
+        GpioPin = other.GpioPin;
+      }
+      if (other.Name.Length != 0) {
+        Name = other.Name;
+      }
+      if (other.Type != global::Meshtastic.Protobufs.RemoteHardwarePinType.Unknown) {
+        Type = other.Type;
+      }
+      _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
+    }
+
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    public void MergeFrom(pb::CodedInputStream input) {
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+      input.ReadRawMessage(this);
+    #else
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, input);
+            break;
+          case 8: {
+            GpioPin = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+          case 24: {
+            Type = (global::Meshtastic.Protobufs.RemoteHardwarePinType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    #endif
+    }
+
+    #if !GOOGLE_PROTOBUF_REFSTRUCT_COMPATIBILITY_MODE
+    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+    void pb::IBufferMessage.InternalMergeFrom(ref pb::ParseContext input) {
+      uint tag;
+      while ((tag = input.ReadTag()) != 0) {
+        switch(tag) {
+          default:
+            _unknownFields = pb::UnknownFieldSet.MergeFieldFrom(_unknownFields, ref input);
+            break;
+          case 8: {
+            GpioPin = input.ReadUInt32();
+            break;
+          }
+          case 18: {
+            Name = input.ReadString();
+            break;
+          }
+          case 24: {
+            Type = (global::Meshtastic.Protobufs.RemoteHardwarePinType) input.ReadEnum();
+            break;
+          }
+        }
+      }
+    }
+    #endif
 
   }
 
