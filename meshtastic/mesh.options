@@ -36,7 +36,7 @@
 
 *FromRadio.payload_variant anonymous_oneof:true
 
-#*FromRadio.PtdButtons.buttons_states int_size:8
+*FromRadio.PtdButtons.buttons_states int_size:8
 
 *Routing.variant anonymous_oneof:true
 

@@ -40,7 +40,7 @@ message PtdButtons {
 
   PtdButtonId button = 1;
   PtdButtonEvent event = 2;
-  //fixed32 buttons_states = 3;
+  uint32 buttons_states = 3;
 }
 
 /*
