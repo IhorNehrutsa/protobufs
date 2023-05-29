@@ -420,12 +420,12 @@ enum HardwareModel {
    */
   BETAFPV_900_NANO_TX = 46;
 
-  PTD = 100;
-
   /*
    * Raspberry Pi Pico (W) with Waveshare SX1262 LoRa Node Module
    */
   RPI_PICO = 47;
+
+  PTD = 100;
 
   /*
    * ------------------------------------------------------------------------------------------------------------------------------------------
@@ -1385,6 +1385,11 @@ message ToRadio {
      */
 
     XModem xmodemPacket = 5;
+
+    /*
+    * Ptd Buttons
+    */
+    PtdButtons ptdButtons = 6;
   }
 }
 

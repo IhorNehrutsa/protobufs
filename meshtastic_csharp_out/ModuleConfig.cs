@@ -25,7 +25,7 @@ namespace Meshtastic.Protobufs {
       byte[] descriptorData = global::System.Convert.FromBase64String(
           string.Concat(
             "Ch5tZXNodGFzdGljL21vZHVsZV9jb25maWcucHJvdG8SCm1lc2h0YXN0aWMi",
-            "iCIKDE1vZHVsZUNvbmZpZxIzCgRtcXR0GAEgASgLMiMubWVzaHRhc3RpYy5N",
+            "uyIKDE1vZHVsZUNvbmZpZxIzCgRtcXR0GAEgASgLMiMubWVzaHRhc3RpYy5N",
             "b2R1bGVDb25maWcuTVFUVENvbmZpZ0gAEjcKBnNlcmlhbBgCIAEoCzIlLm1l",
             "c2h0YXN0aWMuTW9kdWxlQ29uZmlnLlNlcmlhbENvbmZpZ0gAElQKFWV4dGVy",
             "bmFsX25vdGlmaWNhdGlvbhgDIAEoCzIzLm1lc2h0YXN0aWMuTW9kdWxlQ29u",
@@ -77,58 +77,59 @@ namespace Meshtastic.Protobufs {
             "EFNQRUVYX1JFU0VSVkVEMTEQCxIUChBTUEVFWF9SRVNFUlZFRDEyEAwSHQoZ",
             "U1BFRVhfQVBQTElDQVRJT05fREVGSU5FRBANEhsKF1NQRUVYX0lOX0JBTkRf",
             "U0lHTkFMSU5HEA4SGQoVU1BFRVhfVEVSTUlOQVRPUl9DT0RFEA8iHQoJT3B1",
-            "c19CYXVkEhAKDE9QVVNfREVGQVVMVBAAQgkKB2JpdHJhdGUasQQKDFNlcmlh",
+            "c19CYXVkEhAKDE9QVVNfREVGQVVMVBAAQgkKB2JpdHJhdGUa5AQKDFNlcmlh",
             "bENvbmZpZxIPCgdlbmFibGVkGAEgASgIEgwKBGVjaG8YAiABKAgSCwoDcnhk",
             "GAMgASgNEgsKA3R4ZBgEIAEoDRI/CgRiYXVkGAUgASgOMjEubWVzaHRhc3Rp",
             "Yy5Nb2R1bGVDb25maWcuU2VyaWFsQ29uZmlnLlNlcmlhbF9CYXVkEg8KB3Rp",
             "bWVvdXQYBiABKA0SPwoEbW9kZRgHIAEoDjIxLm1lc2h0YXN0aWMuTW9kdWxl",
-            "Q29uZmlnLlNlcmlhbENvbmZpZy5TZXJpYWxfTW9kZSKKAgoLU2VyaWFsX0Jh",
-            "dWQSEAoMQkFVRF9ERUZBVUxUEAASDAoIQkFVRF8xMTAQARIMCghCQVVEXzMw",
-            "MBACEgwKCEJBVURfNjAwEAMSDQoJQkFVRF8xMjAwEAQSDQoJQkFVRF8yNDAw",
-            "EAUSDQoJQkFVRF80ODAwEAYSDQoJQkFVRF85NjAwEAcSDgoKQkFVRF8xOTIw",
-            "MBAIEg4KCkJBVURfMzg0MDAQCRIOCgpCQVVEXzU3NjAwEAoSDwoLQkFVRF8x",
-            "MTUyMDAQCxIPCgtCQVVEXzIzMDQwMBAMEg8KC0JBVURfNDYwODAwEA0SDwoL",
-            "QkFVRF81NzYwMDAQDhIPCgtCQVVEXzkyMTYwMBAPIkgKC1NlcmlhbF9Nb2Rl",
-            "EgsKB0RFRkFVTFQQABIKCgZTSU1QTEUQARIJCgVQUk9UTxACEgsKB1RFWFRN",
-            "U0cQAxIICgROTUVBEAQazgIKGkV4dGVybmFsTm90aWZpY2F0aW9uQ29uZmln",
-            "Eg8KB2VuYWJsZWQYASABKAgSEQoJb3V0cHV0X21zGAIgASgNEg4KBm91dHB1",
-            "dBgDIAEoDRIUCgxvdXRwdXRfdmlicmEYCCABKA0SFQoNb3V0cHV0X2J1enpl",
-            "chgJIAEoDRIOCgZhY3RpdmUYBCABKAgSFQoNYWxlcnRfbWVzc2FnZRgFIAEo",
-            "CBIbChNhbGVydF9tZXNzYWdlX3ZpYnJhGAogASgIEhwKFGFsZXJ0X21lc3Nh",
-            "Z2VfYnV6emVyGAsgASgIEhIKCmFsZXJ0X2JlbGwYBiABKAgSGAoQYWxlcnRf",
-            "YmVsbF92aWJyYRgMIAEoCBIZChFhbGVydF9iZWxsX2J1enplchgNIAEoCBIP",
-            "Cgd1c2VfcHdtGAcgASgIEhMKC25hZ190aW1lb3V0GA4gASgNGoQBChJTdG9y",
-            "ZUZvcndhcmRDb25maWcSDwoHZW5hYmxlZBgBIAEoCBIRCgloZWFydGJlYXQY",
-            "AiABKAgSDwoHcmVjb3JkcxgDIAEoDRIaChJoaXN0b3J5X3JldHVybl9tYXgY",
-            "BCABKA0SHQoVaGlzdG9yeV9yZXR1cm5fd2luZG93GAUgASgNGkAKD1Jhbmdl",
-            "VGVzdENvbmZpZxIPCgdlbmFibGVkGAEgASgIEg4KBnNlbmRlchgCIAEoDRIM",
-            "CgRzYXZlGAMgASgIGoYCCg9UZWxlbWV0cnlDb25maWcSHgoWZGV2aWNlX3Vw",
-            "ZGF0ZV9pbnRlcnZhbBgBIAEoDRIjChtlbnZpcm9ubWVudF91cGRhdGVfaW50",
-            "ZXJ2YWwYAiABKA0SJwofZW52aXJvbm1lbnRfbWVhc3VyZW1lbnRfZW5hYmxl",
-            "ZBgDIAEoCBIiChplbnZpcm9ubWVudF9zY3JlZW5fZW5hYmxlZBgEIAEoCBIm",
-            "Ch5lbnZpcm9ubWVudF9kaXNwbGF5X2ZhaHJlbmhlaXQYBSABKAgSGwoTYWly",
-            "X3F1YWxpdHlfZW5hYmxlZBgGIAEoCBIcChRhaXJfcXVhbGl0eV9pbnRlcnZh",
-            "bBgHIAEoDRrWBAoTQ2FubmVkTWVzc2FnZUNvbmZpZxIXCg9yb3RhcnkxX2Vu",
-            "YWJsZWQYASABKAgSGQoRaW5wdXRicm9rZXJfcGluX2EYAiABKA0SGQoRaW5w",
-            "dXRicm9rZXJfcGluX2IYAyABKA0SHQoVaW5wdXRicm9rZXJfcGluX3ByZXNz",
-            "GAQgASgNElkKFGlucHV0YnJva2VyX2V2ZW50X2N3GAUgASgOMjsubWVzaHRh",
-            "c3RpYy5Nb2R1bGVDb25maWcuQ2FubmVkTWVzc2FnZUNvbmZpZy5JbnB1dEV2",
-            "ZW50Q2hhchJaChVpbnB1dGJyb2tlcl9ldmVudF9jY3cYBiABKA4yOy5tZXNo",
-            "dGFzdGljLk1vZHVsZUNvbmZpZy5DYW5uZWRNZXNzYWdlQ29uZmlnLklucHV0",
-            "RXZlbnRDaGFyElwKF2lucHV0YnJva2VyX2V2ZW50X3ByZXNzGAcgASgOMjsu",
+            "Q29uZmlnLlNlcmlhbENvbmZpZy5TZXJpYWxfTW9kZRIkChxvdmVycmlkZV9j",
+            "b25zb2xlX3NlcmlhbF9wb3J0GAggASgIIooCCgtTZXJpYWxfQmF1ZBIQCgxC",
+            "QVVEX0RFRkFVTFQQABIMCghCQVVEXzExMBABEgwKCEJBVURfMzAwEAISDAoI",
+            "QkFVRF82MDAQAxINCglCQVVEXzEyMDAQBBINCglCQVVEXzI0MDAQBRINCglC",
+            "QVVEXzQ4MDAQBhINCglCQVVEXzk2MDAQBxIOCgpCQVVEXzE5MjAwEAgSDgoK",
+            "QkFVRF8zODQwMBAJEg4KCkJBVURfNTc2MDAQChIPCgtCQVVEXzExNTIwMBAL",
+            "Eg8KC0JBVURfMjMwNDAwEAwSDwoLQkFVRF80NjA4MDAQDRIPCgtCQVVEXzU3",
+            "NjAwMBAOEg8KC0JBVURfOTIxNjAwEA8iVQoLU2VyaWFsX01vZGUSCwoHREVG",
+            "QVVMVBAAEgoKBlNJTVBMRRABEgkKBVBST1RPEAISCwoHVEVYVE1TRxADEggK",
+            "BE5NRUEQBBILCgdDQUxUT1BPEAUazgIKGkV4dGVybmFsTm90aWZpY2F0aW9u",
+            "Q29uZmlnEg8KB2VuYWJsZWQYASABKAgSEQoJb3V0cHV0X21zGAIgASgNEg4K",
+            "Bm91dHB1dBgDIAEoDRIUCgxvdXRwdXRfdmlicmEYCCABKA0SFQoNb3V0cHV0",
+            "X2J1enplchgJIAEoDRIOCgZhY3RpdmUYBCABKAgSFQoNYWxlcnRfbWVzc2Fn",
+            "ZRgFIAEoCBIbChNhbGVydF9tZXNzYWdlX3ZpYnJhGAogASgIEhwKFGFsZXJ0",
+            "X21lc3NhZ2VfYnV6emVyGAsgASgIEhIKCmFsZXJ0X2JlbGwYBiABKAgSGAoQ",
+            "YWxlcnRfYmVsbF92aWJyYRgMIAEoCBIZChFhbGVydF9iZWxsX2J1enplchgN",
+            "IAEoCBIPCgd1c2VfcHdtGAcgASgIEhMKC25hZ190aW1lb3V0GA4gASgNGoQB",
+            "ChJTdG9yZUZvcndhcmRDb25maWcSDwoHZW5hYmxlZBgBIAEoCBIRCgloZWFy",
+            "dGJlYXQYAiABKAgSDwoHcmVjb3JkcxgDIAEoDRIaChJoaXN0b3J5X3JldHVy",
+            "bl9tYXgYBCABKA0SHQoVaGlzdG9yeV9yZXR1cm5fd2luZG93GAUgASgNGkAK",
+            "D1JhbmdlVGVzdENvbmZpZxIPCgdlbmFibGVkGAEgASgIEg4KBnNlbmRlchgC",
+            "IAEoDRIMCgRzYXZlGAMgASgIGoYCCg9UZWxlbWV0cnlDb25maWcSHgoWZGV2",
+            "aWNlX3VwZGF0ZV9pbnRlcnZhbBgBIAEoDRIjChtlbnZpcm9ubWVudF91cGRh",
+            "dGVfaW50ZXJ2YWwYAiABKA0SJwofZW52aXJvbm1lbnRfbWVhc3VyZW1lbnRf",
+            "ZW5hYmxlZBgDIAEoCBIiChplbnZpcm9ubWVudF9zY3JlZW5fZW5hYmxlZBgE",
+            "IAEoCBImCh5lbnZpcm9ubWVudF9kaXNwbGF5X2ZhaHJlbmhlaXQYBSABKAgS",
+            "GwoTYWlyX3F1YWxpdHlfZW5hYmxlZBgGIAEoCBIcChRhaXJfcXVhbGl0eV9p",
+            "bnRlcnZhbBgHIAEoDRrWBAoTQ2FubmVkTWVzc2FnZUNvbmZpZxIXCg9yb3Rh",
+            "cnkxX2VuYWJsZWQYASABKAgSGQoRaW5wdXRicm9rZXJfcGluX2EYAiABKA0S",
+            "GQoRaW5wdXRicm9rZXJfcGluX2IYAyABKA0SHQoVaW5wdXRicm9rZXJfcGlu",
+            "X3ByZXNzGAQgASgNElkKFGlucHV0YnJva2VyX2V2ZW50X2N3GAUgASgOMjsu",
             "bWVzaHRhc3RpYy5Nb2R1bGVDb25maWcuQ2FubmVkTWVzc2FnZUNvbmZpZy5J",
-            "bnB1dEV2ZW50Q2hhchIXCg91cGRvd24xX2VuYWJsZWQYCCABKAgSDwoHZW5h",
-            "YmxlZBgJIAEoCBIaChJhbGxvd19pbnB1dF9zb3VyY2UYCiABKAkSEQoJc2Vu",
-            "ZF9iZWxsGAsgASgIImMKDklucHV0RXZlbnRDaGFyEggKBE5PTkUQABIGCgJV",
-            "UBAREggKBERPV04QEhIICgRMRUZUEBMSCQoFUklHSFQQFBIKCgZTRUxFQ1QQ",
-            "ChIICgRCQUNLEBsSCgoGQ0FOQ0VMEBhCEQoPcGF5bG9hZF92YXJpYW50ImQK",
-            "EVJlbW90ZUhhcmR3YXJlUGluEhAKCGdwaW9fcGluGAEgASgNEgwKBG5hbWUY",
-            "AiABKAkSLwoEdHlwZRgDIAEoDjIhLm1lc2h0YXN0aWMuUmVtb3RlSGFyZHdh",
-            "cmVQaW5UeXBlKkkKFVJlbW90ZUhhcmR3YXJlUGluVHlwZRILCgdVTktOT1dO",
-            "EAASEAoMRElHSVRBTF9SRUFEEAESEQoNRElHSVRBTF9XUklURRACQmcKE2Nv",
-            "bS5nZWVrc3ZpbGxlLm1lc2hCEk1vZHVsZUNvbmZpZ1Byb3Rvc1oiZ2l0aHVi",
-            "LmNvbS9tZXNodGFzdGljL2dvL2dlbmVyYXRlZKoCFE1lc2h0YXN0aWMuUHJv",
-            "dG9idWZzugIAYgZwcm90bzM="));
+            "bnB1dEV2ZW50Q2hhchJaChVpbnB1dGJyb2tlcl9ldmVudF9jY3cYBiABKA4y",
+            "Oy5tZXNodGFzdGljLk1vZHVsZUNvbmZpZy5DYW5uZWRNZXNzYWdlQ29uZmln",
+            "LklucHV0RXZlbnRDaGFyElwKF2lucHV0YnJva2VyX2V2ZW50X3ByZXNzGAcg",
+            "ASgOMjsubWVzaHRhc3RpYy5Nb2R1bGVDb25maWcuQ2FubmVkTWVzc2FnZUNv",
+            "bmZpZy5JbnB1dEV2ZW50Q2hhchIXCg91cGRvd24xX2VuYWJsZWQYCCABKAgS",
+            "DwoHZW5hYmxlZBgJIAEoCBIaChJhbGxvd19pbnB1dF9zb3VyY2UYCiABKAkS",
+            "EQoJc2VuZF9iZWxsGAsgASgIImMKDklucHV0RXZlbnRDaGFyEggKBE5PTkUQ",
+            "ABIGCgJVUBAREggKBERPV04QEhIICgRMRUZUEBMSCQoFUklHSFQQFBIKCgZT",
+            "RUxFQ1QQChIICgRCQUNLEBsSCgoGQ0FOQ0VMEBhCEQoPcGF5bG9hZF92YXJp",
+            "YW50ImQKEVJlbW90ZUhhcmR3YXJlUGluEhAKCGdwaW9fcGluGAEgASgNEgwK",
+            "BG5hbWUYAiABKAkSLwoEdHlwZRgDIAEoDjIhLm1lc2h0YXN0aWMuUmVtb3Rl",
+            "SGFyZHdhcmVQaW5UeXBlKkkKFVJlbW90ZUhhcmR3YXJlUGluVHlwZRILCgdV",
+            "TktOT1dOEAASEAoMRElHSVRBTF9SRUFEEAESEQoNRElHSVRBTF9XUklURRAC",
+            "QmcKE2NvbS5nZWVrc3ZpbGxlLm1lc2hCEk1vZHVsZUNvbmZpZ1Byb3Rvc1oi",
+            "Z2l0aHViLmNvbS9tZXNodGFzdGljL2dvL2dlbmVyYXRlZKoCFE1lc2h0YXN0",
+            "aWMuUHJvdG9idWZzugIAYgZwcm90bzM="));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Meshtastic.Protobufs.RemoteHardwarePinType), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -136,7 +137,7 @@ namespace Meshtastic.Protobufs {
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.RemoteHardwareConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.RemoteHardwareConfig.Parser, new[]{ "Enabled", "AllowUndefinedPinAccess", "AvailablePins" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig.Parser, new[]{ "Codec2Enabled", "PttPin", "Bitrate", "I2SWs", "I2SSd", "I2SDin", "I2SSck" }, null, new[]{ typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.AudioConfig.Types.Audio_Baud) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config), global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Parser, new[]{ "Codec", "PttPin", "Codec2Bitrate", "SpeexBitrate", "OpusBitrate", "I2SWs", "I2SSd", "I2SDin", "I2SSck" }, new[]{ "Bitrate" }, new[]{ typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Audio_Codec), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Codec2_Baud), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Speex_Bit_Rate), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.Audio_Config.Types.Opus_Baud) }, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Parser, new[]{ "Enabled", "Echo", "Rxd", "Txd", "Baud", "Timeout", "Mode" }, null, new[]{ typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Baud), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Mode) }, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Parser, new[]{ "Enabled", "Echo", "Rxd", "Txd", "Baud", "Timeout", "Mode", "OverrideConsoleSerialPort" }, null, new[]{ typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Baud), typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Mode) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.ExternalNotificationConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.ExternalNotificationConfig.Parser, new[]{ "Enabled", "OutputMs", "Output", "OutputVibra", "OutputBuzzer", "Active", "AlertMessage", "AlertMessageVibra", "AlertMessageBuzzer", "AlertBell", "AlertBellVibra", "AlertBellBuzzer", "UsePwm", "NagTimeout" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.StoreForwardConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.StoreForwardConfig.Parser, new[]{ "Enabled", "Heartbeat", "Records", "HistoryReturnMax", "HistoryReturnWindow" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ModuleConfig.Types.RangeTestConfig), global::Meshtastic.Protobufs.ModuleConfig.Types.RangeTestConfig.Parser, new[]{ "Enabled", "Sender", "Save" }, null, null, null, null),
@@ -2879,6 +2880,7 @@ namespace Meshtastic.Protobufs {
           baud_ = other.baud_;
           timeout_ = other.timeout_;
           mode_ = other.mode_;
+          overrideConsoleSerialPort_ = other.overrideConsoleSerialPort_;
           _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
         }
 
@@ -2894,7 +2896,6 @@ namespace Meshtastic.Protobufs {
         /// <summary>
         ///
         /// Preferences for the SerialModule
-        /// FIXME - Move this out of UserPreferences and into a section for module configuration.
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2926,7 +2927,7 @@ namespace Meshtastic.Protobufs {
         private uint rxd_;
         /// <summary>
         ///
-        /// TODO: REPLACE
+        /// RX pin (should match Arduino gpio pin number)
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2942,7 +2943,7 @@ namespace Meshtastic.Protobufs {
         private uint txd_;
         /// <summary>
         ///
-        /// TODO: REPLACE
+        /// TX pin (should match Arduino gpio pin number)
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2958,7 +2959,7 @@ namespace Meshtastic.Protobufs {
         private global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Baud baud_ = global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Baud.BaudDefault;
         /// <summary>
         ///
-        /// TODO: REPLACE
+        /// Serial baud rate
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2990,7 +2991,7 @@ namespace Meshtastic.Protobufs {
         private global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Mode mode_ = global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Mode.Default;
         /// <summary>
         ///
-        /// TODO: REPLACE
+        /// Mode for serial module operation
         /// </summary>
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
         [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
@@ -2998,6 +2999,24 @@ namespace Meshtastic.Protobufs {
           get { return mode_; }
           set {
             mode_ = value;
+          }
+        }
+
+        /// <summary>Field number for the "override_console_serial_port" field.</summary>
+        public const int OverrideConsoleSerialPortFieldNumber = 8;
+        private bool overrideConsoleSerialPort_;
+        /// <summary>
+        ///
+        /// Overrides the platform's defacto Serial port instance to use with Serial module config settings
+        /// This is currently only usable in output modes like NMEA / CalTopo and may behave strangely or not work at all in other modes
+        /// Existing logging over the Serial Console will still be present
+        /// </summary>
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
+        [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
+        public bool OverrideConsoleSerialPort {
+          get { return overrideConsoleSerialPort_; }
+          set {
+            overrideConsoleSerialPort_ = value;
           }
         }
 
@@ -3023,6 +3042,7 @@ namespace Meshtastic.Protobufs {
           if (Baud != other.Baud) return false;
           if (Timeout != other.Timeout) return false;
           if (Mode != other.Mode) return false;
+          if (OverrideConsoleSerialPort != other.OverrideConsoleSerialPort) return false;
           return Equals(_unknownFields, other._unknownFields);
         }
 
@@ -3037,6 +3057,7 @@ namespace Meshtastic.Protobufs {
           if (Baud != global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Baud.BaudDefault) hash ^= Baud.GetHashCode();
           if (Timeout != 0) hash ^= Timeout.GetHashCode();
           if (Mode != global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Mode.Default) hash ^= Mode.GetHashCode();
+          if (OverrideConsoleSerialPort != false) hash ^= OverrideConsoleSerialPort.GetHashCode();
           if (_unknownFields != null) {
             hash ^= _unknownFields.GetHashCode();
           }
@@ -3083,6 +3104,10 @@ namespace Meshtastic.Protobufs {
             output.WriteRawTag(56);
             output.WriteEnum((int) Mode);
           }
+          if (OverrideConsoleSerialPort != false) {
+            output.WriteRawTag(64);
+            output.WriteBool(OverrideConsoleSerialPort);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(output);
           }
@@ -3121,6 +3146,10 @@ namespace Meshtastic.Protobufs {
             output.WriteRawTag(56);
             output.WriteEnum((int) Mode);
           }
+          if (OverrideConsoleSerialPort != false) {
+            output.WriteRawTag(64);
+            output.WriteBool(OverrideConsoleSerialPort);
+          }
           if (_unknownFields != null) {
             _unknownFields.WriteTo(ref output);
           }
@@ -3151,6 +3180,9 @@ namespace Meshtastic.Protobufs {
           }
           if (Mode != global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Mode.Default) {
             size += 1 + pb::CodedOutputStream.ComputeEnumSize((int) Mode);
+          }
+          if (OverrideConsoleSerialPort != false) {
+            size += 1 + 1;
           }
           if (_unknownFields != null) {
             size += _unknownFields.CalculateSize();
@@ -3184,6 +3216,9 @@ namespace Meshtastic.Protobufs {
           }
           if (other.Mode != global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Mode.Default) {
             Mode = other.Mode;
+          }
+          if (other.OverrideConsoleSerialPort != false) {
+            OverrideConsoleSerialPort = other.OverrideConsoleSerialPort;
           }
           _unknownFields = pb::UnknownFieldSet.MergeFrom(_unknownFields, other._unknownFields);
         }
@@ -3226,6 +3261,10 @@ namespace Meshtastic.Protobufs {
               }
               case 56: {
                 Mode = (global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Mode) input.ReadEnum();
+                break;
+              }
+              case 64: {
+                OverrideConsoleSerialPort = input.ReadBool();
                 break;
               }
             }
@@ -3271,6 +3310,10 @@ namespace Meshtastic.Protobufs {
                 Mode = (global::Meshtastic.Protobufs.ModuleConfig.Types.SerialConfig.Types.Serial_Mode) input.ReadEnum();
                 break;
               }
+              case 64: {
+                OverrideConsoleSerialPort = input.ReadBool();
+                break;
+              }
             }
           }
         }
@@ -3314,6 +3357,10 @@ namespace Meshtastic.Protobufs {
             [pbr::OriginalName("PROTO")] Proto = 2,
             [pbr::OriginalName("TEXTMSG")] Textmsg = 3,
             [pbr::OriginalName("NMEA")] Nmea = 4,
+            /// <summary>
+            /// NMEA messages specifically tailored for CalTopo
+            /// </summary>
+            [pbr::OriginalName("CALTOPO")] Caltopo = 5,
           }
 
         }
