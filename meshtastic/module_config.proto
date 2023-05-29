@@ -286,11 +286,12 @@ message ModuleConfig {
       PROTO = 2;
       TEXTMSG = 3;
       NMEA = 4;
+      // NMEA messages specifically tailored for CalTopo
+      CALTOPO = 5;
     }
 
     /*
      * Preferences for the SerialModule
-     * FIXME - Move this out of UserPreferences and into a section for module configuration.
      */
     bool enabled = 1;
 
@@ -300,17 +301,17 @@ message ModuleConfig {
     bool echo = 2;
 
     /*
-     * TODO: REPLACE
+     * RX pin (should match Arduino gpio pin number)
      */
     uint32 rxd = 3;
 
     /*
-     * TODO: REPLACE
+     * TX pin (should match Arduino gpio pin number)
      */
     uint32 txd = 4;
 
     /*
-     * TODO: REPLACE
+     * Serial baud rate
      */
     Serial_Baud baud = 5;
 
@@ -320,9 +321,16 @@ message ModuleConfig {
     uint32 timeout = 6;
 
     /*
-     * TODO: REPLACE
+     * Mode for serial module operation
      */
     Serial_Mode mode = 7;
+
+    /*
+     * Overrides the platform's defacto Serial port instance to use with Serial module config settings
+     * This is currently only usable in output modes like NMEA / CalTopo and may behave strangely or not work at all in other modes
+     * Existing logging over the Serial Console will still be present
+     */
+    bool override_console_serial_port = 8;
   }
 
   /*
