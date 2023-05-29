@@ -116,46 +116,45 @@ namespace Meshtastic.Protobufs {
             "dHVzSAASKgoMeG1vZGVtUGFja2V0GAwgASgLMhIubWVzaHRhc3RpYy5YTW9k",
             "ZW1IABIuCghtZXRhZGF0YRgNIAEoCzIaLm1lc2h0YXN0aWMuRGV2aWNlTWV0",
             "YWRhdGFIABIsCgpwdGRCdXR0b25zGA4gASgLMhYubWVzaHRhc3RpYy5QdGRC",
-            "dXR0b25zSABCEQoPcGF5bG9hZF92YXJpYW50ItABCgdUb1JhZGlvEigKBnBh",
+            "dXR0b25zSABCEQoPcGF5bG9hZF92YXJpYW50IqIBCgdUb1JhZGlvEigKBnBh",
             "Y2tldBgBIAEoCzIWLm1lc2h0YXN0aWMuTWVzaFBhY2tldEgAEhgKDndhbnRf",
             "Y29uZmlnX2lkGAMgASgNSAASFAoKZGlzY29ubmVjdBgEIAEoCEgAEioKDHht",
-            "b2RlbVBhY2tldBgFIAEoCzISLm1lc2h0YXN0aWMuWE1vZGVtSAASLAoKcHRk",
-            "QnV0dG9ucxgGIAEoCzIWLm1lc2h0YXN0aWMuUHRkQnV0dG9uc0gAQhEKD3Bh",
-            "eWxvYWRfdmFyaWFudCJACgpDb21wcmVzc2VkEiQKB3BvcnRudW0YASABKA4y",
-            "Ey5tZXNodGFzdGljLlBvcnROdW0SDAoEZGF0YRgCIAEoDCJhCgxOZWlnaGJv",
-            "ckluZm8SDwoHbm9kZV9pZBgBIAEoDRIXCg9sYXN0X3NlbnRfYnlfaWQYAiAB",
-            "KA0SJwoJbmVpZ2hib3JzGAMgAygLMhQubWVzaHRhc3RpYy5OZWlnaGJvciIo",
-            "CghOZWlnaGJvchIPCgdub2RlX2lkGAEgASgNEgsKA3NuchgCIAEoAiKtAgoO",
-            "RGV2aWNlTWV0YWRhdGESGAoQZmlybXdhcmVfdmVyc2lvbhgBIAEoCRIcChRk",
-            "ZXZpY2Vfc3RhdGVfdmVyc2lvbhgCIAEoDRITCgtjYW5TaHV0ZG93bhgDIAEo",
-            "CBIPCgdoYXNXaWZpGAQgASgIEhQKDGhhc0JsdWV0b290aBgFIAEoCBITCgto",
-            "YXNFdGhlcm5ldBgGIAEoCBIyCgRyb2xlGAcgASgOMiQubWVzaHRhc3RpYy5D",
-            "b25maWcuRGV2aWNlQ29uZmlnLlJvbGUSFgoOcG9zaXRpb25fZmxhZ3MYCCAB",
-            "KA0SKwoIaHdfbW9kZWwYCSABKA4yGS5tZXNodGFzdGljLkhhcmR3YXJlTW9k",
-            "ZWwSGQoRaGFzUmVtb3RlSGFyZHdhcmUYCiABKAgq8wQKDUhhcmR3YXJlTW9k",
-            "ZWwSCQoFVU5TRVQQABIMCghUTE9SQV9WMhABEgwKCFRMT1JBX1YxEAISEgoO",
-            "VExPUkFfVjJfMV8xUDYQAxIJCgVUQkVBTRAEEg8KC0hFTFRFQ19WMl8wEAUS",
-            "DgoKVEJFQU1fVjBQNxAGEgoKBlRfRUNITxAHEhAKDFRMT1JBX1YxXzFQMxAI",
-            "EgsKB1JBSzQ2MzEQCRIPCgtIRUxURUNfVjJfMRAKEg0KCUhFTFRFQ19WMRAL",
-            "EhgKFExJTFlHT19UQkVBTV9TM19DT1JFEAwSDAoIUkFLMTEyMDAQDRILCgdO",
-            "QU5PX0cxEA4SEgoOVExPUkFfVjJfMV8xUDgQDxIPCgtUTE9SQV9UM19TMxAQ",
-            "EhQKEE5BTk9fRzFfRVhQTE9SRVIQERIOCgpTVEFUSU9OX0cxEBkSDAoIUkFL",
-            "MTEzMTAQGhIRCg1MT1JBX1JFTEFZX1YxECASDgoKTlJGNTI4NDBESxAhEgcK",
-            "A1BQUhAiEg8KC0dFTklFQkxPQ0tTECMSEQoNTlJGNTJfVU5LTk9XThAkEg0K",
-            "CVBPUlREVUlOTxAlEg8KC0FORFJPSURfU0lNECYSCgoGRElZX1YxECcSFQoR",
-            "TlJGNTI4NDBfUENBMTAwNTkQKBIKCgZEUl9ERVYQKRILCgdNNVNUQUNLECoS",
-            "DQoJSEVMVEVDX1YzECsSEQoNSEVMVEVDX1dTTF9WMxAsEhMKD0JFVEFGUFZf",
-            "MjQwMF9UWBAtEhcKE0JFVEFGUFZfOTAwX05BTk9fVFgQLhIMCghSUElfUElD",
-            "TxAvEgcKA1BURBBkEg8KClBSSVZBVEVfSFcQ/wEqLAoJQ29uc3RhbnRzEggK",
-            "BFpFUk8QABIVChBEQVRBX1BBWUxPQURfTEVOEO0BKu4BChFDcml0aWNhbEVy",
-            "cm9yQ29kZRIICgROT05FEAASDwoLVFhfV0FUQ0hET0cQARIUChBTTEVFUF9F",
-            "TlRFUl9XQUlUEAISDAoITk9fUkFESU8QAxIPCgtVTlNQRUNJRklFRBAEEhUK",
-            "EVVCTE9YX1VOSVRfRkFJTEVEEAUSDQoJTk9fQVhQMTkyEAYSGQoVSU5WQUxJ",
-            "RF9SQURJT19TRVRUSU5HEAcSEwoPVFJBTlNNSVRfRkFJTEVEEAgSDAoIQlJP",
-            "V05PVVQQCRISCg5TWDEyNjJfRkFJTFVSRRAKEhEKDVJBRElPX1NQSV9CVUcQ",
-            "C0JfChNjb20uZ2Vla3N2aWxsZS5tZXNoQgpNZXNoUHJvdG9zWiJnaXRodWIu",
-            "Y29tL21lc2h0YXN0aWMvZ28vZ2VuZXJhdGVkqgIUTWVzaHRhc3RpYy5Qcm90",
-            "b2J1ZnO6AgBiBnByb3RvMw=="));
+            "b2RlbVBhY2tldBgFIAEoCzISLm1lc2h0YXN0aWMuWE1vZGVtSABCEQoPcGF5",
+            "bG9hZF92YXJpYW50IkAKCkNvbXByZXNzZWQSJAoHcG9ydG51bRgBIAEoDjIT",
+            "Lm1lc2h0YXN0aWMuUG9ydE51bRIMCgRkYXRhGAIgASgMImEKDE5laWdoYm9y",
+            "SW5mbxIPCgdub2RlX2lkGAEgASgNEhcKD2xhc3Rfc2VudF9ieV9pZBgCIAEo",
+            "DRInCgluZWlnaGJvcnMYAyADKAsyFC5tZXNodGFzdGljLk5laWdoYm9yIigK",
+            "CE5laWdoYm9yEg8KB25vZGVfaWQYASABKA0SCwoDc25yGAIgASgCIq0CCg5E",
+            "ZXZpY2VNZXRhZGF0YRIYChBmaXJtd2FyZV92ZXJzaW9uGAEgASgJEhwKFGRl",
+            "dmljZV9zdGF0ZV92ZXJzaW9uGAIgASgNEhMKC2NhblNodXRkb3duGAMgASgI",
+            "Eg8KB2hhc1dpZmkYBCABKAgSFAoMaGFzQmx1ZXRvb3RoGAUgASgIEhMKC2hh",
+            "c0V0aGVybmV0GAYgASgIEjIKBHJvbGUYByABKA4yJC5tZXNodGFzdGljLkNv",
+            "bmZpZy5EZXZpY2VDb25maWcuUm9sZRIWCg5wb3NpdGlvbl9mbGFncxgIIAEo",
+            "DRIrCghod19tb2RlbBgJIAEoDjIZLm1lc2h0YXN0aWMuSGFyZHdhcmVNb2Rl",
+            "bBIZChFoYXNSZW1vdGVIYXJkd2FyZRgKIAEoCCrzBAoNSGFyZHdhcmVNb2Rl",
+            "bBIJCgVVTlNFVBAAEgwKCFRMT1JBX1YyEAESDAoIVExPUkFfVjEQAhISCg5U",
+            "TE9SQV9WMl8xXzFQNhADEgkKBVRCRUFNEAQSDwoLSEVMVEVDX1YyXzAQBRIO",
+            "CgpUQkVBTV9WMFA3EAYSCgoGVF9FQ0hPEAcSEAoMVExPUkFfVjFfMVAzEAgS",
+            "CwoHUkFLNDYzMRAJEg8KC0hFTFRFQ19WMl8xEAoSDQoJSEVMVEVDX1YxEAsS",
+            "GAoUTElMWUdPX1RCRUFNX1MzX0NPUkUQDBIMCghSQUsxMTIwMBANEgsKB05B",
+            "Tk9fRzEQDhISCg5UTE9SQV9WMl8xXzFQOBAPEg8KC1RMT1JBX1QzX1MzEBAS",
+            "FAoQTkFOT19HMV9FWFBMT1JFUhAREg4KClNUQVRJT05fRzEQGRIMCghSQUsx",
+            "MTMxMBAaEhEKDUxPUkFfUkVMQVlfVjEQIBIOCgpOUkY1Mjg0MERLECESBwoD",
+            "UFBSECISDwoLR0VOSUVCTE9DS1MQIxIRCg1OUkY1Ml9VTktOT1dOECQSDQoJ",
+            "UE9SVERVSU5PECUSDwoLQU5EUk9JRF9TSU0QJhIKCgZESVlfVjEQJxIVChFO",
+            "UkY1Mjg0MF9QQ0ExMDA1ORAoEgoKBkRSX0RFVhApEgsKB001U1RBQ0sQKhIN",
+            "CglIRUxURUNfVjMQKxIRCg1IRUxURUNfV1NMX1YzECwSEwoPQkVUQUZQVl8y",
+            "NDAwX1RYEC0SFwoTQkVUQUZQVl85MDBfTkFOT19UWBAuEgwKCFJQSV9QSUNP",
+            "EC8SBwoDUFREEGQSDwoKUFJJVkFURV9IVxD/ASosCglDb25zdGFudHMSCAoE",
+            "WkVSTxAAEhUKEERBVEFfUEFZTE9BRF9MRU4Q7QEq7gEKEUNyaXRpY2FsRXJy",
+            "b3JDb2RlEggKBE5PTkUQABIPCgtUWF9XQVRDSERPRxABEhQKEFNMRUVQX0VO",
+            "VEVSX1dBSVQQAhIMCghOT19SQURJTxADEg8KC1VOU1BFQ0lGSUVEEAQSFQoR",
+            "VUJMT1hfVU5JVF9GQUlMRUQQBRINCglOT19BWFAxOTIQBhIZChVJTlZBTElE",
+            "X1JBRElPX1NFVFRJTkcQBxITCg9UUkFOU01JVF9GQUlMRUQQCBIMCghCUk9X",
+            "Tk9VVBAJEhIKDlNYMTI2Ml9GQUlMVVJFEAoSEQoNUkFESU9fU1BJX0JVRxAL",
+            "Ql8KE2NvbS5nZWVrc3ZpbGxlLm1lc2hCCk1lc2hQcm90b3NaImdpdGh1Yi5j",
+            "b20vbWVzaHRhc3RpYy9nby9nZW5lcmF0ZWSqAhRNZXNodGFzdGljLlByb3Rv",
+            "YnVmc7oCAGIGcHJvdG8z"));
       descriptor = pbr::FileDescriptor.FromGeneratedCode(descriptorData,
           new pbr::FileDescriptor[] { global::Meshtastic.Protobufs.ChannelReflection.Descriptor, global::Meshtastic.Protobufs.ConfigReflection.Descriptor, global::Meshtastic.Protobufs.ModuleConfigReflection.Descriptor, global::Meshtastic.Protobufs.PortnumsReflection.Descriptor, global::Meshtastic.Protobufs.TelemetryReflection.Descriptor, global::Meshtastic.Protobufs.XmodemReflection.Descriptor, },
           new pbr::GeneratedClrTypeInfo(new[] {typeof(global::Meshtastic.Protobufs.HardwareModel), typeof(global::Meshtastic.Protobufs.Constants), typeof(global::Meshtastic.Protobufs.CriticalErrorCode), }, null, new pbr::GeneratedClrTypeInfo[] {
@@ -172,7 +171,7 @@ namespace Meshtastic.Protobufs {
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.LogRecord), global::Meshtastic.Protobufs.LogRecord.Parser, new[]{ "Message", "Time", "Source", "Level" }, null, new[]{ typeof(global::Meshtastic.Protobufs.LogRecord.Types.Level) }, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.QueueStatus), global::Meshtastic.Protobufs.QueueStatus.Parser, new[]{ "Res", "Free", "Maxlen", "MeshPacketId" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.FromRadio), global::Meshtastic.Protobufs.FromRadio.Parser, new[]{ "Id", "Packet", "MyInfo", "NodeInfo", "Config", "LogRecord", "ConfigCompleteId", "Rebooted", "ModuleConfig", "Channel", "QueueStatus", "XmodemPacket", "Metadata", "PtdButtons" }, new[]{ "PayloadVariant" }, null, null, null),
-            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ToRadio), global::Meshtastic.Protobufs.ToRadio.Parser, new[]{ "Packet", "WantConfigId", "Disconnect", "XmodemPacket", "PtdButtons" }, new[]{ "PayloadVariant" }, null, null, null),
+            new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.ToRadio), global::Meshtastic.Protobufs.ToRadio.Parser, new[]{ "Packet", "WantConfigId", "Disconnect", "XmodemPacket" }, new[]{ "PayloadVariant" }, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.Compressed), global::Meshtastic.Protobufs.Compressed.Parser, new[]{ "Portnum", "Data" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.NeighborInfo), global::Meshtastic.Protobufs.NeighborInfo.Parser, new[]{ "NodeId", "LastSentById", "Neighbors" }, null, null, null, null),
             new pbr::GeneratedClrTypeInfo(typeof(global::Meshtastic.Protobufs.Neighbor), global::Meshtastic.Protobufs.Neighbor.Parser, new[]{ "NodeId", "Snr" }, null, null, null, null),
@@ -7791,9 +7790,6 @@ namespace Meshtastic.Protobufs {
         case PayloadVariantOneofCase.XmodemPacket:
           XmodemPacket = other.XmodemPacket.Clone();
           break;
-        case PayloadVariantOneofCase.PtdButtons:
-          PtdButtons = other.PtdButtons.Clone();
-          break;
       }
 
       _unknownFields = pb::UnknownFieldSet.Clone(other._unknownFields);
@@ -7874,22 +7870,6 @@ namespace Meshtastic.Protobufs {
       }
     }
 
-    /// <summary>Field number for the "ptdButtons" field.</summary>
-    public const int PtdButtonsFieldNumber = 6;
-    /// <summary>
-    ///
-    /// Ptd Buttons
-    /// </summary>
-    [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
-    [global::System.CodeDom.Compiler.GeneratedCode("protoc", null)]
-    public global::Meshtastic.Protobufs.PtdButtons PtdButtons {
-      get { return payloadVariantCase_ == PayloadVariantOneofCase.PtdButtons ? (global::Meshtastic.Protobufs.PtdButtons) payloadVariant_ : null; }
-      set {
-        payloadVariant_ = value;
-        payloadVariantCase_ = value == null ? PayloadVariantOneofCase.None : PayloadVariantOneofCase.PtdButtons;
-      }
-    }
-
     private object payloadVariant_;
     /// <summary>Enum of possible cases for the "payload_variant" oneof.</summary>
     public enum PayloadVariantOneofCase {
@@ -7898,7 +7878,6 @@ namespace Meshtastic.Protobufs {
       WantConfigId = 3,
       Disconnect = 4,
       XmodemPacket = 5,
-      PtdButtons = 6,
     }
     private PayloadVariantOneofCase payloadVariantCase_ = PayloadVariantOneofCase.None;
     [global::System.Diagnostics.DebuggerNonUserCodeAttribute]
@@ -7933,7 +7912,6 @@ namespace Meshtastic.Protobufs {
       if (WantConfigId != other.WantConfigId) return false;
       if (Disconnect != other.Disconnect) return false;
       if (!object.Equals(XmodemPacket, other.XmodemPacket)) return false;
-      if (!object.Equals(PtdButtons, other.PtdButtons)) return false;
       if (PayloadVariantCase != other.PayloadVariantCase) return false;
       return Equals(_unknownFields, other._unknownFields);
     }
@@ -7946,7 +7924,6 @@ namespace Meshtastic.Protobufs {
       if (payloadVariantCase_ == PayloadVariantOneofCase.WantConfigId) hash ^= WantConfigId.GetHashCode();
       if (payloadVariantCase_ == PayloadVariantOneofCase.Disconnect) hash ^= Disconnect.GetHashCode();
       if (payloadVariantCase_ == PayloadVariantOneofCase.XmodemPacket) hash ^= XmodemPacket.GetHashCode();
-      if (payloadVariantCase_ == PayloadVariantOneofCase.PtdButtons) hash ^= PtdButtons.GetHashCode();
       hash ^= (int) payloadVariantCase_;
       if (_unknownFields != null) {
         hash ^= _unknownFields.GetHashCode();
@@ -7982,10 +7959,6 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(42);
         output.WriteMessage(XmodemPacket);
       }
-      if (payloadVariantCase_ == PayloadVariantOneofCase.PtdButtons) {
-        output.WriteRawTag(50);
-        output.WriteMessage(PtdButtons);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(output);
       }
@@ -8012,10 +7985,6 @@ namespace Meshtastic.Protobufs {
         output.WriteRawTag(42);
         output.WriteMessage(XmodemPacket);
       }
-      if (payloadVariantCase_ == PayloadVariantOneofCase.PtdButtons) {
-        output.WriteRawTag(50);
-        output.WriteMessage(PtdButtons);
-      }
       if (_unknownFields != null) {
         _unknownFields.WriteTo(ref output);
       }
@@ -8037,9 +8006,6 @@ namespace Meshtastic.Protobufs {
       }
       if (payloadVariantCase_ == PayloadVariantOneofCase.XmodemPacket) {
         size += 1 + pb::CodedOutputStream.ComputeMessageSize(XmodemPacket);
-      }
-      if (payloadVariantCase_ == PayloadVariantOneofCase.PtdButtons) {
-        size += 1 + pb::CodedOutputStream.ComputeMessageSize(PtdButtons);
       }
       if (_unknownFields != null) {
         size += _unknownFields.CalculateSize();
@@ -8071,12 +8037,6 @@ namespace Meshtastic.Protobufs {
             XmodemPacket = new global::Meshtastic.Protobufs.XModem();
           }
           XmodemPacket.MergeFrom(other.XmodemPacket);
-          break;
-        case PayloadVariantOneofCase.PtdButtons:
-          if (PtdButtons == null) {
-            PtdButtons = new global::Meshtastic.Protobufs.PtdButtons();
-          }
-          PtdButtons.MergeFrom(other.PtdButtons);
           break;
       }
 
@@ -8121,15 +8081,6 @@ namespace Meshtastic.Protobufs {
             XmodemPacket = subBuilder;
             break;
           }
-          case 50: {
-            global::Meshtastic.Protobufs.PtdButtons subBuilder = new global::Meshtastic.Protobufs.PtdButtons();
-            if (payloadVariantCase_ == PayloadVariantOneofCase.PtdButtons) {
-              subBuilder.MergeFrom(PtdButtons);
-            }
-            input.ReadMessage(subBuilder);
-            PtdButtons = subBuilder;
-            break;
-          }
         }
       }
     #endif
@@ -8169,15 +8120,6 @@ namespace Meshtastic.Protobufs {
             }
             input.ReadMessage(subBuilder);
             XmodemPacket = subBuilder;
-            break;
-          }
-          case 50: {
-            global::Meshtastic.Protobufs.PtdButtons subBuilder = new global::Meshtastic.Protobufs.PtdButtons();
-            if (payloadVariantCase_ == PayloadVariantOneofCase.PtdButtons) {
-              subBuilder.MergeFrom(PtdButtons);
-            }
-            input.ReadMessage(subBuilder);
-            PtdButtons = subBuilder;
             break;
           }
         }
